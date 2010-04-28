@@ -140,6 +140,12 @@
 	[super dealloc];
 }
 
+#pragma mark -
+#pragma mark Activities
+- (IBAction)buttonPressedForWordBank:(id)sender {
+	NSLog(@"word bank");
+}
+
 
 @end
 

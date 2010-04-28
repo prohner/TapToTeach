@@ -26,5 +26,7 @@
 
 - (NSString *)applicationDocumentsDirectory;
 
+- (IBAction)buttonPressedForWordBank:(id)sender;
+
 @end
 
