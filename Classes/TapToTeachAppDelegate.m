@@ -7,7 +7,6 @@
 //
 
 #import "TapToTeachAppDelegate.h"
-#import "WordBankViewController.h"
 
 
 @implementation TapToTeachAppDelegate
@@ -136,6 +135,7 @@
     [managedObjectContext release];
     [managedObjectModel release];
     [persistentStoreCoordinator release];
+	[wordBankViewController release];
     
 	[window release];
 	[super dealloc];
@@ -144,18 +144,22 @@
 #pragma mark -
 #pragma mark Activities
 - (IBAction)buttonPressedForWordBank:(id)sender {
-	NSLog(@"word bank");
+	[self loadViewController:&wordBankViewController withNibAndClassName:@"WordBankViewController"];
+}
+
+- (void)loadViewController:(UIViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName {
+	[(*ctrl) release];
 	
-	WordBankViewController *ctrl = [[WordBankViewController alloc] initWithNibName:@"WordBankViewController" bundle:nil];
+	Class c = NSClassFromString(nibAndClassName);
+	*ctrl = [[c alloc] initWithNibName:@"WordBankViewController" bundle:nil];
 	
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDuration:1];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:window cache:YES];
-	[window addSubview:ctrl.view];
-	[UIView commitAnimations];	
+	[window addSubview:(*ctrl).view];
+	[UIView commitAnimations];
 }
-
 
 @end
 

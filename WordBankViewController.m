@@ -7,7 +7,7 @@
 //
 
 #import "WordBankViewController.h"
-
+#import "Utility.h"
 
 @implementation WordBankViewController
 
@@ -47,6 +47,7 @@
 
 
 - (void)viewDidUnload {
+	MEMORY_LOG();
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -62,7 +63,7 @@
 
 
 - (void)dealloc {
-    [super dealloc];
+	MEMORY_LOG();
 	[button1 release];
 	[button2 release];
 	[button3 release];
@@ -71,7 +72,16 @@
 	
 	[infoButton release];
 	[text release];
+    [super dealloc];
 }
 
+- (IBAction)infoButtonPressed:(id)sender {
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:1];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+	[self.view removeFromSuperview];
+	[UIView commitAnimations];	
+}
 
 @end

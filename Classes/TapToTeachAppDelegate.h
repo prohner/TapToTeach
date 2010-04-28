@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "WordBankViewController.h"
+#import "Utility.h"
 
 @interface TapToTeachAppDelegate : NSObject <UIApplicationDelegate> {
 
@@ -16,6 +18,7 @@
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
     UIWindow *window;
+	WordBankViewController *wordBankViewController;
 }
 
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
@@ -27,6 +30,7 @@
 - (NSString *)applicationDocumentsDirectory;
 
 - (IBAction)buttonPressedForWordBank:(id)sender;
+- (void)loadViewController:(UIViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName;
 
 @end
 

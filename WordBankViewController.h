@@ -28,4 +28,5 @@
 @property (nonatomic, retain) IBOutlet UIButton *infoButton;
 @property (nonatomic, retain) IBOutlet UITextField *text;
 
+- (IBAction)infoButtonPressed:(id)sender;
 @end

@@ -17,6 +17,7 @@
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */; };
 		E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C268CE1187EFB80054600F /* WordBankViewController.xib */; };
+		E7C2690B1187F5EF0054600F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C2690A1187F5EF0054600F /* Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		E7C268CC1187EFB80054600F /* WordBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankViewController.h; sourceTree = "<group>"; };
 		E7C268CD1187EFB80054600F /* WordBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankViewController.m; sourceTree = "<group>"; };
 		E7C268CE1187EFB80054600F /* WordBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankViewController.xib; sourceTree = "<group>"; };
+		E7C269091187F5EF0054600F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		E7C2690A1187F5EF0054600F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* TapToTeachAppDelegate.h */,
 				1D3623250D0F684500981E51 /* TapToTeachAppDelegate.m */,
+				E7C269091187F5EF0054600F /* Utility.h */,
+				E7C2690A1187F5EF0054600F /* Utility.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				1D3623260D0F684500981E51 /* TapToTeachAppDelegate.m in Sources */,
 				28193055112F811F00ECF9B4 /* TapToTeach.xcdatamodeld in Sources */,
 				E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */,
+				E7C2690B1187F5EF0054600F /* Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
