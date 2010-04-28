@@ -7,6 +7,7 @@
 //
 
 #import "TapToTeachAppDelegate.h"
+#import "WordBankViewController.h"
 
 
 @implementation TapToTeachAppDelegate
@@ -144,6 +145,15 @@
 #pragma mark Activities
 - (IBAction)buttonPressedForWordBank:(id)sender {
 	NSLog(@"word bank");
+	
+	WordBankViewController *ctrl = [[WordBankViewController alloc] initWithNibName:@"WordBankViewController" bundle:nil];
+	
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:1];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:window cache:YES];
+	[window addSubview:ctrl.view];
+	[UIView commitAnimations];	
 }
 
 
