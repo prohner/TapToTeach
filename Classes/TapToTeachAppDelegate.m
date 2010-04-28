@@ -3,7 +3,7 @@
 //  TapToTeach
 //
 //  Created by Preston Rohner on 4/27/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
+//  Copyright Cool Tool Apps 2010. All rights reserved.
 //
 
 #import "TapToTeachAppDelegate.h"
