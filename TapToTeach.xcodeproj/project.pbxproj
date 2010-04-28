@@ -18,6 +18,10 @@
 		E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */; };
 		E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C268CE1187EFB80054600F /* WordBankViewController.xib */; };
 		E7C2690B1187F5EF0054600F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C2690A1187F5EF0054600F /* Utility.m */; };
+		E7C269BE11888A7B0054600F /* WordBankSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269B711888A7B0054600F /* WordBankSettings.m */; };
+		E7C269BF11888A7B0054600F /* SystemSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269B911888A7B0054600F /* SystemSettings.m */; };
+		E7C269C011888A7B0054600F /* WordBank.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269BB11888A7B0054600F /* WordBank.m */; };
+		E7C269C111888A7B0054600F /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269BD11888A7B0054600F /* Word.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,14 @@
 		E7C268CE1187EFB80054600F /* WordBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankViewController.xib; sourceTree = "<group>"; };
 		E7C269091187F5EF0054600F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		E7C2690A1187F5EF0054600F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		E7C269B611888A7B0054600F /* WordBankSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankSettings.h; sourceTree = "<group>"; };
+		E7C269B711888A7B0054600F /* WordBankSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankSettings.m; sourceTree = "<group>"; };
+		E7C269B811888A7B0054600F /* SystemSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemSettings.h; sourceTree = "<group>"; };
+		E7C269B911888A7B0054600F /* SystemSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemSettings.m; sourceTree = "<group>"; };
+		E7C269BA11888A7B0054600F /* WordBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBank.h; sourceTree = "<group>"; };
+		E7C269BB11888A7B0054600F /* WordBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBank.m; sourceTree = "<group>"; };
+		E7C269BC11888A7B0054600F /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		E7C269BD11888A7B0054600F /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +209,10 @@
 				28193055112F811F00ECF9B4 /* TapToTeach.xcdatamodeld in Sources */,
 				E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */,
 				E7C2690B1187F5EF0054600F /* Utility.m in Sources */,
+				E7C269BE11888A7B0054600F /* WordBankSettings.m in Sources */,
+				E7C269BF11888A7B0054600F /* SystemSettings.m in Sources */,
+				E7C269C011888A7B0054600F /* WordBank.m in Sources */,
+				E7C269C111888A7B0054600F /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +305,14 @@
 			isa = XCVersionGroup;
 			children = (
 				28C3AD890F43EF2300507BA6 /* TapToTeach.xcdatamodel */,
+				E7C269B611888A7B0054600F /* WordBankSettings.h */,
+				E7C269B711888A7B0054600F /* WordBankSettings.m */,
+				E7C269B811888A7B0054600F /* SystemSettings.h */,
+				E7C269B911888A7B0054600F /* SystemSettings.m */,
+				E7C269BA11888A7B0054600F /* WordBank.h */,
+				E7C269BB11888A7B0054600F /* WordBank.m */,
+				E7C269BC11888A7B0054600F /* Word.h */,
+				E7C269BD11888A7B0054600F /* Word.m */,
 			);
 			currentVersion = 28C3AD890F43EF2300507BA6 /* TapToTeach.xcdatamodel */;
 			path = TapToTeach.xcdatamodeld;

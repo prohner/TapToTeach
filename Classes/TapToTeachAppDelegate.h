@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 #import "WordBankViewController.h"
 #import "Utility.h"
+#import "SystemSettings.h"
 
 @interface TapToTeachAppDelegate : NSObject <UIApplicationDelegate> {
 
@@ -19,13 +20,17 @@
 
     UIWindow *window;
 	WordBankViewController *wordBankViewController;
+	SystemSettings *systemSettings;
+	UILabel *welcomeLabel;
 }
 
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic, retain, readonly) SystemSettings *systemSettings;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UILabel *welcomeLabel;
 
 - (NSString *)applicationDocumentsDirectory;
 

@@ -11,7 +11,7 @@
 
 @implementation TapToTeachAppDelegate
 
-@synthesize window;
+@synthesize window, welcomeLabel;
 
 
 #pragma mark -
@@ -20,6 +20,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
     // Override point for customization after application launch
+	NSString *welcomeMessage = @"Welcome!";
+	if ([[[self systemSettings] userName] isEqualToString:@""]) {
+		[welcomeMessage release];
+		welcomeMessage = [[NSString alloc] initWithFormat:@"Welcome %@!", [[self systemSettings] userName]];
+	}
+	welcomeLabel.text = welcomeMessage;
+	[welcomeMessage release];
+
 	
     [window makeKeyAndVisible];
     
@@ -139,6 +147,29 @@
     
 	[window release];
 	[super dealloc];
+}
+
+#pragma mark -
+#pragma mark System Settings
+- (SystemSettings *)systemSettings {
+	if ( ! systemSettings) {
+		NSEntityDescription *systemSettingsEntity = [[[self managedObjectModel] entitiesByName] objectForKey:@"SystemSettings"];
+		NSFetchRequest *request = [[NSFetchRequest alloc] init];
+		[request setEntity:systemSettingsEntity];
+		
+		NSError *error = nil;
+		NSArray *array = [[self managedObjectContext] executeFetchRequest:request error:&error];
+		
+		if ((error != nil) || (array == nil)) {
+			NSLog(@"Error while fetching\n%@",
+				  ([error localizedDescription] != nil)
+				  ? [error localizedDescription] : @"Unknown Error");
+			exit(1);
+		}
+	}
+
+	return systemSettings;
+	
 }
 
 #pragma mark -

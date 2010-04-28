@@ -269,12 +269,14 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>28193054112F811F00ECF9B4</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>1</integer>
+									<integer>8</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -328,15 +330,22 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E7C269AB118883B90054600F</string>
+										<string>E7C269F3118898BB0054600F</string>
 										<key>history</key>
 										<array>
 											<string>E7C268D61187F05D0054600F</string>
 											<string>E7C2693C1187FA850054600F</string>
-											<string>E7C2696611887E510054600F</string>
 											<string>E7C2697311887FC40054600F</string>
-											<string>E7C269A9118883B90054600F</string>
-											<string>E7C269AA118883B90054600F</string>
+											<string>E7C269D3118896310054600F</string>
+											<string>E7C269D4118896310054600F</string>
+											<string>E7C269D5118896310054600F</string>
+											<string>E7C269D6118896310054600F</string>
+											<string>E7C269D7118896310054600F</string>
+											<string>E7C269D8118896310054600F</string>
+											<string>E7C269E0118896BC0054600F</string>
+											<string>E7C269E7118897050054600F</string>
+											<string>E7C269E8118897050054600F</string>
+											<string>E7C269E9118897050054600F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -534,6 +543,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>E7C269F4118898BB0054600F</string>
 		<string>E7C26982118881040054600F</string>
 		<string>E7C2697811887FC40054600F</string>
 		<string>1CD10A99069EF8BA00B06720</string>
