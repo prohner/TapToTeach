@@ -14,15 +14,16 @@
 @synthesize button1, button2, button3, button4, button5, infoButton, text;
 
 
-/*
+
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         // Custom initialization
+		appDelegate = [[UIApplication sharedApplication] delegate];
+		
     }
     return self;
 }
-*/
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

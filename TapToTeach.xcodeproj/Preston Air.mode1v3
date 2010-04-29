@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>225</real>
+								<real>272</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -281,7 +281,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {225, 785}}</string>
+							<string>{{0, 0}, {272, 785}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -293,11 +293,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {242, 803}}</string>
+						<string>{{0, 0}, {289, 803}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>225</real>
+							<real>272</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>1 334 1086 844 0 0 1920 1178 </string>
@@ -305,7 +305,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>242pt</string>
+					<string>289pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -330,22 +330,22 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E7C269F3118898BB0054600F</string>
+										<string>E7C26A231188AF4E0054600F</string>
 										<key>history</key>
 										<array>
 											<string>E7C268D61187F05D0054600F</string>
-											<string>E7C2693C1187FA850054600F</string>
 											<string>E7C2697311887FC40054600F</string>
 											<string>E7C269D3118896310054600F</string>
 											<string>E7C269D4118896310054600F</string>
-											<string>E7C269D5118896310054600F</string>
 											<string>E7C269D6118896310054600F</string>
 											<string>E7C269D7118896310054600F</string>
-											<string>E7C269D8118896310054600F</string>
-											<string>E7C269E0118896BC0054600F</string>
 											<string>E7C269E7118897050054600F</string>
 											<string>E7C269E8118897050054600F</string>
-											<string>E7C269E9118897050054600F</string>
+											<string>E7C26A0911889F0D0054600F</string>
+											<string>E7C26A0B11889F0D0054600F</string>
+											<string>E7C26A201188AF4E0054600F</string>
+											<string>E7C26A211188AF4E0054600F</string>
+											<string>E7C26A221188AF4E0054600F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -357,7 +357,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {839, 613}}</string>
+								<string>{{0, 0}, {792, 613}}</string>
 								<key>RubberWindowFrame</key>
 								<string>1 334 1086 844 0 0 1920 1178 </string>
 							</dict>
@@ -377,7 +377,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 618}, {839, 185}}</string>
+								<string>{{0, 618}, {792, 185}}</string>
 								<key>RubberWindowFrame</key>
 								<string>1 334 1086 844 0 0 1920 1178 </string>
 							</dict>
@@ -388,7 +388,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>839pt</string>
+					<string>792pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -543,7 +543,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E7C269F4118898BB0054600F</string>
+		<string>E7C26A241188AF4E0054600F</string>
 		<string>E7C26982118881040054600F</string>
 		<string>E7C2697811887FC40054600F</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -573,7 +573,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>WordBankViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -590,6 +590,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

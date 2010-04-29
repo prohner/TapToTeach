@@ -7,6 +7,7 @@
 //
 
 #import "TapToTeachAppDelegate.h"
+#import "WordBankViewController.h"
 
 
 @implementation TapToTeachAppDelegate
@@ -166,6 +167,11 @@
 				  ? [error localizedDescription] : @"Unknown Error");
 			exit(1);
 		}
+
+		if ([array count] > 0) {
+			systemSettings = [array objectAtIndex:0];
+		}
+		
 	}
 
 	return systemSettings;
@@ -191,6 +197,13 @@
 	[window addSubview:(*ctrl).view];
 	[UIView commitAnimations];
 }
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Overriden to allow any orientation.
+    return YES;
+}
+
+
 
 @end
 

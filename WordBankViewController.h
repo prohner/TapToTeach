@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TapToTeachAppDelegate.h"
+#import "WordBankSettings.h"
 
 @interface WordBankViewController : UIViewController {
 	UIButton *button1;
@@ -18,6 +19,8 @@
 	
 	UIButton *infoButton;
 	UITextField *text;
+	TapToTeachAppDelegate *appDelegate;
+	WordBankSettings *wordBankSettings;
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *button1;

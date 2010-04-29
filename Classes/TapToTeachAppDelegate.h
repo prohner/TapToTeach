@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import "WordBankViewController.h"
 #import "Utility.h"
 #import "SystemSettings.h"
+
+@class WordBankViewController;
 
 @interface TapToTeachAppDelegate : NSObject <UIApplicationDelegate> {
 
