@@ -23,6 +23,7 @@
 	#define FUNCTION_LOG(fmt, ...) /* */
 #endif
 
+#define degreesToRadians(x) (M_PI * x / 180.0)
 
 @interface Utility : NSObject {
 

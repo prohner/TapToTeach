@@ -189,6 +189,7 @@
 	
 	Class c = NSClassFromString(nibAndClassName);
 	*ctrl = [[c alloc] initWithNibName:@"WordBankViewController" bundle:nil];
+	[(*ctrl).view setFrame:window.bounds];
 	
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDuration:1];
@@ -203,7 +204,61 @@
     return YES;
 }
 
+#pragma mark -
+#pragma mark Accessing data
+- (WordBankSettings *)wordBankSettings {
+	WordBankSettings *wordBankSettings;
+	NSEntityDescription *wordBankSettingsEntity = [[[self managedObjectModel] entitiesByName] objectForKey:@"WordBankSettings"];
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	[request setEntity:wordBankSettingsEntity];
+	
+	NSError *error = nil;
+	NSArray *array = [[self managedObjectContext] executeFetchRequest:request error:&error];
+	
+	if ((error != nil) || (array == nil)) {
+		NSLog(@"Error while fetching\n%@",
+			  ([error localizedDescription] != nil)
+			  ? [error localizedDescription] : @"Unknown Error");
+		exit(1);
+	}
+	
+	if ([array count] > 0) {
+		wordBankSettings = [array objectAtIndex:0];
+	} else {
+		wordBankSettings = (WordBankSettings *)[NSEntityDescription insertNewObjectForEntityForName:@"WordBankSettings" inManagedObjectContext:[self managedObjectContext]];
+		FUNCTION_LOG(@"New settings: sz=%i, cnt=%i", [wordBankSettings.touchpointSize intValue], [wordBankSettings.numberOfTouchpoints intValue]);
+	}
+	return wordBankSettings;
+}
 
+- (NSArray *)wordBanks {
+	NSEntityDescription *wordBankEntity = [[[self managedObjectModel] entitiesByName] objectForKey:@"WordBank"];	
+	
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:wordBankEntity];
+	
+	NSError *error = nil;
+    NSArray *array = [[self managedObjectContext] executeFetchRequest:request error:&error];
+    if ((error != nil) || (array == nil)) {
+        NSLog(@"Error while fetching\n%@",
+			  ([error localizedDescription] != nil)
+			  ? [error localizedDescription] : @"Unknown Error");
+        exit(1);
+    }
+	
+	return array;
+}
+
+- (void)saveData {
+	NSError *error = nil;
+	
+	if (![[self managedObjectContext] save: &error]) {
+		NSLog(@"Error while saving\n%@",
+			  ([error localizedDescription] != nil) ? [error localizedDescription] : @"Unknown Error");
+		exit(1);
+	}	
+	
+}
 
 @end
 

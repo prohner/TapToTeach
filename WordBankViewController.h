@@ -32,4 +32,9 @@
 @property (nonatomic, retain) IBOutlet UITextField *text;
 
 - (IBAction)infoButtonPressed:(id)sender;
+- (UIButton *)initButton:(UIButton *)btn at:(int)index;
+
+
+- (void) setupScreenDisplay;
+
 @end

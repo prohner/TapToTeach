@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 #import "Utility.h"
 #import "SystemSettings.h"
+#import "WordBankSettings.h"
 
 @class WordBankViewController;
 
@@ -37,6 +38,9 @@
 
 - (IBAction)buttonPressedForWordBank:(id)sender;
 - (void)loadViewController:(UIViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName;
+- (WordBankSettings *)wordBankSettings;
+- (NSArray *)wordBanks;
+- (void)saveData;
 
 @end
 
