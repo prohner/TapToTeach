@@ -9,6 +9,7 @@
 #import "WordBankSettingsViewController.h"
 #import "WordBankViewController.h"
 #import "WordBank.h"
+#import "WordBankWordsViewController.h"
 
 #define SECTION_GENERAL_SETTINGS	1
 #define SECTION_CONGRATS_SETTINGS	2
@@ -16,6 +17,8 @@
 #define SECTION_GENERAL_SETTINGS_NAME				0
 #define SECTION_GENERAL_SETTINGS_TOUCHPOINT_COUNT	1
 #define SECTION_GENERAL_SETTINGS_TOUCHPOINT_SIZE	2
+#define SECTION_GENERAL_SETTINGS_VISUAL_PROMPT		3
+#define SECTION_GENERAL_SETTINGS_AUDIO_PROMPT		4
 
 #define SECTION_CONGRATS_SETTINGS_AUDIO				0
 #define SECTION_CONGRATS_SETTINGS_USE_NAME			1
@@ -24,7 +27,7 @@
 @implementation WordBankSettingsViewController
 
 @synthesize audioCongrats, userName, visualCongrats, numberOfTouchpoints, touchpointSize;
-@synthesize wordBankViewController;
+@synthesize wordBankViewController, quitWordBankButton, audioPrompt, visualPrompt;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -39,16 +42,24 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	self.title = @"Settings";
+	self.navigationItem.leftBarButtonItem = quitWordBankButton;
 
 	appDelegate = [[UIApplication sharedApplication] delegate];
 	wordBankSettings = [appDelegate wordBankSettings];
 	wordBanks = [appDelegate wordBanks];
+
+	if ([wordBanks count] == 0) {
+		self.editing = YES;
+	}
 	
 	numberOfTouchpoints.value = [wordBankSettings.numberOfTouchpoints floatValue];
 	touchpointSize.value = [wordBankSettings.touchpointSize floatValue];
 	audioCongrats.on = [wordBankSettings.giveAudioCongratulations boolValue];
 	userName.on = [wordBankSettings.audioCongratulationsText isEqualToString:@""] ? NO : YES;
 	visualCongrats.on = [wordBankSettings.giveVisualCongratulations boolValue];
+	
+	audioPrompt.on = [wordBankSettings.giveAudioPrompt boolValue];
+	visualPrompt.on = [wordBankSettings.giveVisualPrompt boolValue];
 	
 }
 
@@ -93,7 +104,7 @@
     // Return the number of rows in the section.
 	switch (section) {
 		case SECTION_GENERAL_SETTINGS:
-			return 3;
+			return 5;
 			break;
 		case SECTION_CONGRATS_SETTINGS:
 			return 3;
@@ -119,7 +130,7 @@
 			return @"Settings";
 			break;
 		case SECTION_CONGRATS_SETTINGS:
-			return @"Congratulations";
+			return @"Congratulations Settings";
 			break;
 		case SECTION_WORD_BANKS:
 			return @"Word Banks";
@@ -303,6 +314,16 @@
 					[touchpointSize setMaximumValueImage:img];
 				}
 					break;
+				case SECTION_GENERAL_SETTINGS_AUDIO_PROMPT:
+					cell.textLabel.text = @"Audio Prompt";
+					[audioPrompt setFrame:CGRectMake(210, 7.5, 80, 35)];
+					[cell addSubview:audioPrompt];
+					break;
+				case SECTION_GENERAL_SETTINGS_VISUAL_PROMPT:
+					cell.textLabel.text = @"Visual Prompt";
+					[visualPrompt setFrame:CGRectMake(210, 7.5, 80, 35)];
+					[cell addSubview:visualPrompt];
+					break;
 				default:
 					break;
 			}
@@ -336,6 +357,9 @@
 				wb = [wordBanks objectAtIndex:indexPath.row];
 				cell.textLabel.text = wb.title;
 				cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+				if (wb == [appDelegate wordBankSettings].lastWordBank) {
+					cell.accessoryType = UITableViewCellAccessoryCheckmark;
+				}
 			} else {
 				[newWordBankTitle release];
 				newWordBankTitle = [[UITextField alloc] initWithFrame:CGRectMake(45, 10, 250, 35)];
@@ -465,13 +489,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
+	
+	WordBankWordsViewController *detailViewController = [[WordBankWordsViewController alloc] initWithNibName:@"WordBankWordsViewController" bundle:nil];
+	// ...
+	// Pass the selected object to the new view controller.
+	wordBanks = [appDelegate wordBanks];
+	detailViewController.wordBank = (WordBank *)[wordBanks objectAtIndex:indexPath.row];
+	detailViewController.wordBankViewController = wordBankViewController;
+
+	[self.navigationController pushViewController:detailViewController animated:YES];
+	[detailViewController release];
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
@@ -531,6 +559,21 @@
 - (IBAction)visualCongratsChanged:(id)sender {
 	[appDelegate wordBankSettings].giveVisualCongratulations = [NSNumber numberWithBool:visualCongrats.on];
 	[appDelegate saveData];
+}
+
+- (IBAction)visualPromptChanged:(id)sender {
+	[appDelegate wordBankSettings].giveVisualPrompt = [NSNumber numberWithBool:visualPrompt.on];
+	[appDelegate saveData];
+}
+
+- (IBAction)audioPromptChanged:(id)sender {
+	[appDelegate wordBankSettings].giveAudioPrompt = [NSNumber numberWithBool:audioPrompt.on];
+	[appDelegate saveData];
+}
+
+- (IBAction)quitWordBank:(id)sender {
+	FUNCTION_LOG(@"Quit word bank");
+	[wordBankViewController quitWordBank:sender];
 }
 
 @end

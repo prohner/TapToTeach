@@ -12,7 +12,7 @@
 
 @implementation WordBankViewController
 
-@synthesize button1, button2, button3, button4, button5, infoButton, text;
+@synthesize button1, button2, button3, button4, button5, infoButton, text, wordToSpell;
 
 
 
@@ -22,7 +22,6 @@
         // Custom initialization
 		appDelegate = [[UIApplication sharedApplication] delegate];
 
-		wordBankSettings = [appDelegate wordBankSettings];
 		text.text = @"Your text here";
     }
     return self;
@@ -40,6 +39,12 @@
 	[self initButton:button3 at:3];
 	[self initButton:button4 at:4];
 	[self initButton:button5 at:5];
+
+	wordBankSettings = [appDelegate wordBankSettings];
+	FUNCTION_LOG(@"%i", wordBankSettings.lastWordBank);
+	if (! wordBankSettings.lastWordBank) {
+		wordToSpell.text = @"<== Tap info button to add/choose a word bank";
+	}
 }
 
 - (UIButton *)initButton:(UIButton *)btn at:(int)index {
@@ -242,8 +247,8 @@
 	WordBankSettingsViewController *ctrl = [[WordBankSettingsViewController alloc] initWithNibName:@"WordBankSettingsViewController" bundle:nil];
 	ctrl.wordBankViewController = self;
 	UINavigationController *navController = [[[UINavigationController alloc] initWithRootViewController:ctrl] autorelease];
-	UIPopoverController *popover = [[NSClassFromString(@"UIPopoverController") alloc] initWithContentViewController:navController];
-	[popover setPopoverContentSize:CGSizeMake(320, 550)];
+	popover = [[NSClassFromString(@"UIPopoverController") alloc] initWithContentViewController:navController];
+	//[popover setPopoverContentSize:CGSizeMake(320, 550)];
 	
 	CGRect popoverRect = infoButton.frame;
 	//CGRect popoverRect = [self.view convertRect:[categoriesTextField frame] fromView:[categoriesTextField superview]];
@@ -253,12 +258,27 @@
 }
 
 - (IBAction)quitWordBank:(id)sender {
+	if (popover && popover.popoverVisible) {
+		[popover dismissPopoverAnimated:YES];
+	}
+
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDuration:1];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
 	[self.view removeFromSuperview];
 	[UIView commitAnimations];	
+}
+
+- (void)reloadWordBankAndStart {
+	if (popover && popover.popoverVisible) {
+		[popover dismissPopoverAnimated:YES];
+	}
+	[self setupScreenDisplay];
+	[self startWordBank];
+}
+
+- (void)startWordBank {
 }
 
 @end

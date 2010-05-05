@@ -16,6 +16,9 @@
 	UISwitch *audioCongrats;
 	UISwitch *userName;
 	UISwitch *visualCongrats;
+
+	UISwitch *audioPrompt;
+	UISwitch *visualPrompt;
 	UISlider *numberOfTouchpoints;
 	UISlider *touchpointSize;
 	
@@ -24,6 +27,7 @@
 	WordBankViewController *wordBankViewController;
 	NSArray *wordBanks;
 	UITextField *newWordBankTitle;
+	UIBarButtonItem *quitWordBankButton;
 }
 
 @property (nonatomic, retain) IBOutlet UISwitch *audioCongrats;
@@ -31,6 +35,10 @@
 @property (nonatomic, retain) IBOutlet UISwitch *visualCongrats;
 @property (nonatomic, retain) IBOutlet UISlider *numberOfTouchpoints;
 @property (nonatomic, retain) IBOutlet UISlider *touchpointSize;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *quitWordBankButton;
+@property (nonatomic, retain) IBOutlet UISwitch *audioPrompt;
+@property (nonatomic, retain) IBOutlet UISwitch *visualPrompt;
+
 @property (nonatomic, retain) WordBankViewController *wordBankViewController;
 
 - (IBAction)numberOfTouchpointsChanged:(id)sender;
@@ -40,5 +48,8 @@
 - (IBAction)audioCongratsChanged:(id)sender;
 - (IBAction)useNameCongratsChanged:(id)sender;
 - (IBAction)visualCongratsChanged:(id)sender;
-
+- (IBAction)quitWordBank:(id)sender;
+- (IBAction)visualPromptChanged:(id)sender;
+- (IBAction)audioPromptChanged:(id)sender;
+	
 @end

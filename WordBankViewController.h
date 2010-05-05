@@ -19,8 +19,10 @@
 	
 	UIButton *infoButton;
 	UITextField *text;
+	UILabel *wordToSpell;
 	TapToTeachAppDelegate *appDelegate;
 	WordBankSettings *wordBankSettings;
+	UIPopoverController *popover;
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *button1;
@@ -30,11 +32,15 @@
 @property (nonatomic, retain) IBOutlet UIButton *button5;
 @property (nonatomic, retain) IBOutlet UIButton *infoButton;
 @property (nonatomic, retain) IBOutlet UITextField *text;
+@property (nonatomic, retain) IBOutlet UILabel *wordToSpell;
 
 - (IBAction)infoButtonPressed:(id)sender;
 - (UIButton *)initButton:(UIButton *)btn at:(int)index;
 
 
-- (void) setupScreenDisplay;
+- (void)setupScreenDisplay;
+- (IBAction)quitWordBank:(id)sender;
+- (void)reloadWordBankAndStart;
+- (void)startWordBank;
 
 @end

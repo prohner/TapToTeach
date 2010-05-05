@@ -14,13 +14,11 @@
 {
 }
 
+@property (nonatomic, retain) NSNumber * giveAudioCongratulations;
+@property (nonatomic, retain) NSNumber * giveVisualCongratulations;
+@property (nonatomic, retain) NSString * audioCongratulationsText;
 @property (nonatomic, retain) NSNumber * numberOfTouchpoints;
 @property (nonatomic, retain) NSNumber * touchpointSize;
-@property (nonatomic, retain) NSNumber * giveVisualPrompt;
-@property (nonatomic, retain) NSNumber * giveAudioPrompt;
-@property (nonatomic, retain) NSNumber * giveAudioCongratulations;
-@property (nonatomic, retain) NSString * audioCongratulationsText;
-@property (nonatomic, retain) NSNumber * giveVisualCongratulations;
 @property (nonatomic, retain) WordBank * lastWordBank;
 
 @end

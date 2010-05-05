@@ -18,12 +18,14 @@
 		E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */; };
 		E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C268CE1187EFB80054600F /* WordBankViewController.xib */; };
 		E7C2690B1187F5EF0054600F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C2690A1187F5EF0054600F /* Utility.m */; };
-		E7C269BE11888A7B0054600F /* WordBankSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269B711888A7B0054600F /* WordBankSettings.m */; };
 		E7C269BF11888A7B0054600F /* SystemSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269B911888A7B0054600F /* SystemSettings.m */; };
 		E7C269C011888A7B0054600F /* WordBank.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269BB11888A7B0054600F /* WordBank.m */; };
 		E7C269C111888A7B0054600F /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269BD11888A7B0054600F /* Word.m */; };
 		E7C26B18118B98DA0054600F /* WordBankSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C26B16118B98DA0054600F /* WordBankSettingsViewController.m */; };
 		E7C26B19118B98DA0054600F /* WordBankSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C26B17118B98DA0054600F /* WordBankSettingsViewController.xib */; };
+		E7E39E7B1190796E0021EEC3 /* WordBankWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */; };
+		E7E39E7C1190796E0021EEC3 /* WordBankWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */; };
+		E7E39F49119132410021EEC3 /* WordBankSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E39F48119132410021EEC3 /* WordBankSettings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +46,6 @@
 		E7C268CE1187EFB80054600F /* WordBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankViewController.xib; sourceTree = "<group>"; };
 		E7C269091187F5EF0054600F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		E7C2690A1187F5EF0054600F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
-		E7C269B611888A7B0054600F /* WordBankSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankSettings.h; sourceTree = "<group>"; };
-		E7C269B711888A7B0054600F /* WordBankSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankSettings.m; sourceTree = "<group>"; };
 		E7C269B811888A7B0054600F /* SystemSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemSettings.h; sourceTree = "<group>"; };
 		E7C269B911888A7B0054600F /* SystemSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemSettings.m; sourceTree = "<group>"; };
 		E7C269BA11888A7B0054600F /* WordBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBank.h; sourceTree = "<group>"; };
@@ -55,6 +55,11 @@
 		E7C26B15118B98DA0054600F /* WordBankSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankSettingsViewController.h; sourceTree = "<group>"; };
 		E7C26B16118B98DA0054600F /* WordBankSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankSettingsViewController.m; sourceTree = "<group>"; };
 		E7C26B17118B98DA0054600F /* WordBankSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankSettingsViewController.xib; sourceTree = "<group>"; };
+		E7E39E781190796E0021EEC3 /* WordBankWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankWordsViewController.h; sourceTree = "<group>"; };
+		E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankWordsViewController.m; sourceTree = "<group>"; };
+		E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankWordsViewController.xib; sourceTree = "<group>"; };
+		E7E39F47119132410021EEC3 /* WordBankSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankSettings.h; sourceTree = "<group>"; };
+		E7E39F48119132410021EEC3 /* WordBankSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankSettings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +156,9 @@
 				E7C26B15118B98DA0054600F /* WordBankSettingsViewController.h */,
 				E7C26B16118B98DA0054600F /* WordBankSettingsViewController.m */,
 				E7C26B17118B98DA0054600F /* WordBankSettingsViewController.xib */,
+				E7E39E781190796E0021EEC3 /* WordBankWordsViewController.h */,
+				E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */,
+				E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */,
 			);
 			name = "Word Bank";
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */,
 				E7C26B19118B98DA0054600F /* WordBankSettingsViewController.xib in Resources */,
+				E7E39E7C1190796E0021EEC3 /* WordBankWordsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,11 +227,12 @@
 				28193055112F811F00ECF9B4 /* TapToTeach.xcdatamodeld in Sources */,
 				E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */,
 				E7C2690B1187F5EF0054600F /* Utility.m in Sources */,
-				E7C269BE11888A7B0054600F /* WordBankSettings.m in Sources */,
 				E7C269BF11888A7B0054600F /* SystemSettings.m in Sources */,
 				E7C269C011888A7B0054600F /* WordBank.m in Sources */,
 				E7C269C111888A7B0054600F /* Word.m in Sources */,
 				E7C26B18118B98DA0054600F /* WordBankSettingsViewController.m in Sources */,
+				E7E39E7B1190796E0021EEC3 /* WordBankWordsViewController.m in Sources */,
+				E7E39F49119132410021EEC3 /* WordBankSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +325,8 @@
 			isa = XCVersionGroup;
 			children = (
 				28C3AD890F43EF2300507BA6 /* TapToTeach.xcdatamodel */,
-				E7C269B611888A7B0054600F /* WordBankSettings.h */,
-				E7C269B711888A7B0054600F /* WordBankSettings.m */,
+				E7E39F47119132410021EEC3 /* WordBankSettings.h */,
+				E7E39F48119132410021EEC3 /* WordBankSettings.m */,
 				E7C269B811888A7B0054600F /* SystemSettings.h */,
 				E7C269B911888A7B0054600F /* SystemSettings.m */,
 				E7C269BA11888A7B0054600F /* WordBank.h */,

@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>216</real>
+								<real>285</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -275,14 +275,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>3</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {216, 703}}</string>
+							<string>{{0, 0}, {285, 703}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -294,11 +294,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {233, 721}}</string>
+						<string>{{0, 0}, {302, 721}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>216</real>
+							<real>285</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>0 416 1095 762 0 0 1920 1178 </string>
@@ -306,7 +306,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>233pt</string>
+					<string>302pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WordBankSettingsViewController.m</string>
+								<string>WordBankViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>WordBankSettingsViewController.m</string>
+										<string>WordBankViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E7E39E71119076C20021EEC3</string>
+										<string>E7E3A0271191CD580021EEC3</string>
 										<key>history</key>
 										<array>
 											<string>E7C268D61187F05D0054600F</string>
@@ -339,16 +339,18 @@
 											<string>E7C269D4118896310054600F</string>
 											<string>E7C26A50118946850054600F</string>
 											<string>E7C26A7D1189486A0054600F</string>
-											<string>E7C26B42118B9D530054600F</string>
-											<string>E7C26BAA118C71820054600F</string>
 											<string>E7C26C0F118E80EE0054600F</string>
-											<string>E7E39D35118FC2700021EEC3</string>
-											<string>E7E39D72118FCCFB0021EEC3</string>
 											<string>E7E39D74118FCCFB0021EEC3</string>
-											<string>E7E39D91118FD0E00021EEC3</string>
-											<string>E7E39DFF118FD77C0021EEC3</string>
-											<string>E7E39E49118FE27F0021EEC3</string>
-											<string>E7E39E4A118FE27F0021EEC3</string>
+											<string>E7E39E8711907A5B0021EEC3</string>
+											<string>E7E39EA011907CCA0021EEC3</string>
+											<string>E7E39F65119133E40021EEC3</string>
+											<string>E7E39FB51191C64A0021EEC3</string>
+											<string>E7E3A01B1191CD220021EEC3</string>
+											<string>E7E3A01C1191CD220021EEC3</string>
+											<string>E7E3A01D1191CD220021EEC3</string>
+											<string>E7E3A0241191CD580021EEC3</string>
+											<string>E7E3A0251191CD580021EEC3</string>
+											<string>E7E3A0261191CD580021EEC3</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -360,7 +362,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {857, 623}}</string>
+								<string>{{0, 0}, {788, 623}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 416 1095 762 0 0 1920 1178 </string>
 							</dict>
@@ -380,7 +382,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 628}, {857, 93}}</string>
+								<string>{{0, 628}, {788, 93}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 416 1095 762 0 0 1920 1178 </string>
 							</dict>
@@ -391,7 +393,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>857pt</string>
+					<string>788pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -546,7 +548,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E7E39E72119076C20021EEC3</string>
 		<string>E7E39E42118FE1800021EEC3</string>
 		<string>E7E39D43118FC3450021EEC3</string>
 		<string>E7E39D44118FC3450021EEC3</string>
@@ -577,23 +578,25 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>WordBankWordsViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {500, 218}}</string>
+								<string>{{0, 0}, {945, 362}}</string>
 								<key>RubberWindowFrame</key>
-								<string>587 513 500 500 0 0 1920 1178 </string>
+								<string>587 369 945 644 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>218pt</string>
+							<string>362pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -608,9 +611,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 223}, {500, 236}}</string>
+								<string>{{0, 367}, {945, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>587 513 500 500 0 0 1920 1178 </string>
+								<string>587 369 945 644 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -619,7 +622,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>459pt</string>
+					<string>603pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -642,7 +645,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>587 513 500 500 0 0 1920 1178 </string>
+			<string>587 369 945 644 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>E7C2688D1187E2560054600F</string>
 			<key>WindowToolIsVisible</key>

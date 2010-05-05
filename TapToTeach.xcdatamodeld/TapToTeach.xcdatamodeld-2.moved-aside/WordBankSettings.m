@@ -12,13 +12,11 @@
 
 @implementation WordBankSettings 
 
+@dynamic giveAudioCongratulations;
+@dynamic giveVisualCongratulations;
+@dynamic audioCongratulationsText;
 @dynamic numberOfTouchpoints;
 @dynamic touchpointSize;
-@dynamic giveVisualPrompt;
-@dynamic giveAudioPrompt;
-@dynamic giveAudioCongratulations;
-@dynamic audioCongratulationsText;
-@dynamic giveVisualCongratulations;
 @dynamic lastWordBank;
 
 @end
