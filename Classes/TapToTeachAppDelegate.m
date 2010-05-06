@@ -29,9 +29,9 @@
 	welcomeLabel.text = welcomeMessage;
 	[welcomeMessage release];
 
-	
     [window makeKeyAndVisible];
-    
+
+    [self buttonPressedForWordBank:nil];
     return YES;
 }
 

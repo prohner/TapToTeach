@@ -9,10 +9,13 @@
 #import "WordBankViewController.h"
 #import "Utility.h"
 #import "WordBankSettingsViewController.h"
+#import <stdlib.h>
+//#import <time.h>
+
 
 @implementation WordBankViewController
 
-@synthesize button1, button2, button3, button4, button5, infoButton, text, wordToSpell;
+@synthesize button1, button2, button3, button4, button5, infoButton, text, wordToSpell, wordToSpellLabel;
 
 
 
@@ -32,6 +35,13 @@
     [super viewDidLoad];
 	[self setupScreenDisplay];
 }
+
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	[self reloadWordBankAndStart];
+}
+
 
 - (void) setupScreenDisplay {
 	[self initButton:button1 at:1];
@@ -59,6 +69,7 @@
 
 	int size = [wordBankSettings.touchpointSize intValue];
 	//UIDeviceOrientation interfaceOrientation = [[UIDevice currentDevice] orientation];
+	btn.titleLabel.font = [UIFont systemFontOfSize:size * .75];
 	
 	int height = appDelegate.window.frame.size.height;
 	int width = appDelegate.window.frame.size.width;
@@ -270,6 +281,9 @@
 	[UIView commitAnimations];	
 }
 
+#pragma mark -
+#pragma mark Word Bank Processing
+
 - (void)reloadWordBankAndStart {
 	if (popover && popover.popoverVisible) {
 		[popover dismissPopoverAnimated:YES];
@@ -279,6 +293,218 @@
 }
 
 - (void)startWordBank {
+	FUNCTION_LOG(@"hi");
+	WordBank *lastWordBank = [appDelegate wordBankSettings].lastWordBank;
+	if ([[appDelegate wordBanks] containsObject:lastWordBank]) {
+		wordBank = lastWordBank;
+		words = [[[wordBank words] allObjects] copy];
+
+//		int array[[wordBank.words count]];
+//		[wordUsage setc
+//		 for (int i = 0; i < [wordBank.words count]; i++) {
+//			 wordUsage[i] = 0;
+//		 }
+		wordUsage = [[NSMutableArray alloc] init];
+		FUNCTION_LOG(@"word usage counters:");
+		for (int i = 0; i < [wordBank.words count]; i++) {
+			FUNCTION_LOG(@"(%i) at %i is %i", wordUsage, i, wordUsage[i]);
+		}
+		[self nextWord];
+	}
 }
 
+- (IBAction)nextWord {
+	text.text = @"";
+	text.placeholder = @"";
+	word = nil;
+	wordBank = [appDelegate wordBankSettings].lastWordBank;
+	words = [[wordBank.words allObjects] mutableCopy];
+	int max_attempts = 50;
+	
+	while (word == nil && --max_attempts) {
+		if ([wordUsage count] == [words count]) {
+			FUNCTION_LOG(@"Resetting wordUsage array");
+			[wordUsage release];
+			wordUsage = [[NSMutableArray alloc] init];
+		}
+		int attempts = [wordBank.words count] + 1;
+		while (--attempts) {
+			--max_attempts;
+			int f = abs(arc4random());
+			int idx = f % [wordBank.words count];
+			word = [words objectAtIndex:idx];
+			FUNCTION_LOG(@"Checking idx == %i (from %i). What about %@?", idx, f, word.word);
+			if ( ! [wordUsage containsObject:word]) {
+				[wordUsage addObject:word];
+				break;
+			}
+			word = nil;
+		}
+	}
+	
+	wordToSpell.text = word.word;
+	[self setButtonLetters];
+	
+//	FUNCTION_LOG(@"word usage counters:");
+//	for (int i = 0; i < [wordBank.words count]; i++) {
+//		FUNCTION_LOG(@"(%i) at %i is %i", wordUsage, i, wordUsage[i]);
+//	}
+	
+	
+	FUNCTION_LOG(@"%@", wordToSpell.text);
+}
+
+- (void)setButtonLetters {
+	wordBankSettings = [appDelegate wordBankSettings];
+	int buttonCount = [wordBankSettings.numberOfTouchpoints intValue];
+
+	char char1 = [wordToSpell.text characterAtIndex:[text.text length]];
+	char char2 = char1;
+	char char3 = char1;
+	char char4 = char1;
+	char char5 = char1;
+	
+	while (char2 == char1 || char3 == char1 || char4 == char1 || char5 == char1 
+		|| char3 == char2 || char4 == char2 || char5 == char2 
+ 	    || char4 == char3 || char5 == char3
+		|| char5 == char4
+		   ) {
+		char2 = 97 + (abs(arc4random()) % 26);
+		char3 = 97 + (abs(arc4random()) % 26);
+		char4 = 97 + (abs(arc4random()) % 26);
+		char5 = 97 + (abs(arc4random()) % 26);
+	}
+
+	int i1 = 0;
+	int i2 = 0;
+	int i3 = 0;
+	int i4 = 0;
+	int i5 = 0;
+	while (i2 == i1 || i3 == i1 || i4 == i1 || i5 == i1
+		|| i3 == i2 || i4 == i2 || i5 == i2
+		|| i4 == i3 || i5 == i3
+		|| i5 == i4
+		|| i1 >= buttonCount
+		   ) {
+		i1 = (abs(arc4random()) % 5);
+		i2 = (abs(arc4random()) % 5);
+		i3 = (abs(arc4random()) % 5);
+		i4 = (abs(arc4random()) % 5);
+		i5 = (abs(arc4random()) % 5);
+	}
+
+	UIButton *b1;
+	UIButton *b2;
+	UIButton *b3;
+	UIButton *b4;
+	UIButton *b5;
+	
+	switch (i1) {
+		case 0:
+			b1 = button1;
+			break;
+		case 1:
+			b1 = button2;
+			break;
+		case 2:
+			b1 = button3;
+			break;
+		case 3:
+			b1 = button4;
+			break;
+		case 4:
+			b1 = button5;
+			break;
+		default:
+			break;
+	}
+	
+	switch (i2) {
+		case 0:
+			b2 = button1;
+			break;
+		case 1:
+			b2 = button2;
+			break;
+		case 2:
+			b2 = button3;
+			break;
+		case 3:
+			b2 = button4;
+			break;
+		case 4:
+			b2 = button5;
+			break;
+		default:
+			break;
+	}
+	
+	switch (i3) {
+		case 0:
+			b3 = button1;
+			break;
+		case 1:
+			b3 = button2;
+			break;
+		case 2:
+			b3 = button3;
+			break;
+		case 3:
+			b3 = button4;
+			break;
+		case 4:
+			b3 = button5;
+			break;
+		default:
+			break;
+	}
+	
+	switch (i4) {
+		case 0:
+			b4 = button1;
+			break;
+		case 1:
+			b4 = button2;
+			break;
+		case 2:
+			b4 = button3;
+			break;
+		case 3:
+			b4 = button4;
+			break;
+		case 4:
+			b4 = button5;
+			break;
+		default:
+			break;
+	}
+	
+	switch (i5) {
+		case 0:
+			b5 = button1;
+			break;
+		case 1:
+			b5 = button2;
+			break;
+		case 2:
+			b5 = button3;
+			break;
+		case 3:
+			b5 = button4;
+			break;
+		case 4:
+			b5 = button5;
+			break;
+		default:
+			break;
+	}
+
+	
+	[b1 setTitle:[[NSString alloc] initWithFormat:@"%c", char1] forState:UIControlStateNormal];
+	[b2 setTitle:[[NSString alloc] initWithFormat:@"%c", char2] forState:UIControlStateNormal];
+	[b3 setTitle:[[NSString alloc] initWithFormat:@"%c", char3] forState:UIControlStateNormal];
+	[b4 setTitle:[[NSString alloc] initWithFormat:@"%c", char4] forState:UIControlStateNormal];
+	[b5 setTitle:[[NSString alloc] initWithFormat:@"%c", char5] forState:UIControlStateNormal];
+	
+}	
 @end
