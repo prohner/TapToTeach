@@ -75,6 +75,13 @@
 	int width = appDelegate.window.frame.size.width;
 	int xMargin = 0;
 	int yMargin = 100;
+	if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeLeft
+		|| [[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeRight
+		) {
+		height = appDelegate.window.frame.size.width;
+		width = appDelegate.window.frame.size.height;
+	}
+	FUNCTION_LOG(@"width=%i, height=%i", width, height);
 
 	if (buttonCount == 1 && index == 1) {
 		int x = width / 2 - size / 2 - xMargin;
@@ -211,9 +218,11 @@
 	 UIInterfaceOrientationLandscapeRight
 	 */
 	if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-		self.view.transform = CGAffineTransformIdentity;
+		//self.view.transform = CGAffineTransformIdentity;
+		[self setupScreenDisplay];
 	} else {
-		self.view.transform = CGAffineTransformMakeRotation(degreesToRadians(90));
+		//self.view.transform = CGAffineTransformMakeRotation(degreesToRadians(90));
+		[self setupScreenDisplay];
 	}
 }
 
@@ -316,6 +325,7 @@
 - (IBAction)nextWord {
 	text.text = @"";
 	text.placeholder = @"";
+	text.backgroundColor = [UIColor clearColor];
 	word = nil;
 	wordBank = [appDelegate wordBankSettings].lastWordBank;
 	words = [[wordBank.words allObjects] mutableCopy];
@@ -342,9 +352,9 @@
 		}
 	}
 	
-	wordToSpell.text = word.word;
+	wordToSpell.text = [word.word lowercaseString];
 	[self setButtonLetters];
-	
+	[self setButtonsEnabled:YES];
 //	FUNCTION_LOG(@"word usage counters:");
 //	for (int i = 0; i < [wordBank.words count]; i++) {
 //		FUNCTION_LOG(@"(%i) at %i is %i", wordUsage, i, wordUsage[i]);
@@ -352,6 +362,14 @@
 	
 	
 	FUNCTION_LOG(@"%@", wordToSpell.text);
+}
+
+- (void)setButtonsEnabled:(BOOL) enabled {
+	button1.enabled = enabled;
+	button2.enabled = enabled;
+	button3.enabled = enabled;
+	button4.enabled = enabled;
+	button5.enabled = enabled;
 }
 
 - (void)setButtonLetters {
@@ -506,5 +524,29 @@
 	[b4 setTitle:[[NSString alloc] initWithFormat:@"%c", char4] forState:UIControlStateNormal];
 	[b5 setTitle:[[NSString alloc] initWithFormat:@"%c", char5] forState:UIControlStateNormal];
 	
-}	
+}
+
+- (IBAction)buttonPressed:(id)sender {
+	int letterIndex = [text.text length];
+	UIButton *button = (UIButton *)sender;
+	char letterChosen = [button.titleLabel.text characterAtIndex:0];
+	
+	if (letterChosen == [wordToSpell.text characterAtIndex:letterIndex]) {
+		NSString *l = [[NSString alloc] initWithFormat:@"%c", letterChosen];
+		text.text = [text.text stringByAppendingString:l];
+		[l release];
+	}
+	
+	//FUNCTION_LOG(@"Checking %@ against target %@", wordToSpell.text
+	if ([wordToSpell.text isEqualToString:text.text]) {
+//		[self sayWord];
+		text.backgroundColor = [UIColor greenColor];
+		[self setButtonsEnabled:NO];
+		//[self nextWord];
+	} else {
+		[self setButtonLetters];
+	}
+}
+
+
 @end

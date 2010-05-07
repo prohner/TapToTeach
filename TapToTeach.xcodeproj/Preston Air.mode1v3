@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WordBankSettingsViewController.m</string>
+								<string>WordBankViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>WordBankSettingsViewController.m</string>
+										<string>WordBankViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E7E3A186119299F60021EEC3</string>
+										<string>E7E3A1CD1193C1680021EEC3</string>
 										<key>history</key>
 										<array>
 											<string>E7C268D61187F05D0054600F</string>
@@ -339,7 +339,6 @@
 											<string>E7C26A50118946850054600F</string>
 											<string>E7C26A7D1189486A0054600F</string>
 											<string>E7C26C0F118E80EE0054600F</string>
-											<string>E7E39D74118FCCFB0021EEC3</string>
 											<string>E7E39EA011907CCA0021EEC3</string>
 											<string>E7E3A01C1191CD220021EEC3</string>
 											<string>E7E3A03B11926B280021EEC3</string>
@@ -348,9 +347,10 @@
 											<string>E7E3A082119275E50021EEC3</string>
 											<string>E7E3A083119275E50021EEC3</string>
 											<string>E7E3A100119283460021EEC3</string>
-											<string>E7E3A1581192963C0021EEC3</string>
-											<string>E7E3A184119299F60021EEC3</string>
-											<string>E7E3A185119299F60021EEC3</string>
+											<string>E7E3A19911929B1D0021EEC3</string>
+											<string>E7E3A19B11929B1D0021EEC3</string>
+											<string>E7E3A1AE1193BECE0021EEC3</string>
+											<string>E7E3A1AF1193BECE0021EEC3</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -548,7 +548,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E7E3A17C119299210021EEC3</string>
 		<string>E7E39E42118FE1800021EEC3</string>
 		<string>E7E39D43118FC3450021EEC3</string>
 		<string>E7E39D44118FC3450021EEC3</string>

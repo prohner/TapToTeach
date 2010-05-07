@@ -53,5 +53,7 @@
 - (void)startWordBank;
 - (IBAction)nextWord;
 - (void)setButtonLetters;
+- (IBAction)buttonPressed:(id)sender;
+- (void)setButtonsEnabled:(BOOL) enabled;
 
 @end
