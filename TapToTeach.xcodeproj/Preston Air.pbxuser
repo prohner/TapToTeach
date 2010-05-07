@@ -9,7 +9,7 @@
 	};
 	1D3623250D0F684500981E51 /* TapToTeachAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2371, 3601}}";
+			sepNavIntBoundsRect = "{{0, 0}, {2371, 3549}}";
 			sepNavSelRange = "{7753, 7}";
 			sepNavVisRange = "{6972, 1613}";
 		};
@@ -189,8 +189,7 @@
 			E7E39D3D118FC3400021EEC3 /* WordBankSettingsViewController.m:555 */,
 			E7E39DAA118FD23A0021EEC3 /* WordBankSettingsViewController.m:397 */,
 			E7E39E38118FE12C0021EEC3 /* WordBankSettingsViewController.m:437 */,
-			E7E3A12A11928A2D0021EEC3 /* WordBankViewController.m:347 */,
-			E7E3A166119297340021EEC3 /* WordBankViewController.m:376 */,
+			E7E3A1FA1193CBB90021EEC3 /* WordBankViewController.m:550 */,
 		);
 		codeSenseManager = E7C268971187E2560054600F /* Code sense */;
 		executables = (
@@ -226,7 +225,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					544,
+					478,
 					20,
 					48,
 					43,
@@ -648,6 +647,82 @@
 			E7E3A1C11193C0180021EEC3 /* PBXTextBookmark */ = E7E3A1C11193C0180021EEC3 /* PBXTextBookmark */;
 			E7E3A1C81193C0E90021EEC3 /* PBXTextBookmark */ = E7E3A1C81193C0E90021EEC3 /* PBXTextBookmark */;
 			E7E3A1CD1193C1680021EEC3 /* PBXTextBookmark */ = E7E3A1CD1193C1680021EEC3 /* PBXTextBookmark */;
+			E7E3A1F01193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F01193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F11193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F11193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F21193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F21193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F31193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F31193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F41193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F41193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F51193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F51193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F61193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F61193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F71193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F71193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F81193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F81193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1F91193CB7F0021EEC3 /* PBXTextBookmark */ = E7E3A1F91193CB7F0021EEC3 /* PBXTextBookmark */;
+			E7E3A1FE1193CBC20021EEC3 /* PBXTextBookmark */ = E7E3A1FE1193CBC20021EEC3 /* PBXTextBookmark */;
+			E7E3A1FF1193CBC20021EEC3 /* PBXTextBookmark */ = E7E3A1FF1193CBC20021EEC3 /* PBXTextBookmark */;
+			E7E3A2001193CBC20021EEC3 /* PBXTextBookmark */ = E7E3A2001193CBC20021EEC3 /* PBXTextBookmark */;
+			E7E3A2021193CBD40021EEC3 /* PBXTextBookmark */ = E7E3A2021193CBD40021EEC3 /* PBXTextBookmark */;
+			E7E3A2091193CC5D0021EEC3 /* PBXTextBookmark */ = E7E3A2091193CC5D0021EEC3 /* PBXTextBookmark */;
+			E7E3A20A1193CC5D0021EEC3 /* PBXTextBookmark */ = E7E3A20A1193CC5D0021EEC3 /* PBXTextBookmark */;
+			E7E3A20B1193CC5D0021EEC3 /* PBXTextBookmark */ = E7E3A20B1193CC5D0021EEC3 /* PBXTextBookmark */;
+			E7E3A20C1193CC5D0021EEC3 /* PBXTextBookmark */ = E7E3A20C1193CC5D0021EEC3 /* PBXTextBookmark */;
+			E7E3A20D1193CC5D0021EEC3 /* PBXTextBookmark */ = E7E3A20D1193CC5D0021EEC3 /* PBXTextBookmark */;
+			E7E3A20E1193CC5D0021EEC3 /* PBXTextBookmark */ = E7E3A20E1193CC5D0021EEC3 /* PBXTextBookmark */;
+			E7E3A2111193CC6D0021EEC3 /* PBXTextBookmark */ = E7E3A2111193CC6D0021EEC3 /* PBXTextBookmark */;
+			E7E3A2121193CC6D0021EEC3 /* PBXTextBookmark */ = E7E3A2121193CC6D0021EEC3 /* PBXTextBookmark */;
+			E7E3A2131193CC6D0021EEC3 /* PBXTextBookmark */ = E7E3A2131193CC6D0021EEC3 /* PBXTextBookmark */;
+			E7E3A2161193CCA30021EEC3 /* PBXTextBookmark */ = E7E3A2161193CCA30021EEC3 /* PBXTextBookmark */;
+			E7E3A2171193CCA30021EEC3 /* PBXTextBookmark */ = E7E3A2171193CCA30021EEC3 /* PBXTextBookmark */;
+			E7E3A21C1193CD1B0021EEC3 /* PBXTextBookmark */ = E7E3A21C1193CD1B0021EEC3 /* PBXTextBookmark */;
+			E7E3A21D1193CD1B0021EEC3 /* PBXTextBookmark */ = E7E3A21D1193CD1B0021EEC3 /* PBXTextBookmark */;
+			E7E3A21E1193CD1B0021EEC3 /* PBXTextBookmark */ = E7E3A21E1193CD1B0021EEC3 /* PBXTextBookmark */;
+			E7E3A2231193CD700021EEC3 /* PBXTextBookmark */ = E7E3A2231193CD700021EEC3 /* PBXTextBookmark */;
+			E7E3A2241193CD700021EEC3 /* PBXTextBookmark */ = E7E3A2241193CD700021EEC3 /* PBXTextBookmark */;
+			E7E3A2251193CD700021EEC3 /* PBXTextBookmark */ = E7E3A2251193CD700021EEC3 /* PBXTextBookmark */;
+			E7E3A2261193CD700021EEC3 /* PBXTextBookmark */ = E7E3A2261193CD700021EEC3 /* PBXTextBookmark */;
+			E7E3A2271193CD700021EEC3 /* PBXTextBookmark */ = E7E3A2271193CD700021EEC3 /* PBXTextBookmark */;
+			E7E3A22E1193CDA70021EEC3 /* PBXTextBookmark */ = E7E3A22E1193CDA70021EEC3 /* PBXTextBookmark */;
+			E7E3A22F1193CDA70021EEC3 /* PBXTextBookmark */ = E7E3A22F1193CDA70021EEC3 /* PBXTextBookmark */;
+			E7E3A2301193CDA70021EEC3 /* PBXTextBookmark */ = E7E3A2301193CDA70021EEC3 /* PBXTextBookmark */;
+			E7E3A2311193CDA70021EEC3 /* PBXTextBookmark */ = E7E3A2311193CDA70021EEC3 /* PBXTextBookmark */;
+			E7E3A2361193CDBA0021EEC3 /* PBXTextBookmark */ = E7E3A2361193CDBA0021EEC3 /* PBXTextBookmark */;
+			E7E3A2371193CDBA0021EEC3 /* PBXTextBookmark */ = E7E3A2371193CDBA0021EEC3 /* PBXTextBookmark */;
+			E7E3A2381193CDBA0021EEC3 /* PBXTextBookmark */ = E7E3A2381193CDBA0021EEC3 /* PBXTextBookmark */;
+			E7E3A23B1193CDC80021EEC3 /* PBXTextBookmark */ = E7E3A23B1193CDC80021EEC3 /* PBXTextBookmark */;
+			E7E3A23C1193CDC80021EEC3 /* PBXTextBookmark */ = E7E3A23C1193CDC80021EEC3 /* PBXTextBookmark */;
+			E7E3A23D1193CDC80021EEC3 /* PBXTextBookmark */ = E7E3A23D1193CDC80021EEC3 /* PBXTextBookmark */;
+			E7E3A2401193D1470021EEC3 /* PBXTextBookmark */ = E7E3A2401193D1470021EEC3 /* PBXTextBookmark */;
+			E7E3A2411193D1470021EEC3 /* PBXTextBookmark */ = E7E3A2411193D1470021EEC3 /* PBXTextBookmark */;
+			E7E3A2421193D1470021EEC3 /* PBXTextBookmark */ = E7E3A2421193D1470021EEC3 /* PBXTextBookmark */;
+			E7E3A2431193D1470021EEC3 /* PBXTextBookmark */ = E7E3A2431193D1470021EEC3 /* PBXTextBookmark */;
+			E7E3A24A1193D15A0021EEC3 /* PBXTextBookmark */ = E7E3A24A1193D15A0021EEC3 /* PBXTextBookmark */;
+			E7E3A24B1193D15A0021EEC3 /* PBXTextBookmark */ = E7E3A24B1193D15A0021EEC3 /* PBXTextBookmark */;
+			E7E3A2501193D1A70021EEC3 /* PBXTextBookmark */ = E7E3A2501193D1A70021EEC3 /* PBXTextBookmark */;
+			E7E3A2511193D1A70021EEC3 /* PBXTextBookmark */ = E7E3A2511193D1A70021EEC3 /* PBXTextBookmark */;
+			E7E3A2521193D1A70021EEC3 /* PBXTextBookmark */ = E7E3A2521193D1A70021EEC3 /* PBXTextBookmark */;
+			E7E3A2561193D1B50021EEC3 /* PBXTextBookmark */ = E7E3A2561193D1B50021EEC3 /* PBXTextBookmark */;
+			E7E3A2591193D2010021EEC3 /* PBXTextBookmark */ = E7E3A2591193D2010021EEC3 /* PBXTextBookmark */;
+			E7E3A25A1193D2010021EEC3 /* PBXTextBookmark */ = E7E3A25A1193D2010021EEC3 /* PBXTextBookmark */;
+			E7E3A25B1193D2010021EEC3 /* PBXTextBookmark */ = E7E3A25B1193D2010021EEC3 /* PBXTextBookmark */;
+			E7E3A25E1193D2160021EEC3 /* PBXTextBookmark */ = E7E3A25E1193D2160021EEC3 /* PBXTextBookmark */;
+			E7E3A25F1193D2160021EEC3 /* PBXTextBookmark */ = E7E3A25F1193D2160021EEC3 /* PBXTextBookmark */;
+			E7E3A2601193D2160021EEC3 /* PBXTextBookmark */ = E7E3A2601193D2160021EEC3 /* PBXTextBookmark */;
+			E7E3A2651193D2430021EEC3 /* PBXTextBookmark */ = E7E3A2651193D2430021EEC3 /* PBXTextBookmark */;
+			E7E3A2661193D2430021EEC3 /* PBXTextBookmark */ = E7E3A2661193D2430021EEC3 /* PBXTextBookmark */;
+			E7E3A2671193D2430021EEC3 /* PBXTextBookmark */ = E7E3A2671193D2430021EEC3 /* PBXTextBookmark */;
+			E7E3A26C1193D2DD0021EEC3 /* PBXTextBookmark */ = E7E3A26C1193D2DD0021EEC3 /* PBXTextBookmark */;
+			E7E3A26D1193D2DD0021EEC3 /* PBXTextBookmark */ = E7E3A26D1193D2DD0021EEC3 /* PBXTextBookmark */;
+			E7E3A26E1193D2DD0021EEC3 /* PBXTextBookmark */ = E7E3A26E1193D2DD0021EEC3 /* PBXTextBookmark */;
+			E7E3A26F1193D2DD0021EEC3 /* PBXTextBookmark */ = E7E3A26F1193D2DD0021EEC3 /* PBXTextBookmark */;
+			E7E3A2781193D37D0021EEC3 /* PBXTextBookmark */ = E7E3A2781193D37D0021EEC3 /* PBXTextBookmark */;
+			E7E3A2791193D37D0021EEC3 /* PBXTextBookmark */ = E7E3A2791193D37D0021EEC3 /* PBXTextBookmark */;
+			E7E3A27A1193D37D0021EEC3 /* PBXTextBookmark */ = E7E3A27A1193D37D0021EEC3 /* PBXTextBookmark */;
+			E7E3A27B1193D37D0021EEC3 /* PBXTextBookmark */ = E7E3A27B1193D37D0021EEC3 /* PBXTextBookmark */;
+			E7E3A2821193D4A30021EEC3 /* PBXTextBookmark */ = E7E3A2821193D4A30021EEC3 /* PBXTextBookmark */;
+			E7E3A2831193D4A30021EEC3 /* PBXTextBookmark */ = E7E3A2831193D4A30021EEC3 /* PBXTextBookmark */;
+			E7E3A2841193D4A30021EEC3 /* PBXTextBookmark */ = E7E3A2841193D4A30021EEC3 /* PBXTextBookmark */;
+			E7E3A2851193D4A30021EEC3 /* PBXTextBookmark */ = E7E3A2851193D4A30021EEC3 /* PBXTextBookmark */;
+			E7E3A2861193D4A30021EEC3 /* PBXTextBookmark */ = E7E3A2861193D4A30021EEC3 /* PBXTextBookmark */;
+			E7E3A2871193D4A30021EEC3 /* PBXTextBookmark */ = E7E3A2871193D4A30021EEC3 /* PBXTextBookmark */;
 		};
 		sourceControlManager = E7C268961187E2560054600F /* Source Control */;
 		userBuildSettings = {
@@ -710,16 +785,16 @@
 	};
 	E7C268CC1187EFB80054600F /* WordBankViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {722, 780}}";
-			sepNavSelRange = "{372, 0}";
-			sepNavVisRange = "{151, 1453}";
+			sepNavIntBoundsRect = "{{0, 0}, {722, 793}}";
+			sepNavSelRange = "{1624, 0}";
+			sepNavVisRange = "{176, 1455}";
 		};
 	};
 	E7C268CD1187EFB80054600F /* WordBankViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1027, 7059}}";
-			sepNavSelRange = "{10819, 0}";
-			sepNavVisRange = "{10144, 1396}";
+			sepNavIntBoundsRect = "{{0, 0}, {705, 7982}}";
+			sepNavSelRange = "{14915, 0}";
+			sepNavVisRange = "{13521, 1562}";
 			sepNavWindowFrame = "{{621, 63}, {1554, 1115}}";
 		};
 	};
@@ -867,9 +942,9 @@
 	};
 	E7C26B16118B98DA0054600F /* WordBankSettingsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1076, 7735}}";
-			sepNavSelRange = "{18311, 0}";
-			sepNavVisRange = "{17538, 1534}";
+			sepNavIntBoundsRect = "{{0, 0}, {1076, 7631}}";
+			sepNavSelRange = "{17242, 0}";
+			sepNavVisRange = "{16535, 1553}";
 		};
 	};
 	E7C26B42118B9D530054600F /* XDModelBookmark */ = {
@@ -942,7 +1017,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 247";
 		rLen = 0;
-		rLoc = 8253;
+		rLoc = 8280;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 0;
@@ -1192,7 +1267,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 247";
 		rLen = 0;
-		rLoc = 8253;
+		rLoc = 8280;
 		rType = 0;
 		vrLen = 1617;
 		vrLoc = 0;
@@ -1202,7 +1277,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 26";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1549;
 		vrLoc = 0;
@@ -1212,7 +1287,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 26";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1896;
 		vrLoc = 3546;
@@ -1501,7 +1576,7 @@
 		ignoreCount = 0;
 		lineNumber = 555;
 		location = TapToTeach;
-		modificationTime = 294894060.573459;
+		modificationTime = 294900059.311229;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1597,7 +1672,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 36;
@@ -1637,7 +1712,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 36;
@@ -1787,7 +1862,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 2084;
@@ -1826,7 +1901,7 @@
 		ignoreCount = 0;
 		lineNumber = 397;
 		location = TapToTeach;
-		modificationTime = 294894060.575065;
+		modificationTime = 294900059.312241;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1864,7 +1939,7 @@
 		isa = PBXTextBookmark;
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		rLen = 0;
-		rLoc = 27;
+		rLoc = 28;
 		rType = 1;
 	};
 	E7E39DBA118FD29F0021EEC3 /* PBXTextBookmark */ = {
@@ -1872,7 +1947,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1384;
 		vrLoc = 2143;
@@ -1882,7 +1957,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1384;
 		vrLoc = 2143;
@@ -1912,7 +1987,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 36;
@@ -1949,7 +2024,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 31";
 		rLen = 0;
-		rLoc = 991;
+		rLoc = 1019;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 36;
@@ -1979,7 +2054,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 36;
@@ -2018,7 +2093,7 @@
 		isa = PBXTextBookmark;
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		rLen = 0;
-		rLoc = 27;
+		rLoc = 28;
 		rType = 1;
 	};
 	E7E39DF8118FD6C80021EEC3 /* PBXTextBookmark */ = {
@@ -2026,7 +2101,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 36;
@@ -2043,7 +2118,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 36;
@@ -2132,7 +2207,7 @@
 		ignoreCount = 0;
 		lineNumber = 437;
 		location = TapToTeach;
-		modificationTime = 294894060.57582;
+		modificationTime = 294900059.312758;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -2293,9 +2368,9 @@
 	E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{6984, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7035, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7085, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 7998}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {775, 3692}}";
-			sepNavSelRange = "{846, 26}";
-			sepNavVisRange = "{0, 1197}";
+			sepNavIntBoundsRect = "{{0, 0}, {857, 3744}}";
+			sepNavSelRange = "{413, 22}";
+			sepNavVisRange = "{55, 1226}";
 		};
 	};
 	E7E39E7F119079D40021EEC3 /* XCBuildMessageTextBookmark */ = {
@@ -3099,7 +3174,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 25";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1446;
 		vrLoc = 7;
@@ -3109,7 +3184,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 15";
 		rLen = 0;
-		rLoc = 438;
+		rLoc = 466;
 		rType = 0;
 		vrLen = 1459;
 		vrLoc = 7;
@@ -3173,7 +3248,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 33";
 		rLen = 0;
-		rLoc = 1063;
+		rLoc = 1091;
 		rType = 0;
 		vrLen = 1359;
 		vrLoc = 1187;
@@ -3622,7 +3697,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 246";
 		rLen = 0;
-		rLoc = 8204;
+		rLoc = 8231;
 		rType = 0;
 		vrLen = 1491;
 		vrLoc = 6719;
@@ -3876,7 +3951,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 231";
 		rLen = 0;
-		rLoc = 7612;
+		rLoc = 7639;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 0;
@@ -3886,7 +3961,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 231";
 		rLen = 0;
-		rLoc = 7612;
+		rLoc = 7639;
 		rType = 0;
 		vrLen = 1289;
 		vrLoc = 0;
@@ -3896,7 +3971,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 26";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 0;
@@ -3916,7 +3991,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 28";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1388;
 		vrLoc = 0;
@@ -3926,7 +4001,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 29";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 0;
@@ -3936,7 +4011,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 27";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1384;
 		vrLoc = 0;
@@ -3946,7 +4021,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 27";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 892;
 		rType = 0;
 		vrLen = 1384;
 		vrLoc = 0;
@@ -3956,7 +4031,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 48";
 		rLen = 0;
-		rLoc = 1620;
+		rLoc = 1647;
 		rType = 0;
 		vrLen = 1450;
 		vrLoc = 254;
@@ -3966,7 +4041,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 46";
 		rLen = 0;
-		rLoc = 1588;
+		rLoc = 1615;
 		rType = 0;
 		vrLen = 1457;
 		vrLoc = 254;
@@ -4016,7 +4091,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 260";
 		rLen = 124;
-		rLoc = 8655;
+		rLoc = 8682;
 		rType = 0;
 		vrLen = 1512;
 		vrLoc = 6865;
@@ -4086,7 +4161,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 242";
 		rLen = 0;
-		rLoc = 7712;
+		rLoc = 7739;
 		rType = 0;
 		vrLen = 1512;
 		vrLoc = 6865;
@@ -4096,7 +4171,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 265";
 		rLen = 0;
-		rLoc = 8780;
+		rLoc = 8807;
 		rType = 0;
 		vrLen = 1540;
 		vrLoc = 6865;
@@ -4106,7 +4181,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 229";
 		rLen = 0;
-		rLoc = 7545;
+		rLoc = 7572;
 		rType = 0;
 		vrLen = 1540;
 		vrLoc = 6865;
@@ -4256,7 +4331,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 239";
 		rLen = 0;
-		rLoc = 7682;
+		rLoc = 7709;
 		rType = 0;
 		vrLen = 1510;
 		vrLoc = 6932;
@@ -4326,7 +4401,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 273";
 		rLen = 33;
-		rLoc = 9103;
+		rLoc = 9130;
 		rType = 0;
 		vrLen = 1584;
 		vrLoc = 7007;
@@ -4376,7 +4451,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 281";
 		rLen = 46;
-		rLoc = 9275;
+		rLoc = 9302;
 		rType = 0;
 		vrLen = 1549;
 		vrLoc = 7092;
@@ -4425,7 +4500,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 282";
 		rLen = 0;
-		rLoc = 9320;
+		rLoc = 9347;
 		rType = 0;
 		vrLen = 504;
 		vrLoc = 8159;
@@ -4648,7 +4723,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 249";
 		rLen = 0;
-		rLoc = 8001;
+		rLoc = 8028;
 		rType = 0;
 		vrLen = 1691;
 		vrLoc = 6967;
@@ -4698,7 +4773,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 285";
 		rLen = 0;
-		rLoc = 9392;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 1794;
 		vrLoc = 7101;
@@ -4748,7 +4823,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 285";
 		rLen = 0;
-		rLoc = 9392;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 1794;
 		vrLoc = 7101;
@@ -4758,7 +4833,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 286";
 		rLen = 0;
-		rLoc = 9530;
+		rLoc = 9557;
 		rType = 0;
 		vrLen = 1794;
 		vrLoc = 7101;
@@ -4768,7 +4843,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 287";
 		rLen = 0;
-		rLoc = 9530;
+		rLoc = 9557;
 		rType = 0;
 		vrLen = 1827;
 		vrLoc = 7101;
@@ -4778,7 +4853,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 287";
 		rLen = 0;
-		rLoc = 9530;
+		rLoc = 9557;
 		rType = 0;
 		vrLen = 1827;
 		vrLoc = 7101;
@@ -4828,7 +4903,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 305";
 		rLen = 0;
-		rLoc = 14718;
+		rLoc = 15088;
 		rType = 0;
 		vrLen = 1470;
 		vrLoc = 7653;
@@ -4838,7 +4913,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 18";
 		rLen = 0;
-		rLoc = 334;
+		rLoc = 362;
 		rType = 0;
 		vrLen = 1536;
 		vrLoc = 0;
@@ -4888,7 +4963,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 315";
 		rLen = 0;
-		rLoc = 14718;
+		rLoc = 15088;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 8163;
@@ -4898,7 +4973,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 300";
 		rLen = 0;
-		rLoc = 9903;
+		rLoc = 9930;
 		rType = 0;
 		vrLen = 1235;
 		vrLoc = 8248;
@@ -4908,7 +4983,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 314";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 331;
@@ -4918,7 +4993,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 137";
 		rLen = 0;
-		rLoc = 4653;
+		rLoc = 4680;
 		rType = 0;
 		vrLen = 1249;
 		vrLoc = 8249;
@@ -4928,7 +5003,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 318";
 		rLen = 0;
-		rLoc = 11090;
+		rLoc = 11117;
 		rType = 0;
 		vrLen = 1284;
 		vrLoc = 8249;
@@ -4938,7 +5013,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 283";
 		rLen = 0;
-		rLoc = 9220;
+		rLoc = 9247;
 		rType = 0;
 		vrLen = 1284;
 		vrLoc = 8249;
@@ -4958,7 +5033,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 307";
 		rLen = 0;
-		rLoc = 10047;
+		rLoc = 10074;
 		rType = 0;
 		vrLen = 1275;
 		vrLoc = 8326;
@@ -4968,7 +5043,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 312";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 8326;
@@ -4978,7 +5053,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 312";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1327;
 		vrLoc = 8326;
@@ -4998,7 +5073,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 310";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 8366;
@@ -5008,7 +5083,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 313";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 8366;
@@ -5018,7 +5093,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 312";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 8366;
@@ -5028,7 +5103,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 312";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 8366;
@@ -5038,7 +5113,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 312";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 8366;
@@ -5048,7 +5123,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 323";
 		rLen = 0;
-		rLoc = 10879;
+		rLoc = 10906;
 		rType = 0;
 		vrLen = 1230;
 		vrLoc = 8575;
@@ -5058,7 +5133,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 323";
 		rLen = 0;
-		rLoc = 10879;
+		rLoc = 10906;
 		rType = 0;
 		vrLen = 1242;
 		vrLoc = 8575;
@@ -5068,7 +5143,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 304";
 		rLen = 0;
-		rLoc = 9885;
+		rLoc = 9912;
 		rType = 0;
 		vrLen = 1360;
 		vrLoc = 8575;
@@ -5078,7 +5153,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 304";
 		rLen = 0;
-		rLoc = 9885;
+		rLoc = 9912;
 		rType = 0;
 		vrLen = 1360;
 		vrLoc = 8575;
@@ -5108,7 +5183,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 296";
 		rLen = 14;
-		rLoc = 9692;
+		rLoc = 9719;
 		rType = 0;
 		vrLen = 1392;
 		vrLoc = 8575;
@@ -5118,7 +5193,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 318";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1461;
 		vrLoc = 8575;
@@ -5128,7 +5203,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 300";
 		rLen = 0;
-		rLoc = 9678;
+		rLoc = 9705;
 		rType = 0;
 		vrLen = 1528;
 		vrLoc = 8575;
@@ -5138,7 +5213,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 313";
 		rLen = 0;
-		rLoc = 10770;
+		rLoc = 10797;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 8575;
@@ -5158,7 +5233,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 313";
 		rLen = 0;
-		rLoc = 10770;
+		rLoc = 10797;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 8575;
@@ -5168,7 +5243,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 313";
 		rLen = 0;
-		rLoc = 10770;
+		rLoc = 10797;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 8575;
@@ -5178,7 +5253,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 318";
 		rLen = 0;
-		rLoc = 10771;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 8575;
@@ -5188,7 +5263,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 317";
 		rLen = 0;
-		rLoc = 10301;
+		rLoc = 10328;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 8927;
@@ -5198,7 +5273,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 324";
 		rLen = 0;
-		rLoc = 10462;
+		rLoc = 10489;
 		rType = 0;
 		vrLen = 1389;
 		vrLoc = 9003;
@@ -5208,7 +5283,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 327";
 		rLen = 0;
-		rLoc = 10653;
+		rLoc = 10680;
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 9003;
@@ -5218,7 +5293,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 328";
 		rLen = 0;
-		rLoc = 10571;
+		rLoc = 10598;
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 9003;
@@ -5228,7 +5303,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 339";
 		rLen = 168;
-		rLoc = 10879;
+		rLoc = 10906;
 		rType = 0;
 		vrLen = 1240;
 		vrLoc = 9194;
@@ -5238,35 +5313,17 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 325";
 		rLen = 0;
-		rLoc = 10488;
+		rLoc = 10515;
 		rType = 0;
 		vrLen = 1389;
 		vrLoc = 9042;
-	};
-	E7E3A12A11928A2D0021EEC3 /* WordBankViewController.m:347 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
-		functionName = "-nextWord";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 347;
-		location = TapToTeach;
-		modificationTime = 294894062.076371;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	E7E3A12C11928A2F0021EEC3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 325";
 		rLen = 0;
-		rLoc = 10488;
+		rLoc = 10515;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 9142;
@@ -5276,7 +5333,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 325";
 		rLen = 0;
-		rLoc = 10488;
+		rLoc = 10515;
 		rType = 0;
 		vrLen = 1320;
 		vrLoc = 9118;
@@ -5286,7 +5343,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 325";
 		rLen = 0;
-		rLoc = 10478;
+		rLoc = 10505;
 		rType = 0;
 		vrLen = 1374;
 		vrLoc = 9062;
@@ -5296,7 +5353,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 325";
 		rLen = 0;
-		rLoc = 10478;
+		rLoc = 10505;
 		rType = 0;
 		vrLen = 1370;
 		vrLoc = 9062;
@@ -5306,7 +5363,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 326";
 		rLen = 0;
-		rLoc = 10510;
+		rLoc = 10537;
 		rType = 0;
 		vrLen = 1364;
 		vrLoc = 9062;
@@ -5316,7 +5373,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 311";
 		rLen = 0;
-		rLoc = 10021;
+		rLoc = 10048;
 		rType = 0;
 		vrLen = 1333;
 		vrLoc = 9118;
@@ -5336,7 +5393,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 376";
 		rLen = 0;
-		rLoc = 12336;
+		rLoc = 12363;
 		rType = 0;
 		vrLen = 1124;
 		vrLoc = 10160;
@@ -5346,7 +5403,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 379";
 		rLen = 0;
-		rLoc = 12176;
+		rLoc = 12203;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 10400;
@@ -5356,7 +5413,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 340";
 		rLen = 0;
-		rLoc = 10878;
+		rLoc = 10905;
 		rType = 0;
 		vrLen = 1380;
 		vrLoc = 9890;
@@ -5366,7 +5423,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 339";
 		rLen = 0;
-		rLoc = 10823;
+		rLoc = 10850;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 9890;
@@ -5386,7 +5443,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 280";
 		rLen = 22;
-		rLoc = 9111;
+		rLoc = 9138;
 		rType = 0;
 		vrLen = 1364;
 		vrLoc = 863;
@@ -5396,35 +5453,17 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 345";
 		rLen = 0;
-		rLoc = 10823;
+		rLoc = 10850;
 		rType = 0;
 		vrLen = 1336;
 		vrLoc = 9455;
-	};
-	E7E3A166119297340021EEC3 /* WordBankViewController.m:376 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
-		functionName = "-setButtonLetters";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 376;
-		location = TapToTeach;
-		modificationTime = 294894060.57749;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	E7E3A16A119297390021EEC3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 345";
 		rLen = 0;
-		rLoc = 10823;
+		rLoc = 10850;
 		rType = 0;
 		vrLen = 1399;
 		vrLoc = 9831;
@@ -5434,7 +5473,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 345";
 		rLen = 0;
-		rLoc = 10823;
+		rLoc = 10850;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 9831;
@@ -5444,7 +5483,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 345";
 		rLen = 0;
-		rLoc = 10823;
+		rLoc = 10850;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 10500;
@@ -5454,7 +5493,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 295";
 		rLen = 0;
-		rLoc = 9320;
+		rLoc = 9347;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 7969;
@@ -5464,7 +5503,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 72";
 		rLen = 0;
-		rLoc = 2045;
+		rLoc = 2072;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 1301;
@@ -5483,7 +5522,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 73";
 		rLen = 0;
-		rLoc = 2045;
+		rLoc = 2072;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 1680;
@@ -5493,7 +5532,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 72";
 		rLen = 0;
-		rLoc = 2061;
+		rLoc = 2088;
 		rType = 0;
 		vrLen = 1310;
 		vrLoc = 10137;
@@ -5550,7 +5589,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 512";
 		rLen = 4;
-		rLoc = 14087;
+		rLoc = 14114;
 		rType = 0;
 		vrLen = 1250;
 		vrLoc = 12689;
@@ -5560,7 +5599,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 524";
 		rLen = 0;
-		rLoc = 14576;
+		rLoc = 14600;
 		rType = 0;
 		vrLen = 1274;
 		vrLoc = 12679;
@@ -5570,7 +5609,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 357";
 		rLen = 43;
-		rLoc = 11094;
+		rLoc = 11121;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 9521;
@@ -5590,7 +5629,7 @@
 		fRef = E7C268CC1187EFB80054600F /* WordBankViewController.h */;
 		name = "WordBankViewController.h: 58";
 		rLen = 0;
-		rLoc = 1603;
+		rLoc = 1625;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 151;
@@ -5610,7 +5649,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 357";
 		rLen = 43;
-		rLoc = 11094;
+		rLoc = 11121;
 		rType = 0;
 		vrLen = 1385;
 		vrLoc = 9522;
@@ -5620,7 +5659,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 219";
 		rLen = 0;
-		rLoc = 7036;
+		rLoc = 7063;
 		rType = 0;
 		vrLen = 1303;
 		vrLoc = 5873;
@@ -5630,7 +5669,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 78";
 		rLen = 0;
-		rLoc = 2566;
+		rLoc = 2593;
 		rType = 0;
 		vrLen = 1499;
 		vrLoc = 1617;
@@ -5640,7 +5679,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 79";
 		rLen = 0;
-		rLoc = 2407;
+		rLoc = 2434;
 		rType = 0;
 		vrLen = 1709;
 		vrLoc = 1952;
@@ -5650,7 +5689,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 328";
 		rLen = 0;
-		rLoc = 10021;
+		rLoc = 10048;
 		rType = 0;
 		vrLen = 1324;
 		vrLoc = 9907;
@@ -5660,7 +5699,7 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 367";
 		rLen = 0;
-		rLoc = 11136;
+		rLoc = 11163;
 		rType = 0;
 		vrLen = 1432;
 		vrLoc = 10463;
@@ -5670,9 +5709,806 @@
 		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
 		name = "WordBankViewController.m: 355";
 		rLen = 0;
-		rLoc = 10819;
+		rLoc = 10846;
 		rType = 0;
 		vrLen = 1396;
 		vrLoc = 10144;
+	};
+	E7E3A1D61193C7C10021EEC3 /* Congratulations.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {656, 667}}";
+			sepNavSelRange = "{464, 46}";
+			sepNavVisRange = "{0, 515}";
+		};
+	};
+	E7E3A1D71193C7C10021EEC3 /* Congratulations.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1196}}";
+			sepNavSelRange = "{225, 30}";
+			sepNavVisRange = "{0, 1156}";
+		};
+	};
+	E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {656, 644}}";
+			sepNavSelRange = "{268, 0}";
+			sepNavVisRange = "{0, 277}";
+		};
+	};
+	E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {656, 667}}";
+			sepNavSelRange = "{821, 16}";
+			sepNavVisRange = "{0, 845}";
+		};
+	};
+	E7E3A1F01193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */;
+		name = "WordBankWordsViewController.m: 229";
+		rLen = 91;
+		rLoc = 6806;
+		rType = 0;
+		vrLen = 1438;
+		vrLoc = 6333;
+	};
+	E7E3A1F11193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TapToTeachAppDelegate.m */;
+		name = "TapToTeachAppDelegate.m: 234";
+		rLen = 7;
+		rLoc = 7753;
+		rType = 0;
+		vrLen = 1613;
+		vrLoc = 6972;
+	};
+	E7E3A1F21193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C26B16118B98DA0054600F /* WordBankSettingsViewController.m */;
+		name = "WordBankSettingsViewController.m: 493";
+		rLen = 150;
+		rLoc = 16949;
+		rType = 0;
+		vrLen = 1699;
+		vrLoc = 16535;
+	};
+	E7E3A1F31193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */;
+		name = "SimpleFlashing.h: 13";
+		rLen = 0;
+		rLoc = 268;
+		rType = 0;
+		vrLen = 277;
+		vrLoc = 0;
+	};
+	E7E3A1F41193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D71193C7C10021EEC3 /* Congratulations.m */;
+		name = "Congratulations.m: 33";
+		rLen = 21;
+		rLoc = 1128;
+		rType = 0;
+		vrLen = 1216;
+		vrLoc = 382;
+	};
+	E7E3A1F51193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D61193C7C10021EEC3 /* Congratulations.h */;
+		name = "Congratulations.h: 18";
+		rLen = 69;
+		rLoc = 337;
+		rType = 0;
+		vrLen = 412;
+		vrLoc = 0;
+	};
+	E7E3A1F61193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CC1187EFB80054600F /* WordBankViewController.h */;
+		name = "WordBankViewController.h: 58";
+		rLen = 0;
+		rLoc = 1624;
+		rType = 0;
+		vrLen = 1455;
+		vrLoc = 176;
+	};
+	E7E3A1F71193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 553";
+		rLen = 0;
+		rLoc = 14955;
+		rType = 0;
+		vrLen = 1478;
+		vrLoc = 13494;
+	};
+	E7E3A1F81193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 16";
+		rLen = 0;
+		rLoc = 394;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 0;
+	};
+	E7E3A1F91193CB7F0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 16";
+		rLen = 0;
+		rLoc = 394;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 0;
+	};
+	E7E3A1FA1193CBB90021EEC3 /* WordBankViewController.m:550 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		functionName = "-congratulate";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 550;
+		location = TapToTeach;
+		modificationTime = 294900065.644776;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	E7E3A1FE1193CBC20021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 16";
+		rLen = 0;
+		rLoc = 394;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 0;
+	};
+	E7E3A1FF1193CBC20021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 537";
+		rLen = 0;
+		rLoc = 14451;
+		rType = 0;
+		vrLen = 1488;
+		vrLoc = 13484;
+	};
+	E7E3A2001193CBC20021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 537";
+		rLen = 0;
+		rLoc = 14451;
+		rType = 0;
+		vrLen = 1483;
+		vrLoc = 13484;
+	};
+	E7E3A2021193CBD40021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 537";
+		rLen = 0;
+		rLoc = 14451;
+		rType = 0;
+		vrLen = 1259;
+		vrLoc = 10791;
+	};
+	E7E3A2091193CC5D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D71193C7C10021EEC3 /* Congratulations.m */;
+		name = "Congratulations.m: 15";
+		rLen = 0;
+		rLoc = 528;
+		rType = 0;
+		vrLen = 1212;
+		vrLoc = 0;
+	};
+	E7E3A20A1193CC5D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 521";
+		rLen = 0;
+		rLoc = 13600;
+		rType = 0;
+		vrLen = 1596;
+		vrLoc = 1123;
+	};
+	E7E3A20B1193CC5D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C26B16118B98DA0054600F /* WordBankSettingsViewController.m */;
+		name = "WordBankSettingsViewController.m: 497";
+		rLen = 0;
+		rLoc = 17242;
+		rType = 0;
+		vrLen = 1553;
+		vrLoc = 16535;
+	};
+	E7E3A20C1193CC5D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */;
+		name = "WordBankWordsViewController.m: 36";
+		rLen = 85;
+		rLoc = 938;
+		rType = 0;
+		vrLen = 1200;
+		vrLoc = 461;
+	};
+	E7E3A20D1193CC5D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 18";
+		rLen = 0;
+		rLoc = 399;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 0;
+	};
+	E7E3A20E1193CC5D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 19";
+		rLen = 0;
+		rLoc = 399;
+		rType = 0;
+		vrLen = 487;
+		vrLoc = 0;
+	};
+	E7E3A2111193CC6D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 19";
+		rLen = 0;
+		rLoc = 399;
+		rType = 0;
+		vrLen = 487;
+		vrLoc = 0;
+	};
+	E7E3A2121193CC6D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		rLen = 0;
+		rLoc = 346;
+		rType = 1;
+	};
+	E7E3A2131193CC6D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 347";
+		rLen = 0;
+		rLoc = 10683;
+		rType = 0;
+		vrLen = 1356;
+		vrLoc = 9978;
+	};
+	E7E3A2161193CCA30021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 347";
+		rLen = 0;
+		rLoc = 10683;
+		rType = 0;
+		vrLen = 1451;
+		vrLoc = 13521;
+	};
+	E7E3A2171193CCA30021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 18";
+		rLen = 0;
+		rLoc = 365;
+		rType = 0;
+		vrLen = 554;
+		vrLoc = 0;
+	};
+	E7E3A21C1193CD1B0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 550";
+		rLen = 0;
+		rLoc = 14687;
+		rType = 0;
+		vrLen = 1461;
+		vrLoc = 13511;
+	};
+	E7E3A21D1193CD1B0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 18";
+		rLen = 0;
+		rLoc = 365;
+		rType = 0;
+		vrLen = 554;
+		vrLoc = 0;
+	};
+	E7E3A21E1193CD1B0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 17";
+		rLen = 18;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 556;
+		vrLoc = 0;
+	};
+	E7E3A2231193CD700021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 550";
+		rLen = 0;
+		rLoc = 14687;
+		rType = 0;
+		vrLen = 1461;
+		vrLoc = 13511;
+	};
+	E7E3A2241193CD700021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */;
+		name = "WordBankWordsViewController.m: 36";
+		rLen = 85;
+		rLoc = 938;
+		rType = 0;
+		vrLen = 1199;
+		vrLoc = 461;
+	};
+	E7E3A2251193CD700021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */;
+		name = "SimpleFlashing.h: 13";
+		rLen = 0;
+		rLoc = 268;
+		rType = 0;
+		vrLen = 277;
+		vrLoc = 0;
+	};
+	E7E3A2261193CD700021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 17";
+		rLen = 18;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 556;
+		vrLoc = 0;
+	};
+	E7E3A2271193CD700021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 14";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 555;
+		vrLoc = 0;
+	};
+	E7E3A22E1193CDA70021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 550";
+		rLen = 0;
+		rLoc = 14687;
+		rType = 0;
+		vrLen = 1461;
+		vrLoc = 13511;
+	};
+	E7E3A22F1193CDA70021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */;
+		name = "WordBankWordsViewController.m: 20";
+		rLen = 22;
+		rLoc = 413;
+		rType = 0;
+		vrLen = 1226;
+		vrLoc = 55;
+	};
+	E7E3A2301193CDA70021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 14";
+		rLen = 0;
+		rLoc = 212;
+		rType = 0;
+		vrLen = 555;
+		vrLoc = 0;
+	};
+	E7E3A2311193CDA70021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 15";
+		rLen = 0;
+		rLoc = 245;
+		rType = 0;
+		vrLen = 526;
+		vrLoc = 0;
+	};
+	E7E3A2361193CDBA0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 550";
+		rLen = 0;
+		rLoc = 14687;
+		rType = 0;
+		vrLen = 1461;
+		vrLoc = 13511;
+	};
+	E7E3A2371193CDBA0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		rLen = 0;
+		rLoc = 17;
+		rType = 1;
+	};
+	E7E3A2381193CDBA0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 17";
+		rLen = 18;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 524;
+		vrLoc = 0;
+	};
+	E7E3A23B1193CDC80021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 550";
+		rLen = 0;
+		rLoc = 14687;
+		rType = 0;
+		vrLen = 1461;
+		vrLoc = 13511;
+	};
+	E7E3A23C1193CDC80021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		rLen = 0;
+		rLoc = 17;
+		rType = 1;
+	};
+	E7E3A23D1193CDC80021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 18";
+		rLen = 0;
+		rLoc = 319;
+		rType = 0;
+		vrLen = 524;
+		vrLoc = 0;
+	};
+	E7E3A2401193D1470021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D71193C7C10021EEC3 /* Congratulations.m */;
+		name = "Congratulations.m: 70";
+		rLen = 16;
+		rLoc = 1847;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 648;
+	};
+	E7E3A2411193D1470021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D61193C7C10021EEC3 /* Congratulations.h */;
+		name = "Congratulations.h: 19";
+		rLen = 0;
+		rLoc = 419;
+		rType = 0;
+		vrLen = 425;
+		vrLoc = 0;
+	};
+	E7E3A2421193D1470021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 30";
+		rLen = 0;
+		rLoc = 597;
+		rType = 0;
+		vrLen = 683;
+		vrLoc = 0;
+	};
+	E7E3A2431193D1470021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 17";
+		rLen = 18;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 696;
+		vrLoc = 0;
+	};
+	E7E3A24A1193D15A0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 17";
+		rLen = 18;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 696;
+		vrLoc = 0;
+	};
+	E7E3A24B1193D15A0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 558";
+		rLen = 0;
+		rLoc = 15079;
+		rType = 0;
+		vrLen = 1466;
+		vrLoc = 13511;
+	};
+	E7E3A2501193D1A70021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 33";
+		rLen = 0;
+		rLoc = 837;
+		rType = 0;
+		vrLen = 714;
+		vrLoc = 0;
+	};
+	E7E3A2511193D1A70021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 560";
+		rLen = 0;
+		rLoc = 15079;
+		rType = 0;
+		vrLen = 1498;
+		vrLoc = 13511;
+	};
+	E7E3A2521193D1A70021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 560";
+		rLen = 0;
+		rLoc = 15079;
+		rType = 0;
+		vrLen = 1498;
+		vrLoc = 13511;
+	};
+	E7E3A2561193D1B50021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 559";
+		rLen = 0;
+		rLoc = 15048;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 13511;
+	};
+	E7E3A2591193D2010021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 559";
+		rLen = 0;
+		rLoc = 15048;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 13511;
+	};
+	E7E3A25A1193D2010021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 33";
+		rLen = 0;
+		rLoc = 837;
+		rType = 0;
+		vrLen = 714;
+		vrLoc = 0;
+	};
+	E7E3A25B1193D2010021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 38";
+		rLen = 0;
+		rLoc = 837;
+		rType = 0;
+		vrLen = 835;
+		vrLoc = 0;
+	};
+	E7E3A25E1193D2160021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 38";
+		rLen = 0;
+		rLoc = 837;
+		rType = 0;
+		vrLen = 835;
+		vrLoc = 0;
+	};
+	E7E3A25F1193D2160021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 559";
+		rLen = 0;
+		rLoc = 15048;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 13511;
+	};
+	E7E3A2601193D2160021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 554";
+		rLen = 0;
+		rLoc = 14997;
+		rType = 0;
+		vrLen = 1498;
+		vrLoc = 13511;
+	};
+	E7E3A2651193D2430021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 554";
+		rLen = 0;
+		rLoc = 14997;
+		rType = 0;
+		vrLen = 1498;
+		vrLoc = 13511;
+	};
+	E7E3A2661193D2430021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */;
+		name = "SimpleFlashing.h: 13";
+		rLen = 0;
+		rLoc = 268;
+		rType = 0;
+		vrLen = 277;
+		vrLoc = 0;
+	};
+	E7E3A2671193D2430021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 39";
+		rLen = 0;
+		rLoc = 836;
+		rType = 0;
+		vrLen = 871;
+		vrLoc = 0;
+	};
+	E7E3A26C1193D2DD0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 554";
+		rLen = 0;
+		rLoc = 14997;
+		rType = 0;
+		vrLen = 1498;
+		vrLoc = 13511;
+	};
+	E7E3A26D1193D2DD0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D71193C7C10021EEC3 /* Congratulations.m */;
+		name = "Congratulations.m: 70";
+		rLen = 16;
+		rLoc = 1847;
+		rType = 0;
+		vrLen = 1213;
+		vrLoc = 402;
+	};
+	E7E3A26E1193D2DD0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 39";
+		rLen = 0;
+		rLoc = 836;
+		rType = 0;
+		vrLen = 871;
+		vrLoc = 0;
+	};
+	E7E3A26F1193D2DD0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 35";
+		rLen = 0;
+		rLoc = 767;
+		rType = 0;
+		vrLen = 863;
+		vrLoc = 0;
+	};
+	E7E3A2781193D37D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 39";
+		rLen = 16;
+		rLoc = 821;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 0;
+	};
+	E7E3A2791193D37D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D61193C7C10021EEC3 /* Congratulations.h */;
+		name = "Congratulations.h: 20";
+		rLen = 0;
+		rLoc = 435;
+		rType = 0;
+		vrLen = 470;
+		vrLoc = 0;
+	};
+	E7E3A27A1193D37D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D71193C7C10021EEC3 /* Congratulations.m */;
+		name = "Congratulations.m: 73";
+		rLen = 135;
+		rLoc = 1864;
+		rType = 0;
+		vrLen = 997;
+		vrLoc = 785;
+	};
+	E7E3A27B1193D37D0021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D71193C7C10021EEC3 /* Congratulations.m */;
+		name = "Congratulations.m: 74";
+		rLen = 0;
+		rLoc = 1931;
+		rType = 0;
+		vrLen = 1002;
+		vrLoc = 785;
+	};
+	E7E3A2821193D4A30021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */;
+		name = "SimpleFlashing.h: 13";
+		rLen = 0;
+		rLoc = 268;
+		rType = 0;
+		vrLen = 277;
+		vrLoc = 0;
+	};
+	E7E3A2831193D4A30021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */;
+		name = "SimpleFlashing.m: 39";
+		rLen = 16;
+		rLoc = 821;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 0;
+	};
+	E7E3A2841193D4A30021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D61193C7C10021EEC3 /* Congratulations.h */;
+		name = "Congratulations.h: 23";
+		rLen = 46;
+		rLoc = 464;
+		rType = 0;
+		vrLen = 515;
+		vrLoc = 0;
+	};
+	E7E3A2851193D4A30021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E3A1D71193C7C10021EEC3 /* Congratulations.m */;
+		name = "Congratulations.m: 14";
+		rLen = 30;
+		rLoc = 225;
+		rType = 0;
+		vrLen = 1156;
+		vrLoc = 0;
+	};
+	E7E3A2861193D4A30021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 554";
+		rLen = 0;
+		rLoc = 14997;
+		rType = 0;
+		vrLen = 1516;
+		vrLoc = 13494;
+	};
+	E7E3A2871193D4A30021EEC3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */;
+		name = "WordBankViewController.m: 554";
+		rLen = 0;
+		rLoc = 14915;
+		rType = 0;
+		vrLen = 1562;
+		vrLoc = 13521;
 	};
 }

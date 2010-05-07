@@ -55,5 +55,6 @@
 - (void)setButtonLetters;
 - (IBAction)buttonPressed:(id)sender;
 - (void)setButtonsEnabled:(BOOL) enabled;
+- (void)congratulate;
 
 @end

@@ -10,6 +10,7 @@
 #import "Utility.h"
 #import "WordBankSettingsViewController.h"
 #import <stdlib.h>
+#import "Congratulations.h"
 //#import <time.h>
 
 
@@ -41,7 +42,6 @@
 	[super viewWillAppear:animated];
 	[self reloadWordBankAndStart];
 }
-
 
 - (void) setupScreenDisplay {
 	[self initButton:button1 at:1];
@@ -539,14 +539,26 @@
 	
 	//FUNCTION_LOG(@"Checking %@ against target %@", wordToSpell.text
 	if ([wordToSpell.text isEqualToString:text.text]) {
-//		[self sayWord];
-		text.backgroundColor = [UIColor greenColor];
-		[self setButtonsEnabled:NO];
-		//[self nextWord];
+		[self congratulate];
 	} else {
 		[self setButtonLetters];
 	}
 }
 
+- (void)congratulate {
+	//		[self sayWord];
+	text.backgroundColor = [UIColor greenColor];
+	[self setButtonsEnabled:NO];
+	//[self nextWord];
+	NSString *congratsClass = [Congratulations pickCongratulationsClassString];
+	Congratulations *c = [[NSClassFromString(congratsClass) alloc] initWithNibName:nil bundle:nil];
+	[c initOnRect:text.frame withDuration:1];
+
+	[self.view addSubview:c.view];
+	
+	[c run];
+	//[c.view removeFromSuperview];
+	
+}
 
 @end

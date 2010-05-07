@@ -26,6 +26,8 @@
 		E7E39E7B1190796E0021EEC3 /* WordBankWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */; };
 		E7E39E7C1190796E0021EEC3 /* WordBankWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */; };
 		E7E39F49119132410021EEC3 /* WordBankSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E39F48119132410021EEC3 /* WordBankSettings.m */; };
+		E7E3A1D81193C7C10021EEC3 /* Congratulations.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E3A1D71193C7C10021EEC3 /* Congratulations.m */; };
+		E7E3A1E31193C9690021EEC3 /* SimpleFlashing.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,10 @@
 		E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankWordsViewController.xib; sourceTree = "<group>"; };
 		E7E39F47119132410021EEC3 /* WordBankSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankSettings.h; sourceTree = "<group>"; };
 		E7E39F48119132410021EEC3 /* WordBankSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankSettings.m; sourceTree = "<group>"; };
+		E7E3A1D61193C7C10021EEC3 /* Congratulations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Congratulations.h; sourceTree = "<group>"; };
+		E7E3A1D71193C7C10021EEC3 /* Congratulations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Congratulations.m; sourceTree = "<group>"; };
+		E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleFlashing.h; sourceTree = "<group>"; };
+		E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleFlashing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 		E7C268CB1187EF810054600F /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				E7E3A1CE1193C46F0021EEC3 /* Congratulations */,
 				E7C268D41187F0500054600F /* Word Bank */,
 			);
 			name = Activities;
@@ -161,6 +168,17 @@
 				E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */,
 			);
 			name = "Word Bank";
+			sourceTree = "<group>";
+		};
+		E7E3A1CE1193C46F0021EEC3 /* Congratulations */ = {
+			isa = PBXGroup;
+			children = (
+				E7E3A1D61193C7C10021EEC3 /* Congratulations.h */,
+				E7E3A1D71193C7C10021EEC3 /* Congratulations.m */,
+				E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */,
+				E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */,
+			);
+			name = Congratulations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +251,8 @@
 				E7C26B18118B98DA0054600F /* WordBankSettingsViewController.m in Sources */,
 				E7E39E7B1190796E0021EEC3 /* WordBankWordsViewController.m in Sources */,
 				E7E39F49119132410021EEC3 /* WordBankSettings.m in Sources */,
+				E7E3A1D81193C7C10021EEC3 /* Congratulations.m in Sources */,
+				E7E3A1E31193C9690021EEC3 /* SimpleFlashing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
