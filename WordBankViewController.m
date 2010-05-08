@@ -12,6 +12,7 @@
 #import <stdlib.h>
 #import "Congratulations.h"
 //#import <time.h>
+#import "FliteTTS.h"
 
 
 @implementation WordBankViewController
@@ -546,7 +547,7 @@
 }
 
 - (void)congratulate {
-	//		[self sayWord];
+	//[self sayWord];
 	text.backgroundColor = [UIColor greenColor];
 	[self setButtonsEnabled:NO];
 	//[self nextWord];
@@ -559,6 +560,14 @@
 	[c run];
 	//[c.view removeFromSuperview];
 	
+}
+
+- (void)sayWord {
+	FliteTTS *fliteEngine = [[FliteTTS alloc] init];
+	
+	[fliteEngine setPitch:125.0 variance:11.0 speed:1.0];
+	[fliteEngine speakText:wordToSpell.text];
+//	[fliteEngine release];
 }
 
 @end

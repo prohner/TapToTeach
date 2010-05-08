@@ -1,37 +1,18 @@
     //
-//  Congratulations.m
+//  VoicePlayViewController.m
 //  TapToTeach
 //
-//  Created by Preston Rohner on 5/6/10.
+//  Created by Preston Rohner on 5/7/10.
 //  Copyright 2010 Cool Tool Apps. All rights reserved.
 //
 
-#import "Congratulations.h"
+#import "VoicePlayViewController.h"
+#import "FliteTTS.h"
 
+@implementation VoicePlayViewController
 
-@implementation Congratulations
+@synthesize wordOrPhrase, pitch, variance, speed, voicePicker;
 
-+ (NSString *)pickCongratulationsClassString {
-	NSString *class;
-	switch (arc4random() % 2) {
-		case 0:
-			class = @"SimpleFlashing";
-			break;
-		case 1:
-			class = @"SayCongratulations";
-			break;
-		default:
-			break;
-	}
-	return class;
-}
-
-- (id)initOnRect:(CGRect)rect withDuration:(NSTimeInterval)howLong {
-	appDelegate = [[UIApplication sharedApplication] delegate];
-	duration = howLong;
-	originRect = rect;
-	return self;
-}
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -40,12 +21,6 @@
         // Custom initialization
     }
     return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
 }
 */
 
@@ -82,15 +57,11 @@
     [super dealloc];
 }
 
-- (void)run {
-}
-
-- (void)endRun {
-	[self performSelector:@selector(endRunAndCleanup) withObject:nil afterDelay:duration];
-}
-
-- (void)endRunAndCleanup {
-	[self.view removeFromSuperview];
+- (IBAction)sayWordOrPhrase:(id)sender {
+	FliteTTS *fliteEngine = [[FliteTTS alloc] init];
+	
+	[fliteEngine setPitch:125.0 variance:11.0 speed:1.0];
+	[fliteEngine speakText:wordOrPhrase.text];
 }
 
 @end

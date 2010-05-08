@@ -126,6 +126,9 @@
 		E7E3A3A2119517ED0021EEC3 /* usenglish.c in Sources */ = {isa = PBXBuildFile; fileRef = E7E3A33F119517ED0021EEC3 /* usenglish.c */; };
 		E7E3A3A3119517ED0021EEC3 /* FliteTTS.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E3A342119517ED0021EEC3 /* FliteTTS.m */; };
 		E7E3A3A71195183A0021EEC3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E3A3A61195183A0021EEC3 /* AVFoundation.framework */; };
+		E7E3A3B611951BA30021EEC3 /* SayCongratulations.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E3A3B511951BA30021EEC3 /* SayCongratulations.m */; };
+		E7E3A3EE119526570021EEC3 /* VoicePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E3A3EC119526570021EEC3 /* VoicePlayViewController.m */; };
+		E7E3A3EF119526570021EEC3 /* VoicePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E3A3ED119526570021EEC3 /* VoicePlayViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -330,6 +333,11 @@
 		E7E3A341119517ED0021EEC3 /* FliteTTS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FliteTTS.h; sourceTree = "<group>"; };
 		E7E3A342119517ED0021EEC3 /* FliteTTS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FliteTTS.m; sourceTree = "<group>"; };
 		E7E3A3A61195183A0021EEC3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E7E3A3B411951BA30021EEC3 /* SayCongratulations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SayCongratulations.h; sourceTree = "<group>"; };
+		E7E3A3B511951BA30021EEC3 /* SayCongratulations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SayCongratulations.m; sourceTree = "<group>"; };
+		E7E3A3EB119526570021EEC3 /* VoicePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoicePlayViewController.h; sourceTree = "<group>"; };
+		E7E3A3EC119526570021EEC3 /* VoicePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoicePlayViewController.m; sourceTree = "<group>"; };
+		E7E3A3ED119526570021EEC3 /* VoicePlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoicePlayViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +423,7 @@
 		E7C268CB1187EF810054600F /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				E7E3A3EA119526440021EEC3 /* Voice Play */,
 				E7E3A1CE1193C46F0021EEC3 /* Congratulations */,
 				E7C268D41187F0500054600F /* Word Bank */,
 			);
@@ -444,6 +453,8 @@
 				E7E3A1D71193C7C10021EEC3 /* Congratulations.m */,
 				E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */,
 				E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */,
+				E7E3A3B411951BA30021EEC3 /* SayCongratulations.h */,
+				E7E3A3B511951BA30021EEC3 /* SayCongratulations.m */,
 			);
 			name = Congratulations;
 			sourceTree = "<group>";
@@ -708,6 +719,16 @@
 			path = usenglish;
 			sourceTree = "<group>";
 		};
+		E7E3A3EA119526440021EEC3 /* Voice Play */ = {
+			isa = PBXGroup;
+			children = (
+				E7E3A3EB119526570021EEC3 /* VoicePlayViewController.h */,
+				E7E3A3EC119526570021EEC3 /* VoicePlayViewController.m */,
+				E7E3A3ED119526570021EEC3 /* VoicePlayViewController.xib */,
+			);
+			name = "Voice Play";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -758,6 +779,7 @@
 				E7C26B19118B98DA0054600F /* WordBankSettingsViewController.xib in Resources */,
 				E7E39E7C1190796E0021EEC3 /* WordBankWordsViewController.xib in Resources */,
 				E7E3A39F119517ED0021EEC3 /* us_pos.tree in Resources */,
+				E7E3A3EF119526570021EEC3 /* VoicePlayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,6 +899,8 @@
 				E7E3A3A1119517ED0021EEC3 /* us_text.c in Sources */,
 				E7E3A3A2119517ED0021EEC3 /* usenglish.c in Sources */,
 				E7E3A3A3119517ED0021EEC3 /* FliteTTS.m in Sources */,
+				E7E3A3B611951BA30021EEC3 /* SayCongratulations.m in Sources */,
+				E7E3A3EE119526570021EEC3 /* VoicePlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
