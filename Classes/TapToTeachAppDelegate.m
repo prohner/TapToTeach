@@ -8,11 +8,11 @@
 
 #import "TapToTeachAppDelegate.h"
 #import "WordBankViewController.h"
-
+#import "SettingsViewController.h"
 
 @implementation TapToTeachAppDelegate
 
-@synthesize window, welcomeLabel;
+@synthesize window, welcomeLabel, systemSettings, infoButton;
 
 
 #pragma mark -
@@ -31,7 +31,7 @@
 
     [window makeKeyAndVisible];
 
-    [self buttonPressedForWordBank:nil];
+    //[self buttonPressedForWordBank:nil];
     return YES;
 }
 
@@ -153,7 +153,7 @@
 #pragma mark -
 #pragma mark System Settings
 - (SystemSettings *)systemSettings {
-	if ( ! systemSettings) {
+//	if ( ! systemSettings) {
 		NSEntityDescription *systemSettingsEntity = [[[self managedObjectModel] entitiesByName] objectForKey:@"SystemSettings"];
 		NSFetchRequest *request = [[NSFetchRequest alloc] init];
 		[request setEntity:systemSettingsEntity];
@@ -170,9 +170,11 @@
 
 		if ([array count] > 0) {
 			systemSettings = [array objectAtIndex:0];
+		} else {
+			systemSettings = (SystemSettings *)[NSEntityDescription insertNewObjectForEntityForName:@"SystemSettings" inManagedObjectContext:[self managedObjectContext]];
 		}
 		
-	}
+//	}
 
 	return systemSettings;
 	
@@ -184,11 +186,30 @@
 	[self loadViewController:&wordBankViewController withNibAndClassName:@"WordBankViewController"];
 }
 
+//- (IBAction)buttonPressedForVoicePlay:(id)sender {
+//	[self loadViewController:&voicePlayViewController withNibAndClassName:@"VoicePlayViewController"];
+//}
+
+- (IBAction)infoButtonPressed:(id)sender {
+	SettingsViewController *ctrl = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+	//ctrl.wordBankViewController = self;
+	UINavigationController *navController = [[[UINavigationController alloc] initWithRootViewController:ctrl] autorelease];
+	popover = [[NSClassFromString(@"UIPopoverController") alloc] initWithContentViewController:navController];
+	//[popover setPopoverContentSize:CGSizeMake(320, 550)];
+	
+	CGRect popoverRect = infoButton.frame;
+	//CGRect popoverRect = [self.view convertRect:[categoriesTextField frame] fromView:[categoriesTextField superview]];
+	//popoverRect.size.width = MIN(popoverRect.size.width, 100); // the text field is actually really big
+	
+	[popover presentPopoverFromRect:popoverRect inView:window permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+
 - (void)loadViewController:(UIViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName {
 	[(*ctrl) release];
 	
 	Class c = NSClassFromString(nibAndClassName);
-	*ctrl = [[c alloc] initWithNibName:@"WordBankViewController" bundle:nil];
+	*ctrl = [[c alloc] initWithNibName:nibAndClassName bundle:nil];
 	[(*ctrl).view setFrame:window.bounds];
 	
 	[UIView beginAnimations:nil context:nil];
@@ -206,6 +227,7 @@
 
 #pragma mark -
 #pragma mark Accessing data
+
 - (WordBankSettings *)wordBankSettings {
 	WordBankSettings *wordBankSettings;
 	NSEntityDescription *wordBankSettingsEntity = [[[self managedObjectModel] entitiesByName] objectForKey:@"WordBankSettings"];

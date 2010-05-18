@@ -1,8 +1,8 @@
 //
-//  VoicePlayViewController.h
+//  SettingsViewController.h
 //  TapToTeach
 //
-//  Created by Preston Rohner on 5/7/10.
+//  Created by Preston Rohner on 5/11/10.
 //  Copyright 2010 Cool Tool Apps. All rights reserved.
 //
 
@@ -10,7 +10,11 @@
 
 @class TapToTeachAppDelegate;
 
-@interface VoicePlayViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
+@interface SettingsViewController : UITableViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
+	UISwitch *audioCongrats;
+	UISwitch *visualCongrats;
+
+	UIButton *sayItButton;
 	UITextField *wordOrPhrase;
 	UISlider *pitch;
 	UISlider *variance;
@@ -20,15 +24,19 @@
 	UILabel *pitchValue;
 	UILabel *varianceValue;
 	UILabel *speedValue;
-
+	
 	UITextField *userName;
 	UITextField *userNamePhonetic;
-
+	
 	NSMutableArray *voiceChoices;
 	
 	TapToTeachAppDelegate *appDelegate;
 }
 
+@property (nonatomic, retain) IBOutlet UISwitch *audioCongrats;
+@property (nonatomic, retain) IBOutlet UISwitch *visualCongrats;
+
+@property (nonatomic, retain) IBOutlet UIButton *sayItButton;
 @property (nonatomic, retain) IBOutlet UITextField *wordOrPhrase;
 @property (nonatomic, retain) IBOutlet UISlider *pitch;
 @property (nonatomic, retain) IBOutlet UISlider *variance;
@@ -44,5 +52,8 @@
 
 - (IBAction)sayWordOrPhrase:(id)sender;
 - (IBAction)sliderValueChanged:(id)sender;
+- (IBAction)audioCongratsChanged:(id)sender;
+//- (IBAction)useNameCongratsChanged:(id)sender;
+- (IBAction)visualCongratsChanged:(id)sender;
 
 @end

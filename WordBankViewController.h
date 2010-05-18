@@ -46,6 +46,7 @@
 - (IBAction)infoButtonPressed:(id)sender;
 - (UIButton *)initButton:(UIButton *)btn at:(int)index;
 
+- (void)resetVisualPrompt;
 
 - (void)setupScreenDisplay;
 - (IBAction)quitWordBank:(id)sender;
@@ -57,5 +58,6 @@
 - (void)setButtonsEnabled:(BOOL) enabled;
 - (void)congratulate;
 - (void)sayWord;
+- (void)setupDefaultWordBank;
 
 @end

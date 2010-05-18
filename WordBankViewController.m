@@ -36,6 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self setupScreenDisplay];
+	[self resetVisualPrompt];
 }
 
 
@@ -45,6 +46,12 @@
 }
 
 - (void) setupScreenDisplay {
+	NSArray *wordBanks = [appDelegate wordBanks];
+	if ([wordBanks count] == 0) {
+		[self setupDefaultWordBank];
+	}
+
+	
 	[self initButton:button1 at:1];
 	[self initButton:button2 at:2];
 	[self initButton:button3 at:3];
@@ -56,6 +63,199 @@
 	if (! wordBankSettings.lastWordBank) {
 		wordToSpell.text = @"<== Tap info button to add/choose a word bank";
 	}
+}
+
+- (void)setupDefaultWordBank {
+	WordBank *newWordBank = (WordBank *)[NSEntityDescription insertNewObjectForEntityForName:@"WordBank" 
+																	  inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWordBank.title = @"The English Alphabet";
+	Word *newWord;
+
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"A";
+	newWord.wordPhonetic = @"aye";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"B";
+	newWord.wordPhonetic = @"bee";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"C";
+	newWord.wordPhonetic = @"see";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"D";
+	newWord.wordPhonetic = @"dee";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"E";
+	newWord.wordPhonetic = @"eee";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"F";
+	newWord.wordPhonetic = @"eff";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"G";
+	newWord.wordPhonetic = @"gee";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"H";
+	newWord.wordPhonetic = @"aitch";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"I";
+	newWord.wordPhonetic = @"eye";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"J";
+	newWord.wordPhonetic = @"jay";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"K";
+	newWord.wordPhonetic = @"kay";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"L";
+	newWord.wordPhonetic = @"ell";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"M";
+	newWord.wordPhonetic = @"emm";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"N";
+	newWord.wordPhonetic = @"enn";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"O";
+	newWord.wordPhonetic = @"oh";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"P";
+	newWord.wordPhonetic = @"pee";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"Q";
+	newWord.wordPhonetic = @"queue";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"R";
+	newWord.wordPhonetic = @"are";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"S";
+	newWord.wordPhonetic = @"ess";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"T";
+	newWord.wordPhonetic = @"tee";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"U";
+	newWord.wordPhonetic = @"you";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"V";
+	newWord.wordPhonetic = @"vee";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"W";
+	newWord.wordPhonetic = @"dub bull you";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"X";
+	newWord.wordPhonetic = @"ex";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"Y";
+	newWord.wordPhonetic = @"why";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"Z";
+	newWord.wordPhonetic = @"zee";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWordBank = (WordBank *)[NSEntityDescription insertNewObjectForEntityForName:@"WordBank" 
+																	  inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWordBank.title = @"Three-Letter Words";
+
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"sky";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"fly";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"buy";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"boy";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
+	newWord = (Word *)[NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:[appDelegate managedObjectContext]];
+	newWord.word = @"toy";
+	newWord.wordBank = newWordBank;
+	[appDelegate saveData];
+	
 }
 
 - (UIButton *)initButton:(UIButton *)btn at:(int)index {
@@ -87,7 +287,7 @@
 	if (buttonCount == 1 && index == 1) {
 		int x = width / 2 - size / 2 - xMargin;
 		int y = height / 2 - size / 2 - yMargin;
-		[btn setFrame:CGRectMake(x + xMargin + yMargin, y, size, size)];
+		[btn setFrame:CGRectMake(x + xMargin, y + yMargin, size, size)];
 	}
 
 	if (buttonCount == 2 && (index == 1 || index == 2)) {
@@ -167,25 +367,30 @@
 	if (buttonCount == 5) {
 		float halfScreenWidth = width / 2 - xMargin;
 		float halfScreenHeight = height / 2 - yMargin;
+		float halfTouchpoint = size / 2;
 		int x, y;
+		/*  2   3
+	   	      5
+			1   4
+		 */
 		switch (index) {
 			case 1:
-				x = halfScreenWidth / 2 - size / 2;
+				x = (halfScreenWidth - size / 2) / 2 - halfTouchpoint;
 				y = (halfScreenHeight / 2 - size / 2) + halfScreenHeight;
 				[btn setFrame:CGRectMake(x + xMargin, y + yMargin, size, size)];
 				break;
 			case 2:
-				x = halfScreenWidth / 2 - size / 2;
+				x = (halfScreenWidth - size / 2) / 2 - halfTouchpoint;
 				y = halfScreenHeight / 2 - size / 2;
 				[btn setFrame:CGRectMake(x + xMargin, y + yMargin, size, size)];
 				break;
 			case 3:
-				x = (halfScreenWidth / 2 - size / 2) + halfScreenWidth;
+				x = width - (halfScreenWidth - size / 2) / 2 - halfTouchpoint;
 				y = halfScreenHeight / 2 - size / 2;
 				[btn setFrame:CGRectMake(x + xMargin, y + yMargin, size, size)];
 				break;
 			case 4:
-				x = (halfScreenWidth / 2 - size / 2) + halfScreenWidth;
+				x = width - (halfScreenWidth - size / 2) / 2 - halfTouchpoint;
 				y = (halfScreenHeight / 2 - size / 2) + halfScreenHeight;
 				[btn setFrame:CGRectMake(x + xMargin, y + yMargin, size, size)];
 				break;
@@ -356,13 +561,25 @@
 	wordToSpell.text = [word.word lowercaseString];
 	[self setButtonLetters];
 	[self setButtonsEnabled:YES];
-//	FUNCTION_LOG(@"word usage counters:");
-//	for (int i = 0; i < [wordBank.words count]; i++) {
-//		FUNCTION_LOG(@"(%i) at %i is %i", wordUsage, i, wordUsage[i]);
-//	}
 	
+	BOOL giveAudioPrompt = [[appDelegate wordBankSettings].giveAudioPrompt boolValue];
+	
+	if (giveAudioPrompt) {
+		[self sayWord];
+	}		
 	
 	FUNCTION_LOG(@"%@", wordToSpell.text);
+}
+
+- (void)resetVisualPrompt {
+	BOOL giveVisualPrompt = [[appDelegate wordBankSettings].giveVisualPrompt boolValue];
+	
+	if (giveVisualPrompt) {
+		wordToSpell.hidden = NO;
+	} else {
+		wordToSpell.hidden = YES;
+	}
+	wordToSpellLabel.hidden = wordToSpell.hidden;
 }
 
 - (void)setButtonsEnabled:(BOOL) enabled {
@@ -540,7 +757,9 @@
 	
 	//FUNCTION_LOG(@"Checking %@ against target %@", wordToSpell.text
 	if ([wordToSpell.text isEqualToString:text.text]) {
-		[self congratulate];
+		[self sayWord];
+		[self performSelector:@selector(congratulate) withObject:nil afterDelay:1];
+//		[self congratulate];
 	} else {
 		[self setButtonLetters];
 	}
@@ -564,9 +783,16 @@
 
 - (void)sayWord {
 	FliteTTS *fliteEngine = [[FliteTTS alloc] init];
-	
-	[fliteEngine setPitch:125.0 variance:11.0 speed:1.0];
-	[fliteEngine speakText:wordToSpell.text];
+
+	SystemSettings *s = [appDelegate systemSettings];
+	[fliteEngine setPitch:[s.ttsPitch floatValue] variance:[s.ttsVariance floatValue] speed:1.0];
+	[fliteEngine setVoice:s.ttsVoice];
+	if (word.wordPhonetic && [word.wordPhonetic length]) {
+		[fliteEngine speakText:word.wordPhonetic];
+	} else {
+		[fliteEngine speakText:word.word];
+	}
+
 //	[fliteEngine release];
 }
 

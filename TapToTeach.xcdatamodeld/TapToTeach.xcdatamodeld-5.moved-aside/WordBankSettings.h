@@ -2,7 +2,7 @@
 //  WordBankSettings.h
 //  TapToTeach
 //
-//  Created by Preston Rohner on 5/13/10.
+//  Created by Preston Rohner on 5/4/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
@@ -18,7 +18,9 @@
 @property (nonatomic, retain) NSNumber * touchpointSize;
 @property (nonatomic, retain) NSNumber * giveVisualPrompt;
 @property (nonatomic, retain) NSNumber * giveAudioPrompt;
+@property (nonatomic, retain) NSNumber * giveAudioCongratulations;
 @property (nonatomic, retain) NSString * audioCongratulationsText;
+@property (nonatomic, retain) NSNumber * giveVisualCongratulations;
 @property (nonatomic, retain) WordBank * lastWordBank;
 
 @end

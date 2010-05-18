@@ -26,7 +26,7 @@
 
 @implementation WordBankSettingsViewController
 
-@synthesize audioCongrats, userName, visualCongrats, numberOfTouchpoints, touchpointSize;
+@synthesize numberOfTouchpoints, touchpointSize;
 @synthesize wordBankViewController, quitWordBankButton, audioPrompt, visualPrompt;
 
 #pragma mark -
@@ -54,9 +54,6 @@
 	
 	numberOfTouchpoints.value = [wordBankSettings.numberOfTouchpoints floatValue];
 	touchpointSize.value = [wordBankSettings.touchpointSize floatValue];
-	audioCongrats.on = [wordBankSettings.giveAudioCongratulations boolValue];
-	userName.on = [wordBankSettings.audioCongratulationsText isEqualToString:@""] ? NO : YES;
-	visualCongrats.on = [wordBankSettings.giveVisualCongratulations boolValue];
 	
 	audioPrompt.on = [wordBankSettings.giveAudioPrompt boolValue];
 	visualPrompt.on = [wordBankSettings.giveVisualPrompt boolValue];
@@ -96,7 +93,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 3;
+    return 2;
 }
 
 
@@ -328,26 +325,26 @@
 					break;
 			}
 			break;
-		case SECTION_CONGRATS_SETTINGS:
-			switch (indexPath.row) {
-				case SECTION_CONGRATS_SETTINGS_AUDIO:
-					cell.textLabel.text = @"Audio Congrats";
-					[audioCongrats setFrame:CGRectMake(210, 7.5, 80, 35)];
-					[cell addSubview:audioCongrats];
-					break;
-				case SECTION_CONGRATS_SETTINGS_USE_NAME:
-					cell.textLabel.text = @"Use Name";
-					[userName setFrame:CGRectMake(210, 7.5, 80, 35)];
-					[cell addSubview:userName];
-					break;
-				case SECTION_CONGRATS_SETTINGS_VISUAL:
-					cell.textLabel.text = @"Visual Congrats";
-					[visualCongrats setFrame:CGRectMake(210, 7.5, 80, 35)];
-					[cell addSubview:visualCongrats];
-					break;
-				default:
-					break;
-			}
+//		case SECTION_CONGRATS_SETTINGS:
+//			switch (indexPath.row) {
+//				case SECTION_CONGRATS_SETTINGS_AUDIO:
+//					cell.textLabel.text = @"Audio Congrats";
+//					[audioCongrats setFrame:CGRectMake(210, 7.5, 80, 35)];
+//					[cell addSubview:audioCongrats];
+//					break;
+//				case SECTION_CONGRATS_SETTINGS_USE_NAME:
+//					cell.textLabel.text = @"Use Name";
+//					[userName setFrame:CGRectMake(210, 7.5, 80, 35)];
+//					[cell addSubview:userName];
+//					break;
+//				case SECTION_CONGRATS_SETTINGS_VISUAL:
+//					cell.textLabel.text = @"Visual Congrats";
+//					[visualCongrats setFrame:CGRectMake(210, 7.5, 80, 35)];
+//					[cell addSubview:visualCongrats];
+//					break;
+//				default:
+//					break;
+//			}
 			break;
 		case SECTION_WORD_BANKS:
 		{
@@ -546,29 +543,24 @@
 	FUNCTION_LOG(@"value=%f", numberOfTouchpoints.value);
 }
 
-- (IBAction)audioCongratsChanged:(id)sender {
-	[appDelegate wordBankSettings].giveAudioCongratulations = [NSNumber numberWithBool:audioCongrats.on];
-	[appDelegate saveData];
-}
-
-- (IBAction)useNameCongratsChanged:(id)sender {
-	[appDelegate wordBankSettings].audioCongratulationsText = userName.on ? @"{name}" : @"";
-	[appDelegate saveData];
-}
-
-- (IBAction)visualCongratsChanged:(id)sender {
-	[appDelegate wordBankSettings].giveVisualCongratulations = [NSNumber numberWithBool:visualCongrats.on];
-	[appDelegate saveData];
-}
-
 - (IBAction)visualPromptChanged:(id)sender {
+	FUNCTION_LOG(@"visual prompt %i", visualPrompt.on);
 	[appDelegate wordBankSettings].giveVisualPrompt = [NSNumber numberWithBool:visualPrompt.on];
 	[appDelegate saveData];
+	[wordBankViewController resetVisualPrompt];
+	if ( ! audioPrompt.on && ! visualPrompt.on) {
+		[audioPrompt setOn:YES animated:YES];
+		[self audioPromptChanged:nil];
+	}
 }
 
 - (IBAction)audioPromptChanged:(id)sender {
 	[appDelegate wordBankSettings].giveAudioPrompt = [NSNumber numberWithBool:audioPrompt.on];
 	[appDelegate saveData];
+	if ( ! audioPrompt.on && ! visualPrompt.on) {
+		[visualPrompt setOn:YES animated:YES];
+		[self visualPromptChanged:nil];
+	}
 }
 
 - (IBAction)quitWordBank:(id)sender {

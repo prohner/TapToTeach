@@ -17,10 +17,18 @@
 	float speed;
 	NSString *wordToSay;
 	
-	switch (arc4random() % 3) {
+	switch (arc4random() % 5) {
+		case 4:
+			wordToSay = @"Terrific";
+			speed = 1.0;
+			break;
+		case 3:
+			wordToSay = @"Awesome";
+			speed = 1.0;
+			break;
 		case 2:
-			wordToSay = @"Really good work";
-			speed = 1.80;
+			wordToSay = @"Great work";
+			speed = 1.37;
 			break;
 		case 1:
 			wordToSay = @"Great job";
@@ -34,8 +42,15 @@
 			break;
 	}
 	
+//	FliteTTS *fliteEngine = [[FliteTTS alloc] init];
+//	[fliteEngine setPitch:125.0 variance:11.0 speed:speed];
+//	[fliteEngine speakText:wordToSay];
+
 	FliteTTS *fliteEngine = [[FliteTTS alloc] init];
-	[fliteEngine setPitch:125.0 variance:11.0 speed:speed];
+	
+	SystemSettings *s = [appDelegate systemSettings];
+	[fliteEngine setPitch:[s.ttsPitch floatValue] variance:[s.ttsVariance floatValue] speed:speed];
+	[fliteEngine setVoice:s.ttsVoice];
 	[fliteEngine speakText:wordToSay];
 	
 	//[fliteEngine release];

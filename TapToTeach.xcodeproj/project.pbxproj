@@ -15,6 +15,8 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		E757CE4A119A69820099327A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E757CE48119A69820099327A /* SettingsViewController.m */; };
+		E757CE4B119A69820099327A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E757CE49119A69820099327A /* SettingsViewController.xib */; };
 		E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */; };
 		E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C268CE1187EFB80054600F /* WordBankViewController.xib */; };
 		E7C2690B1187F5EF0054600F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C2690A1187F5EF0054600F /* Utility.m */; };
@@ -144,6 +146,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TapToTeach_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapToTeach_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TapToTeach-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TapToTeach-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		E757CE47119A69820099327A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		E757CE48119A69820099327A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		E757CE49119A69820099327A /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		E7C268CC1187EFB80054600F /* WordBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankViewController.h; sourceTree = "<group>"; };
 		E7C268CD1187EFB80054600F /* WordBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankViewController.m; sourceTree = "<group>"; };
 		E7C268CE1187EFB80054600F /* WordBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankViewController.xib; sourceTree = "<group>"; };
@@ -363,6 +368,9 @@
 				1D3623250D0F684500981E51 /* TapToTeachAppDelegate.m */,
 				E7C269091187F5EF0054600F /* Utility.h */,
 				E7C2690A1187F5EF0054600F /* Utility.m */,
+				E757CE47119A69820099327A /* SettingsViewController.h */,
+				E757CE48119A69820099327A /* SettingsViewController.m */,
+				E757CE49119A69820099327A /* SettingsViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -780,6 +788,7 @@
 				E7E39E7C1190796E0021EEC3 /* WordBankWordsViewController.xib in Resources */,
 				E7E3A39F119517ED0021EEC3 /* us_pos.tree in Resources */,
 				E7E3A3EF119526570021EEC3 /* VoicePlayViewController.xib in Resources */,
+				E757CE4B119A69820099327A /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,6 +910,7 @@
 				E7E3A3A3119517ED0021EEC3 /* FliteTTS.m in Sources */,
 				E7E3A3B611951BA30021EEC3 /* SayCongratulations.m in Sources */,
 				E7E3A3EE119526570021EEC3 /* VoicePlayViewController.m in Sources */,
+				E757CE4A119A69820099327A /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,6 +921,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Preston Rohner (L2LG3DHA7J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Preston Rohner (L2LG3DHA7J)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -918,6 +930,8 @@
 				GCC_PREFIX_HEADER = TapToTeach_Prefix.pch;
 				INFOPLIST_FILE = "TapToTeach-Info.plist";
 				PRODUCT_NAME = TapToTeach;
+				PROVISIONING_PROFILE = "3B486F92-F69A-47A5-B2D0-1B9A435A645D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3B486F92-F69A-47A5-B2D0-1B9A435A645D";
 			};
 			name = Debug;
 		};

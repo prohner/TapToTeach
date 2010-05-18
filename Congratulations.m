@@ -7,22 +7,28 @@
 //
 
 #import "Congratulations.h"
-
+#import "SystemSettings.h"
 
 @implementation Congratulations
 
 + (NSString *)pickCongratulationsClassString {
 	NSString *class;
-	switch (arc4random() % 2) {
-		case 0:
-			class = @"SimpleFlashing";
-			break;
-		case 1:
-			class = @"SayCongratulations";
-			break;
-		default:
-			break;
+	NSMutableArray *congratsClasses = [[NSMutableArray alloc] init];
+	TapToTeachAppDelegate *appDelegate= [[UIApplication sharedApplication] delegate];
+
+	SystemSettings *ss = [appDelegate systemSettings];
+
+	if (ss.giveAudioCongratulations) {
+		[congratsClasses addObject:@"SayCongratulations"];
 	}
+	
+	if (ss.giveVisualCongratulations) {
+		[congratsClasses addObject:@"SimpleFlashing"];
+	}
+	
+	class = [congratsClasses objectAtIndex:arc4random() % [congratsClasses count]];
+
+	[congratsClasses release];
 	return class;
 }
 
