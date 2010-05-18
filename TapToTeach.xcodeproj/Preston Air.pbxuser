@@ -10,8 +10,8 @@
 	1D3623250D0F684500981E51 /* TapToTeachAppDelegate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {2371, 3198}}";
-			sepNavSelRange = "{1979, 0}";
-			sepNavVisRange = "{151, 1835}";
+			sepNavSelRange = "{1006, 0}";
+			sepNavVisRange = "{185, 1801}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* TapToTeach */ = {
@@ -372,7 +372,7 @@
 		ignoreCount = 0;
 		lineNumber = 99;
 		location = TapToTeach;
-		modificationTime = 295849073.068151;
+		modificationTime = 295849275.976174;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -390,7 +390,7 @@
 		ignoreCount = 0;
 		lineNumber = 42;
 		location = TapToTeach;
-		modificationTime = 295849073.068157;
+		modificationTime = 295849275.976184;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -404,9 +404,9 @@
 	E757CE48119A69820099327A /* SettingsViewController.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{10029, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{10080, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{10130, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 12510}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {908, 5447}}";
-			sepNavSelRange = "{7325, 0}";
-			sepNavVisRange = "{5900, 939}";
+			sepNavIntBoundsRect = "{{0, 0}, {1048, 5499}}";
+			sepNavSelRange = "{11124, 0}";
+			sepNavVisRange = "{10381, 1636}";
 		};
 	};
 	E757CE98119A71000099327A /* PBXTextBookmark */ = {
@@ -519,8 +519,8 @@
 	E777CD0A11A247E700212DDE /* ActivitiesViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 1456}}";
-			sepNavSelRange = "{2156, 40}";
-			sepNavVisRange = "{1762, 1844}";
+			sepNavSelRange = "{1895, 0}";
+			sepNavVisRange = "{1761, 1845}";
 		};
 	};
 	E777CD3011A24B4F00212DDE /* ActivitiesViewController.m:81 */ = {
@@ -533,11 +533,11 @@
 		delayBeforeContinue = 0;
 		fileReference = E777CD0A11A247E700212DDE /* ActivitiesViewController.m */;
 		functionName = "-infoButtonPressed:";
-		hitCount = 0;
+		hitCount = 1;
 		ignoreCount = 0;
 		lineNumber = 81;
 		location = TapToTeach;
-		modificationTime = 295849073.068192;
+		modificationTime = 295849304.68824;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -551,11 +551,11 @@
 		delayBeforeContinue = 0;
 		fileReference = E777CD0A11A247E700212DDE /* ActivitiesViewController.m */;
 		functionName = "-buttonPressedForWordBank:";
-		hitCount = 0;
+		hitCount = 1;
 		ignoreCount = 0;
 		lineNumber = 73;
 		location = TapToTeach;
-		modificationTime = 295849073.068201;
+		modificationTime = 295849290.562866;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -693,7 +693,7 @@
 		ignoreCount = 0;
 		lineNumber = 34;
 		location = TapToTeach;
-		modificationTime = 295849073.868196;
+		modificationTime = 295849277.059949;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -767,6 +767,20 @@
 		vrLen = 1628;
 		vrLoc = 46;
 	};
+	E777CD6411A2517F00212DDE /* PlaySoundFile.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {687, 653}}";
+			sepNavSelRange = "{221, 0}";
+			sepNavVisRange = "{0, 233}";
+		};
+	};
+	E777CD6511A2517F00212DDE /* PlaySoundFile.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {687, 653}}";
+			sepNavSelRange = "{224, 171}";
+			sepNavVisRange = "{0, 844}";
+		};
+	};
 	E79BD161119D11F600101BD8 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = E7C269BA11888A7B0054600F /* WordBank.h */;
@@ -821,7 +835,7 @@
 		ignoreCount = 0;
 		lineNumber = 565;
 		location = TapToTeach;
-		modificationTime = 295849073.068165;
+		modificationTime = 295849275.976193;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -839,7 +853,7 @@
 		ignoreCount = 0;
 		lineNumber = 548;
 		location = TapToTeach;
-		modificationTime = 295849073.068171;
+		modificationTime = 295849275.976211;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -913,11 +927,11 @@
 		delayBeforeContinue = 0;
 		fileReference = E757CE48119A69820099327A /* SettingsViewController.m */;
 		functionName = "-sliderValueChanged:";
-		hitCount = 0;
+		hitCount = 1;
 		ignoreCount = 0;
 		lineNumber = 386;
 		location = TapToTeach;
-		modificationTime = 295849073.06818;
+		modificationTime = 295849307.446097;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -993,7 +1007,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -1154,7 +1168,7 @@
 		ignoreCount = 0;
 		lineNumber = 394;
 		location = TapToTeach;
-		modificationTime = 295849073.068107;
+		modificationTime = 295849275.9761;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1172,7 +1186,7 @@
 		ignoreCount = 0;
 		lineNumber = 434;
 		location = TapToTeach;
-		modificationTime = 295849073.068134;
+		modificationTime = 295849275.976134;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1226,7 +1240,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 1222}}";
 			sepNavSelRange = "{521, 0}";
-			sepNavVisRange = "{0, 1392}";
+			sepNavVisRange = "{0, 1396}";
 		};
 	};
 	E7E3A1E11193C9690021EEC3 /* SimpleFlashing.h */ = {
@@ -1238,8 +1252,8 @@
 	};
 	E7E3A1E21193C9690021EEC3 /* SimpleFlashing.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {656, 667}}";
-			sepNavSelRange = "{516, 323}";
+			sepNavIntBoundsRect = "{{0, 0}, {687, 653}}";
+			sepNavSelRange = "{204, 635}";
 			sepNavVisRange = "{0, 845}";
 		};
 	};
@@ -1257,7 +1271,7 @@
 		ignoreCount = 0;
 		lineNumber = 770;
 		location = TapToTeach;
-		modificationTime = 295849073.068143;
+		modificationTime = 295849275.976142;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1277,16 +1291,16 @@
 	};
 	E7E3A3B411951BA30021EEC3 /* SayCongratulations.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {656, 667}}";
-			sepNavSelRange = "{209, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {687, 653}}";
+			sepNavSelRange = "{243, 15}";
 			sepNavVisRange = "{0, 270}";
 		};
 	};
 	E7E3A3B511951BA30021EEC3 /* SayCongratulations.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {687, 715}}";
-			sepNavSelRange = "{560, 0}";
-			sepNavVisRange = "{0, 857}";
+			sepNavIntBoundsRect = "{{0, 0}, {705, 806}}";
+			sepNavSelRange = "{236, 917}";
+			sepNavVisRange = "{147, 1008}";
 		};
 	};
 	E7E3A3CB11951DBF0021EEC3 /* PBXTextBookmark */ = {

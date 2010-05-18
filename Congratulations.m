@@ -20,6 +20,7 @@
 
 	if (ss.giveAudioCongratulations) {
 		[congratsClasses addObject:@"SayCongratulations"];
+		[congratsClasses addObject:@"PlaySoundFile"];
 	}
 	
 	if (ss.giveVisualCongratulations) {
