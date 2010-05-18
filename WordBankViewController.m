@@ -37,6 +37,7 @@
     [super viewDidLoad];
 	[self setupScreenDisplay];
 	[self resetVisualPrompt];
+	[self nextWord];
 }
 
 
@@ -772,7 +773,7 @@
 	//[self nextWord];
 	NSString *congratsClass = [Congratulations pickCongratulationsClassString];
 	Congratulations *c = [[NSClassFromString(congratsClass) alloc] initWithNibName:nil bundle:nil];
-	[c initOnRect:text.frame withDuration:1];
+	[c initOnRect:self.view.frame withDuration:1];
 
 	[self.view addSubview:c.view];
 	

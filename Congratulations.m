@@ -25,11 +25,14 @@
 	
 	if (ss.giveVisualCongratulations) {
 		[congratsClasses addObject:@"SimpleFlashing"];
+		[congratsClasses addObject:@"BouncingBall"];
 	}
 	
 	class = [congratsClasses objectAtIndex:arc4random() % [congratsClasses count]];
-
+	FUNCTION_LOG(@"congrats with %@", class);
 	[congratsClasses release];
+	
+	class = @"BouncingBall";
 	return class;
 }
 

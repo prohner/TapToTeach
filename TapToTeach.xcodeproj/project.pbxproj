@@ -21,6 +21,8 @@
 		E777CD0D11A247E700212DDE /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E777CD0B11A247E700212DDE /* ActivitiesViewController.xib */; };
 		E777CD6611A2517F00212DDE /* PlaySoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E777CD6511A2517F00212DDE /* PlaySoundFile.m */; };
 		E777CD6911A251D200212DDE /* HiDaddy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E777CD6811A251D200212DDE /* HiDaddy.mp3 */; };
+		E777CD9211A2587900212DDE /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E777CD9111A2587900212DDE /* ball.png */; };
+		E777CD9511A2588A00212DDE /* BouncingBall.m in Sources */ = {isa = PBXBuildFile; fileRef = E777CD9411A2588A00212DDE /* BouncingBall.m */; };
 		E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */; };
 		E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C268CE1187EFB80054600F /* WordBankViewController.xib */; };
 		E7C2690B1187F5EF0054600F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C2690A1187F5EF0054600F /* Utility.m */; };
@@ -159,6 +161,9 @@
 		E777CD6411A2517F00212DDE /* PlaySoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySoundFile.h; sourceTree = "<group>"; };
 		E777CD6511A2517F00212DDE /* PlaySoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySoundFile.m; sourceTree = "<group>"; };
 		E777CD6811A251D200212DDE /* HiDaddy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = HiDaddy.mp3; path = sounds/HiDaddy.mp3; sourceTree = "<group>"; };
+		E777CD9111A2587900212DDE /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		E777CD9311A2588A00212DDE /* BouncingBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingBall.h; sourceTree = "<group>"; };
+		E777CD9411A2588A00212DDE /* BouncingBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncingBall.m; sourceTree = "<group>"; };
 		E7C268CC1187EFB80054600F /* WordBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankViewController.h; sourceTree = "<group>"; };
 		E7C268CD1187EFB80054600F /* WordBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankViewController.m; sourceTree = "<group>"; };
 		E7C268CE1187EFB80054600F /* WordBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankViewController.xib; sourceTree = "<group>"; };
@@ -449,6 +454,14 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		E777CD9011A2585C00212DDE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E777CD9111A2587900212DDE /* ball.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		E7C268CB1187EF810054600F /* Activities */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +491,7 @@
 		E7E3A1CE1193C46F0021EEC3 /* Congratulations */ = {
 			isa = PBXGroup;
 			children = (
+				E777CD9011A2585C00212DDE /* Images */,
 				E777CD6711A251BF00212DDE /* Sounds */,
 				E7E3A1D61193C7C10021EEC3 /* Congratulations.h */,
 				E7E3A1D71193C7C10021EEC3 /* Congratulations.m */,
@@ -487,6 +501,8 @@
 				E7E3A3B511951BA30021EEC3 /* SayCongratulations.m */,
 				E777CD6411A2517F00212DDE /* PlaySoundFile.h */,
 				E777CD6511A2517F00212DDE /* PlaySoundFile.m */,
+				E777CD9311A2588A00212DDE /* BouncingBall.h */,
+				E777CD9411A2588A00212DDE /* BouncingBall.m */,
 			);
 			name = Congratulations;
 			sourceTree = "<group>";
@@ -815,6 +831,7 @@
 				E757CE4B119A69820099327A /* SettingsViewController.xib in Resources */,
 				E777CD0D11A247E700212DDE /* ActivitiesViewController.xib in Resources */,
 				E777CD6911A251D200212DDE /* HiDaddy.mp3 in Resources */,
+				E777CD9211A2587900212DDE /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,6 +956,7 @@
 				E757CE4A119A69820099327A /* SettingsViewController.m in Sources */,
 				E777CD0C11A247E700212DDE /* ActivitiesViewController.m in Sources */,
 				E777CD6611A2517F00212DDE /* PlaySoundFile.m in Sources */,
+				E777CD9511A2588A00212DDE /* BouncingBall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
