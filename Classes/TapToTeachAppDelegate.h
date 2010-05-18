@@ -15,6 +15,7 @@
 
 @class WordBankViewController;
 @class VoicePlayViewController;
+@class ActivitiesViewController;
 
 @interface TapToTeachAppDelegate : NSObject <UIApplicationDelegate> {
 
@@ -23,6 +24,9 @@
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
     UIWindow *window;
+
+    IBOutlet ActivitiesViewController *activitiesViewController;
+	
 	WordBankViewController *wordBankViewController;
 	VoicePlayViewController *voicePlayViewController;
 	SystemSettings *systemSettings;
@@ -39,16 +43,12 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UILabel *welcomeLabel;
 @property (nonatomic, retain) IBOutlet UIButton *infoButton;
-
+@property (nonatomic, retain) IBOutlet ActivitiesViewController *activitiesViewController;
 - (NSString *)applicationDocumentsDirectory;
 
-- (IBAction)buttonPressedForWordBank:(id)sender;
-//- (IBAction)buttonPressedForVoicePlay:(id)sender;
-- (void)loadViewController:(UIViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName;
 - (WordBankSettings *)wordBankSettings;
 - (NSArray *)wordBanks;
 - (void)saveData;
-- (IBAction)infoButtonPressed:(id)sender;
 
 @end
 

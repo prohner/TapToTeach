@@ -278,14 +278,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>19</integer>
-									<integer>17</integer>
-									<integer>5</integer>
+									<integer>28</integer>
+									<integer>27</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {285, 785}}</string>
+							<string>{{0, 147}, {285, 785}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -322,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WordBankViewController.m</string>
+								<string>TapToTeachAppDelegate.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>WordBankViewController.m</string>
+										<string>TapToTeachAppDelegate.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E777CD0511A23F2E00212DDE</string>
+										<string>E777CD5D11A24CF700212DDE</string>
 										<key>history</key>
 										<array>
 											<string>E7C268D61187F05D0054600F</string>
@@ -352,20 +351,23 @@
 											<string>E757CE98119A71000099327A</string>
 											<string>E79BD161119D11F600101BD8</string>
 											<string>E79BD162119D11F600101BD8</string>
-											<string>E79BD164119D11F600101BD8</string>
 											<string>E79BD18D119FB4F200101BD8</string>
 											<string>E79BD1C711A0394C00101BD8</string>
-											<string>E79BD1D911A03B1000101BD8</string>
 											<string>E79BD1DB11A03B1000101BD8</string>
 											<string>E79BD1EB11A044BE00101BD8</string>
-											<string>E79BD1EC11A044BE00101BD8</string>
 											<string>E79BD1F411A1690B00101BD8</string>
 											<string>E79BD20811A16A4100101BD8</string>
-											<string>E79BD20911A16A4100101BD8</string>
 											<string>E79BD21211A16B9700101BD8</string>
 											<string>E79BD22111A16DAB00101BD8</string>
-											<string>E777CCF211A23BD300212DDE</string>
-											<string>E79BD22711A16DFE00101BD8</string>
+											<string>E777CD3711A24B6000212DDE</string>
+											<string>E777CD3A11A24B6000212DDE</string>
+											<string>E777CD3B11A24B6000212DDE</string>
+											<string>E777CD3C11A24B6000212DDE</string>
+											<string>E777CD4A11A24C1D00212DDE</string>
+											<string>E777CD5411A24C7000212DDE</string>
+											<string>E777CD5511A24C7000212DDE</string>
+											<string>E777CD5B11A24CF700212DDE</string>
+											<string>E777CD5C11A24CF700212DDE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -563,9 +565,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>E777CD5811A24C7000212DDE</string>
+		<string>E777CD4D11A24C1D00212DDE</string>
+		<string>E777CD4111A24B6000212DDE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>E7C2688D1187E2560054600F</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/Preston Air/work/iPad/TapToTeach/TapToTeach.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -901,6 +906,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -946,7 +953,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

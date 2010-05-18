@@ -17,6 +17,8 @@
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		E757CE4A119A69820099327A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E757CE48119A69820099327A /* SettingsViewController.m */; };
 		E757CE4B119A69820099327A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E757CE49119A69820099327A /* SettingsViewController.xib */; };
+		E777CD0C11A247E700212DDE /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E777CD0A11A247E700212DDE /* ActivitiesViewController.m */; };
+		E777CD0D11A247E700212DDE /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E777CD0B11A247E700212DDE /* ActivitiesViewController.xib */; };
 		E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */; };
 		E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C268CE1187EFB80054600F /* WordBankViewController.xib */; };
 		E7C2690B1187F5EF0054600F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C2690A1187F5EF0054600F /* Utility.m */; };
@@ -149,6 +151,9 @@
 		E757CE47119A69820099327A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		E757CE48119A69820099327A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		E757CE49119A69820099327A /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		E777CD0911A247E700212DDE /* ActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesViewController.h; sourceTree = "<group>"; };
+		E777CD0A11A247E700212DDE /* ActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesViewController.m; sourceTree = "<group>"; };
+		E777CD0B11A247E700212DDE /* ActivitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesViewController.xib; sourceTree = "<group>"; };
 		E7C268CC1187EFB80054600F /* WordBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankViewController.h; sourceTree = "<group>"; };
 		E7C268CD1187EFB80054600F /* WordBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankViewController.m; sourceTree = "<group>"; };
 		E7C268CE1187EFB80054600F /* WordBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankViewController.xib; sourceTree = "<group>"; };
@@ -371,6 +376,9 @@
 				E757CE47119A69820099327A /* SettingsViewController.h */,
 				E757CE48119A69820099327A /* SettingsViewController.m */,
 				E757CE49119A69820099327A /* SettingsViewController.xib */,
+				E777CD0911A247E700212DDE /* ActivitiesViewController.h */,
+				E777CD0A11A247E700212DDE /* ActivitiesViewController.m */,
+				E777CD0B11A247E700212DDE /* ActivitiesViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -789,6 +797,7 @@
 				E7E3A39F119517ED0021EEC3 /* us_pos.tree in Resources */,
 				E7E3A3EF119526570021EEC3 /* VoicePlayViewController.xib in Resources */,
 				E757CE4B119A69820099327A /* SettingsViewController.xib in Resources */,
+				E777CD0D11A247E700212DDE /* ActivitiesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,6 +920,7 @@
 				E7E3A3B611951BA30021EEC3 /* SayCongratulations.m in Sources */,
 				E7E3A3EE119526570021EEC3 /* VoicePlayViewController.m in Sources */,
 				E757CE4A119A69820099327A /* SettingsViewController.m in Sources */,
+				E777CD0C11A247E700212DDE /* ActivitiesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
