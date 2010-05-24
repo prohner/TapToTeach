@@ -150,7 +150,7 @@
 					<object class="IBUIButton" id="708042919">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{20, 965}, {18, 19}}</string>
+						<string key="NSFrame">{{44, 958}, {18, 19}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -450,10 +450,10 @@
 							<reference ref="86016386"/>
 							<reference ref="468915019"/>
 							<reference ref="220721171"/>
-							<reference ref="708042919"/>
 							<reference ref="673724714"/>
 							<reference ref="404447582"/>
 							<reference ref="561561358"/>
+							<reference ref="708042919"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -535,7 +535,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{519, 132}, {768, 1024}}</string>
+					<string>{{564, 132}, {768, 1024}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -568,8 +568,20 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">WordBankViewController</string>
+					<string key="className">ActivityViewController</string>
 					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">quitActivity:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">ActivityViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">WordBankViewController</string>
+					<string key="superclassName">ActivityViewController</string>
 					<object class="NSMutableDictionary" key="actions">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
@@ -577,11 +589,9 @@
 							<string>buttonPressed:</string>
 							<string>infoButtonPressed:</string>
 							<string>nextWord</string>
-							<string>quitWordBank:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>

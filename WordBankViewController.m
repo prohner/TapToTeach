@@ -25,8 +25,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         // Custom initialization
-		appDelegate = [[UIApplication sharedApplication] delegate];
-
 		text.text = @"Your text here";
     }
     return self;
@@ -35,7 +33,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self setupScreenDisplay];
+//	[self setupScreenDisplay];
 	[self resetVisualPrompt];
 	[self nextWord];
 }
@@ -47,12 +45,12 @@
 }
 
 - (void) setupScreenDisplay {
+	FUNCTION_LOG();
 	NSArray *wordBanks = [appDelegate wordBanks];
 	if ([wordBanks count] == 0) {
 		[self setupDefaultWordBank];
 	}
 
-	
 	[self initButton:button1 at:1];
 	[self initButton:button2 at:2];
 	[self initButton:button3 at:3];
@@ -60,7 +58,6 @@
 	[self initButton:button5 at:5];
 
 	wordBankSettings = [appDelegate wordBankSettings];
-	FUNCTION_LOG(@"%i", wordBankSettings.lastWordBank);
 	if (! wordBankSettings.lastWordBank) {
 		wordToSpell.text = @"<== Tap info button to add/choose a word bank";
 	}
@@ -277,11 +274,28 @@
 	int width = appDelegate.window.frame.size.width;
 	int xMargin = 0;
 	int yMargin = 100;
-	if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeLeft
-		|| [[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeRight
+	if ([[UIDevice currentDevice] orientation] == UIDeviceOrientationLandscapeLeft
+		|| [[UIDevice currentDevice] orientation] == UIDeviceOrientationLandscapeRight
 		) {
 		height = appDelegate.window.frame.size.width;
 		width = appDelegate.window.frame.size.height;
+	}
+	switch ([[UIDevice currentDevice] orientation]) {
+		case UIDeviceOrientationLandscapeLeft:
+			FUNCTION_LOG(@"UIDeviceOrientationLandscapeLeft");
+			break;
+		case UIDeviceOrientationLandscapeRight:
+			FUNCTION_LOG(@"UIDeviceOrientationLandscapeRight");
+			break;
+		case UIDeviceOrientationPortrait:
+			FUNCTION_LOG(@"UIDeviceOrientationPortrait");
+			break;
+		case UIDeviceOrientationPortraitUpsideDown:
+			FUNCTION_LOG(@"UIDeviceOrientationPortraitUpsideDown");
+			break;
+		default:
+			FUNCTION_LOG(@"What orientation????");
+			break;
 	}
 	FUNCTION_LOG(@"width=%i, height=%i", width, height);
 
@@ -416,21 +430,54 @@
 }
 
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration {
-	FUNCTION_LOG("rotating");
-	/*
-	 UIInterfaceOrientationPortrait
-	 UIInterfaceOrientationPortraitUpsideDown
-	 UIInterfaceOrientationLandscapeLeft
-	 UIInterfaceOrientationLandscapeRight
-	 */
-	if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-		//self.view.transform = CGAffineTransformIdentity;
-		[self setupScreenDisplay];
-	} else {
-		//self.view.transform = CGAffineTransformMakeRotation(degreesToRadians(90));
-		[self setupScreenDisplay];
+//- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration {
+//	FUNCTION_LOG("rotating");
+//	/*
+//	 UIInterfaceOrientationPortrait
+//	 UIInterfaceOrientationPortraitUpsideDown
+//	 UIInterfaceOrientationLandscapeLeft
+//	 UIInterfaceOrientationLandscapeRight
+//	 */
+////	if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+////		//self.view.transform = CGAffineTransformIdentity;
+////		[self setupScreenDisplay];
+////	} else {
+////		//self.view.transform = CGAffineTransformMakeRotation(degreesToRadians(90));
+////		[self setupScreenDisplay];
+////	}
+//}
+
+- (void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	FUNCTION_LOG(@"Rotating everything");
+//	CGRect r = CGRectMake(0, 0, 768, 1024);
+//	if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+//		r.size.width = 1024;
+//		r.size.height = 768;
+//	}
+//	[self.view setFrame:r];
+	switch (interfaceOrientation) {
+		case UIInterfaceOrientationLandscapeLeft:
+			FUNCTION_LOG(@"from UIInterfaceOrientationLandscapeLeft");
+			break;
+		case UIInterfaceOrientationLandscapeRight:
+			FUNCTION_LOG(@"from UIInterfaceOrientationLandscapeRight");
+			break;
+		case UIInterfaceOrientationPortrait:
+			FUNCTION_LOG(@"from UIInterfaceOrientationPortrait");
+			break;
+		case UIInterfaceOrientationPortraitUpsideDown:
+			FUNCTION_LOG(@"from UIInterfaceOrientationPortraitUpsideDown");
+			break;
+		default:
+			break;
 	}
+	
+	if (popover) {
+		CGRect popoverRect = infoButton.frame;
+		[popover presentPopoverFromRect:popoverRect inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+	}
+	
+	[self setupScreenDisplay];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -482,19 +529,6 @@
 	//popoverRect.size.width = MIN(popoverRect.size.width, 100); // the text field is actually really big
 	
 	[popover presentPopoverFromRect:popoverRect inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-}
-
-- (IBAction)quitWordBank:(id)sender {
-	if (popover && popover.popoverVisible) {
-		[popover dismissPopoverAnimated:YES];
-	}
-
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:1];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
-	[self.view removeFromSuperview];
-	[UIView commitAnimations];	
 }
 
 #pragma mark -
@@ -797,4 +831,10 @@
 //	[fliteEngine release];
 }
 
+- (IBAction)quitActivity:(id)sender {
+	if (popover && popover.popoverVisible) {
+		[popover dismissPopoverAnimated:YES];
+	}
+	[super quitActivity:sender];
+}	
 @end

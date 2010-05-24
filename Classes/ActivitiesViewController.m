@@ -46,6 +46,12 @@
     return YES;
 }
 
+- (void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	FUNCTION_LOG(@"Rotating everything");
+	[appDelegate.window layoutSubviews];
+//	CGAffineTransform rotate = CGAffineTransformMakeRotation(M_PI / 2.0);
+//	[wordBankViewController.view setTransform:rotate];
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -92,18 +98,22 @@
 }
 
 
-- (void)loadViewController:(UIViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName {
+- (void)loadViewController:(ActivityViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName {
 	[(*ctrl) release];
 	
 	Class c = NSClassFromString(nibAndClassName);
 	*ctrl = [[c alloc] initWithNibName:nibAndClassName bundle:nil];
 	[(*ctrl).view setFrame:self.view.bounds];
+	(*ctrl).activitiesViewController = self;
 	
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDuration:1];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
-	[self.view addSubview:(*ctrl).view];
+//	[self.view addSubview:(*ctrl).view];
+	
+	[appDelegate.window addSubview:(*ctrl).view];
+	[appDelegate.activitiesViewController.view removeFromSuperview];
 	[UIView commitAnimations];
 }
 

@@ -10,6 +10,7 @@
 #import "TapToTeachAppDelegate.h"
 
 @class WordBankViewController;
+@class ActivityViewController;
 
 @interface ActivitiesViewController : UIViewController {
 
@@ -24,7 +25,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *infoButton;
 
 - (IBAction)buttonPressedForWordBank:(id)sender;
-- (void)loadViewController:(UIViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName;
+- (void)loadViewController:(ActivityViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName;
 - (IBAction)infoButtonPressed:(id)sender;
 
 @end

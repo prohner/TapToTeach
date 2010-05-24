@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TapToTeachAppDelegate.h"
 #import "WordBankSettings.h"
 #import "WordBank.h"
 #import "Word.h"
+#import "ActivityViewController.h"
 
-@interface WordBankViewController : UIViewController {
+@interface WordBankViewController : ActivityViewController {
 	UIButton *button1;
 	UIButton *button2;
 	UIButton *button3;
@@ -23,7 +23,6 @@
 	UITextField *text;
 	UILabel *wordToSpellLabel;
 	UILabel *wordToSpell;
-	TapToTeachAppDelegate *appDelegate;
 	WordBankSettings *wordBankSettings;
 	UIPopoverController *popover;
 	
@@ -49,7 +48,6 @@
 - (void)resetVisualPrompt;
 
 - (void)setupScreenDisplay;
-- (IBAction)quitWordBank:(id)sender;
 - (void)reloadWordBankAndStart;
 - (void)startWordBank;
 - (IBAction)nextWord;

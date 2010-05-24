@@ -31,6 +31,10 @@
 //	[welcomeMessage release];
 
 //    [window makeKeyAndVisible];
+
+	[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
+	
 	[window addSubview:activitiesViewController.view];
 
     //[self buttonPressedForWordBank:nil];

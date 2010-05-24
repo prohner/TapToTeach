@@ -23,6 +23,7 @@
 		E777CD6911A251D200212DDE /* HiDaddy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E777CD6811A251D200212DDE /* HiDaddy.mp3 */; };
 		E777CD9211A2587900212DDE /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E777CD9111A2587900212DDE /* ball.png */; };
 		E777CD9511A2588A00212DDE /* BouncingBall.m in Sources */ = {isa = PBXBuildFile; fileRef = E777CD9411A2588A00212DDE /* BouncingBall.m */; };
+		E7A253B611A8E6E000F8773D /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A253B411A8E6E000F8773D /* ActivityViewController.m */; };
 		E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */; };
 		E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C268CE1187EFB80054600F /* WordBankViewController.xib */; };
 		E7C2690B1187F5EF0054600F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C2690A1187F5EF0054600F /* Utility.m */; };
@@ -164,6 +165,8 @@
 		E777CD9111A2587900212DDE /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		E777CD9311A2588A00212DDE /* BouncingBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingBall.h; sourceTree = "<group>"; };
 		E777CD9411A2588A00212DDE /* BouncingBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncingBall.m; sourceTree = "<group>"; };
+		E7A253B311A8E6E000F8773D /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		E7A253B411A8E6E000F8773D /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		E7C268CC1187EFB80054600F /* WordBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankViewController.h; sourceTree = "<group>"; };
 		E7C268CD1187EFB80054600F /* WordBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankViewController.m; sourceTree = "<group>"; };
 		E7C268CE1187EFB80054600F /* WordBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankViewController.xib; sourceTree = "<group>"; };
@@ -468,6 +471,8 @@
 				E7E3A3EA119526440021EEC3 /* Voice Play */,
 				E7E3A1CE1193C46F0021EEC3 /* Congratulations */,
 				E7C268D41187F0500054600F /* Word Bank */,
+				E7A253B311A8E6E000F8773D /* ActivityViewController.h */,
+				E7A253B411A8E6E000F8773D /* ActivityViewController.m */,
 			);
 			name = Activities;
 			sourceTree = "<group>";
@@ -957,6 +962,7 @@
 				E777CD0C11A247E700212DDE /* ActivitiesViewController.m in Sources */,
 				E777CD6611A2517F00212DDE /* PlaySoundFile.m in Sources */,
 				E777CD9511A2588A00212DDE /* BouncingBall.m in Sources */,
+				E7A253B611A8E6E000F8773D /* ActivityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

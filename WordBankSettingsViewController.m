@@ -565,7 +565,7 @@
 
 - (IBAction)quitWordBank:(id)sender {
 	FUNCTION_LOG(@"Quit word bank");
-	[wordBankViewController quitWordBank:sender];
+	[wordBankViewController quitActivity:sender];
 }
 
 @end
