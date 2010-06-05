@@ -24,6 +24,13 @@
 		E777CD9211A2587900212DDE /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E777CD9111A2587900212DDE /* ball.png */; };
 		E777CD9511A2588A00212DDE /* BouncingBall.m in Sources */ = {isa = PBXBuildFile; fileRef = E777CD9411A2588A00212DDE /* BouncingBall.m */; };
 		E7A253B611A8E6E000F8773D /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A253B411A8E6E000F8773D /* ActivityViewController.m */; };
+		E7A254D711AA3FD800F8773D /* CleanUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A254D511AA3FD800F8773D /* CleanUpViewController.m */; };
+		E7A254D811AA3FD800F8773D /* CleanUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A254D611AA3FD800F8773D /* CleanUpViewController.xib */; };
+		E7A254DB11AA400E00F8773D /* CleanUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */; };
+		E7A2551E11AA426100F8773D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A2551D11AA426100F8773D /* QuartzCore.framework */; };
+		E7A2554B11AA458F00F8773D /* CleanUpTarget.png in Resources */ = {isa = PBXBuildFile; fileRef = E7A2554A11AA458F00F8773D /* CleanUpTarget.png */; };
+		E7A2565611AB86BC00F8773D /* FinishedPuttingAway.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7A2565411AB86BC00F8773D /* FinishedPuttingAway.wav */; };
+		E7A2565711AB86BC00F8773D /* PutAway.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7A2565511AB86BC00F8773D /* PutAway.wav */; };
 		E7C268CF1187EFB80054600F /* WordBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C268CD1187EFB80054600F /* WordBankViewController.m */; };
 		E7C268D01187EFB80054600F /* WordBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C268CE1187EFB80054600F /* WordBankViewController.xib */; };
 		E7C2690B1187F5EF0054600F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C2690A1187F5EF0054600F /* Utility.m */; };
@@ -32,6 +39,8 @@
 		E7C269C111888A7B0054600F /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C269BD11888A7B0054600F /* Word.m */; };
 		E7C26B18118B98DA0054600F /* WordBankSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C26B16118B98DA0054600F /* WordBankSettingsViewController.m */; };
 		E7C26B19118B98DA0054600F /* WordBankSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C26B17118B98DA0054600F /* WordBankSettingsViewController.xib */; };
+		E7E0704911B458E400E9869B /* CleanUpSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */; };
+		E7E0704A11B458E400E9869B /* CleanUpSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E0704811B458E400E9869B /* CleanUpSettingsViewController.xib */; };
 		E7E39E7B1190796E0021EEC3 /* WordBankWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */; };
 		E7E39E7C1190796E0021EEC3 /* WordBankWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */; };
 		E7E39F49119132410021EEC3 /* WordBankSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E39F48119132410021EEC3 /* WordBankSettings.m */; };
@@ -167,6 +176,15 @@
 		E777CD9411A2588A00212DDE /* BouncingBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncingBall.m; sourceTree = "<group>"; };
 		E7A253B311A8E6E000F8773D /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		E7A253B411A8E6E000F8773D /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		E7A254D411AA3FD800F8773D /* CleanUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanUpViewController.h; sourceTree = "<group>"; };
+		E7A254D511AA3FD800F8773D /* CleanUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanUpViewController.m; sourceTree = "<group>"; };
+		E7A254D611AA3FD800F8773D /* CleanUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CleanUpViewController.xib; sourceTree = "<group>"; };
+		E7A254D911AA400E00F8773D /* CleanUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanUpView.h; sourceTree = "<group>"; };
+		E7A254DA11AA400E00F8773D /* CleanUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanUpView.m; sourceTree = "<group>"; };
+		E7A2551D11AA426100F8773D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E7A2554A11AA458F00F8773D /* CleanUpTarget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CleanUpTarget.png; sourceTree = "<group>"; };
+		E7A2565411AB86BC00F8773D /* FinishedPuttingAway.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = FinishedPuttingAway.wav; path = "sounds/Clean Up/FinishedPuttingAway.wav"; sourceTree = "<group>"; };
+		E7A2565511AB86BC00F8773D /* PutAway.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = PutAway.wav; path = "sounds/Clean Up/PutAway.wav"; sourceTree = "<group>"; };
 		E7C268CC1187EFB80054600F /* WordBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankViewController.h; sourceTree = "<group>"; };
 		E7C268CD1187EFB80054600F /* WordBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankViewController.m; sourceTree = "<group>"; };
 		E7C268CE1187EFB80054600F /* WordBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankViewController.xib; sourceTree = "<group>"; };
@@ -181,6 +199,9 @@
 		E7C26B15118B98DA0054600F /* WordBankSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankSettingsViewController.h; sourceTree = "<group>"; };
 		E7C26B16118B98DA0054600F /* WordBankSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankSettingsViewController.m; sourceTree = "<group>"; };
 		E7C26B17118B98DA0054600F /* WordBankSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankSettingsViewController.xib; sourceTree = "<group>"; };
+		E7E0704611B458E400E9869B /* CleanUpSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanUpSettingsViewController.h; sourceTree = "<group>"; };
+		E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanUpSettingsViewController.m; sourceTree = "<group>"; };
+		E7E0704811B458E400E9869B /* CleanUpSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CleanUpSettingsViewController.xib; sourceTree = "<group>"; };
 		E7E39E781190796E0021EEC3 /* WordBankWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankWordsViewController.h; sourceTree = "<group>"; };
 		E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankWordsViewController.m; sourceTree = "<group>"; };
 		E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankWordsViewController.xib; sourceTree = "<group>"; };
@@ -373,6 +394,7 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
 				E7E3A3A71195183A0021EEC3 /* AVFoundation.framework in Frameworks */,
+				E7A2551E11AA426100F8773D /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +462,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7A2551D11AA426100F8773D /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -465,9 +488,36 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		E7A254D111AA3F2E00F8773D /* Clean Up */ = {
+			isa = PBXGroup;
+			children = (
+				E7A2564E11AB867E00F8773D /* sounds */,
+				E7A2554A11AA458F00F8773D /* CleanUpTarget.png */,
+				E7A254D411AA3FD800F8773D /* CleanUpViewController.h */,
+				E7A254D511AA3FD800F8773D /* CleanUpViewController.m */,
+				E7A254D611AA3FD800F8773D /* CleanUpViewController.xib */,
+				E7A254D911AA400E00F8773D /* CleanUpView.h */,
+				E7A254DA11AA400E00F8773D /* CleanUpView.m */,
+				E7E0704611B458E400E9869B /* CleanUpSettingsViewController.h */,
+				E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */,
+				E7E0704811B458E400E9869B /* CleanUpSettingsViewController.xib */,
+			);
+			name = "Clean Up";
+			sourceTree = "<group>";
+		};
+		E7A2564E11AB867E00F8773D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E7A2565411AB86BC00F8773D /* FinishedPuttingAway.wav */,
+				E7A2565511AB86BC00F8773D /* PutAway.wav */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
 		E7C268CB1187EF810054600F /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				E7A254D111AA3F2E00F8773D /* Clean Up */,
 				E7E3A3EA119526440021EEC3 /* Voice Play */,
 				E7E3A1CE1193C46F0021EEC3 /* Congratulations */,
 				E7C268D41187F0500054600F /* Word Bank */,
@@ -837,6 +887,11 @@
 				E777CD0D11A247E700212DDE /* ActivitiesViewController.xib in Resources */,
 				E777CD6911A251D200212DDE /* HiDaddy.mp3 in Resources */,
 				E777CD9211A2587900212DDE /* ball.png in Resources */,
+				E7A254D811AA3FD800F8773D /* CleanUpViewController.xib in Resources */,
+				E7A2554B11AA458F00F8773D /* CleanUpTarget.png in Resources */,
+				E7A2565611AB86BC00F8773D /* FinishedPuttingAway.wav in Resources */,
+				E7A2565711AB86BC00F8773D /* PutAway.wav in Resources */,
+				E7E0704A11B458E400E9869B /* CleanUpSettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,6 +1018,9 @@
 				E777CD6611A2517F00212DDE /* PlaySoundFile.m in Sources */,
 				E777CD9511A2588A00212DDE /* BouncingBall.m in Sources */,
 				E7A253B611A8E6E000F8773D /* ActivityViewController.m in Sources */,
+				E7A254D711AA3FD800F8773D /* CleanUpViewController.m in Sources */,
+				E7A254DB11AA400E00F8773D /* CleanUpView.m in Sources */,
+				E7E0704911B458E400E9869B /* CleanUpSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TapToTeachAppDelegate.h"
+#import "Utility.h"
 
 @class ActivitiesViewController;
 

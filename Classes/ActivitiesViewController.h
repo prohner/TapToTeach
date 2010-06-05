@@ -11,6 +11,7 @@
 
 @class WordBankViewController;
 @class ActivityViewController;
+@class CleanUpViewController;
 
 @interface ActivitiesViewController : UIViewController {
 
@@ -19,12 +20,14 @@
 	UIButton *infoButton;
 	UIPopoverController *popover;
 	WordBankViewController *wordBankViewController;
+	CleanUpViewController *cleanUpViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *welcomeLabel;
 @property (nonatomic, retain) IBOutlet UIButton *infoButton;
 
 - (IBAction)buttonPressedForWordBank:(id)sender;
+- (IBAction)buttonPressedForCleanUp:(id)sender;
 - (void)loadViewController:(ActivityViewController **)ctrl withNibAndClassName:(NSString *)nibAndClassName;
 - (IBAction)infoButtonPressed:(id)sender;
 

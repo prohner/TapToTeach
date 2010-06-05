@@ -9,6 +9,7 @@
 #import "ActivitiesViewController.h"
 #import "WordBankViewController.h"
 #import "SettingsViewController.h"
+#import "CleanUpViewController.h"
 
 @implementation ActivitiesViewController
 
@@ -77,6 +78,10 @@
 
 - (IBAction)buttonPressedForWordBank:(id)sender {
 	[self loadViewController:&wordBankViewController withNibAndClassName:@"WordBankViewController"];
+}
+
+- (IBAction)buttonPressedForCleanUp:(id)sender {
+	[self loadViewController:&cleanUpViewController withNibAndClassName:@"CleanUpViewController"];
 }
 
 //- (IBAction)buttonPressedForVoicePlay:(id)sender {

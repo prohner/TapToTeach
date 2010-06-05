@@ -32,7 +32,6 @@
 	FUNCTION_LOG(@"congrats with %@", class);
 	[congratsClasses release];
 	
-	class = @"BouncingBall";
 	return class;
 }
 
