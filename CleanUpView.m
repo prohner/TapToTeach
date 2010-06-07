@@ -9,9 +9,16 @@
 #import "CleanUpView.h"
 #import <QuartzCore/QuartzCore.h>
 #import <AVFoundation/AVFoundation.h>
+#import "CleanUpSettings.h"
+#import "CleanUpPicture.h"
 
 #define RANDOM_FUNC		arc4random
 #define IMAGE_SIZE		200
+
+@interface UIImage (Resize)
+	- (UIImage*)scaleToSize:(CGSize)size;
+	- (UIImage *)imageByScalingProportionallyToSize:(CGSize)targetSize;
+@end
 
 @implementation UIImage (Resizing)
 //Read more: http://www.bukisa.com/articles/240216_iphone-resizing-a-uiimage#ixzz0px7HyDfw
@@ -25,6 +32,68 @@
 	UIGraphicsEndImageContext();
 	return scaledImage;
 }
+
+- (UIImage *)imageByScalingProportionallyToSize:(CGSize)targetSize {
+	
+	UIImage *sourceImage = self;
+	UIImage *newImage = nil;
+	
+	CGSize imageSize = sourceImage.size;
+	CGFloat width = imageSize.width;
+	CGFloat height = imageSize.height;
+	
+	CGFloat targetWidth = targetSize.width;
+	CGFloat targetHeight = targetSize.height;
+	
+	CGFloat scaleFactor = 0.0;
+	CGFloat scaledWidth = targetWidth;
+	CGFloat scaledHeight = targetHeight;
+	
+	CGPoint thumbnailPoint = CGPointMake(0.0,0.0);
+	
+	if (CGSizeEqualToSize(imageSize, targetSize) == NO) {
+		
+        CGFloat widthFactor = targetWidth / width;
+        CGFloat heightFactor = targetHeight / height;
+		
+        if (widthFactor < heightFactor) 
+			scaleFactor = widthFactor;
+        else
+			scaleFactor = heightFactor;
+		
+        scaledWidth  = width * scaleFactor;
+        scaledHeight = height * scaleFactor;
+		
+        // center the image
+		
+        if (widthFactor < heightFactor) {
+			thumbnailPoint.y = (targetHeight - scaledHeight) * 0.5; 
+        } else if (widthFactor > heightFactor) {
+			thumbnailPoint.x = (targetWidth - scaledWidth) * 0.5;
+        }
+	}
+	
+	
+	// this is actually the interesting part:
+	
+	UIGraphicsBeginImageContext(targetSize);
+	
+	CGRect thumbnailRect = CGRectZero;
+	thumbnailRect.origin = thumbnailPoint;
+	thumbnailRect.size.width  = scaledWidth;
+	thumbnailRect.size.height = scaledHeight;
+	
+	[sourceImage drawInRect:thumbnailRect];
+	
+	newImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	
+	if(newImage == nil) NSLog(@"could not scale image");
+	
+	
+	return newImage ;
+}
+
 @end
 
 @implementation CleanUpView
@@ -40,6 +109,7 @@
 //}
 
 - (id)initWithCoder:(NSCoder *)coder {
+	appDelegate = [[UIApplication sharedApplication] delegate];
     if (self = [super initWithCoder:coder]) {
 		srandomdev();
 		draggablesArray = [[NSMutableArray alloc] init];
@@ -68,12 +138,21 @@
 //		x.position = CGPointMake(210, 210);
 //		x.contents = (id)[[self makeAnImageOfWidth:10 andHeight:10] CGImage];
 //		[self.layer addSublayer:x];
-		
+
 		int imageSize = IMAGE_SIZE;
 		
-		for (int i = 0; i < 10; i++) {
+		CleanUpSettings *cleanUpSettings = [appDelegate cleanUpSettings];
+		int numberOfImagesToMakeUp = [cleanUpSettings.numberOfImages intValue] - [cleanUpSettings.pictures count];
+		
+		for (int i = numberOfImagesToMakeUp; i > 0; i--) {
 			[self addImage:[self makeAnImageOfWidth:imageSize andHeight:imageSize]];
 		}
+		
+		for (CleanUpPicture *cleanUpPicture in cleanUpSettings.pictures) {
+			UIImage *image = [UIImage imageWithData:cleanUpPicture.pictureData];
+			image = [image imageByScalingProportionallyToSize:CGSizeMake(imageSize, imageSize)];
+			[self addImage:image];
+		}		
 		
 		UITapGestureRecognizer *tapGesture2 = [[UITapGestureRecognizer alloc]
 											  initWithTarget:self action:@selector(infoButtonPressed:)];
@@ -149,7 +228,7 @@
 //	UIGraphicsEndImageContext();
 
 	item.position = CGPointMake(x, y);
-	item.contents = (id)[[newImage scaleToSize: CGSizeMake(IMAGE_SIZE, IMAGE_SIZE)] CGImage];
+	item.contents = (id)[[newImage imageByScalingProportionallyToSize: CGSizeMake(IMAGE_SIZE, IMAGE_SIZE)] CGImage];
 	[item setValue:@"sheet" forKey:@"kind"];
 	CGFloat r = (1000 - (RANDOM_FUNC() % 2000)) / 1000.0f;
 	CGFloat angle = r * M_PI_2;

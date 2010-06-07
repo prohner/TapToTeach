@@ -9,13 +9,15 @@
 #import "CleanUpSettingsViewController.h"
 #import "CleanUpViewController.h"
 #import "CleanUpView.h"
+#import "CleanUpSettings.h"
+#import "CleanUpPicture.h"
 
 #define SECTION_GENERAL		0
 #define SECTION_IMAGES		1
 
 @implementation CleanUpSettingsViewController
 
-@synthesize cleanUpViewController, quitActivityButton;
+@synthesize cleanUpViewController, quitActivityButton, imageSizeSlider, imageCountSlider;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -31,6 +33,9 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	self.title = @"Settings";
 	self.navigationItem.leftBarButtonItem = quitActivityButton;
+	
+	appDelegate = [[UIApplication sharedApplication] delegate];
+	pictures = [[[appDelegate cleanUpSettings].pictures allObjects] mutableCopy];
 }
 
 
@@ -73,7 +78,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 2;
+	int rowCount = 0;
+	switch (section) {
+		case SECTION_GENERAL:
+			rowCount = 2;
+			break;
+		case SECTION_IMAGES:
+			rowCount = [pictures count];
+			if (self.tableView.editing) {
+				rowCount++;
+			}
+			break;
+	}
+    return rowCount;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -90,19 +107,53 @@
 	}
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == SECTION_IMAGES) {
+		return 60.0f;
+	}
+	
+	return 40.0f;
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+    NSString *CellIdentifier = [[NSString alloc] initWithFormat:@"Cell %i.%i", indexPath.section, indexPath.row];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+
+		if (indexPath.section == SECTION_GENERAL) {
+			if (indexPath.row == 0) {
+				cell.textLabel.text = @"Image Sizes";
+				[imageSizeSlider setFrame:CGRectMake(140, 10, 160, 20)];
+				[cell addSubview:imageSizeSlider];
+			} else if (indexPath.row == 1) {
+				cell.textLabel.text = @"Image Count";
+				[imageCountSlider setFrame:CGRectMake(140, 10, 160, 20)];
+				[cell addSubview:imageCountSlider];
+			}
+		} else if (indexPath.section == SECTION_IMAGES) {
+			UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(80, 2, 56, 56)];
+			iv.tag = 1;
+			[cell addSubview:iv];
+		}
+
+				
+	}
     
     // Configure the cell...
-    
+	if (indexPath.section == SECTION_IMAGES) {
+		if (indexPath.row == [pictures count]) {
+			cell.textLabel.text = @"add a picture";
+		} else {
+			UIImageView *iv = (UIImageView *)[cell viewWithTag:1];
+			CleanUpPicture *cup = [pictures objectAtIndex:indexPath.row];
+			iv.image = [UIImage imageWithData:cup.pictureData];
+		}
+	}
+
     return cell;
 }
 
@@ -118,20 +169,57 @@
 }
 
 
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    [self.tableView setEditing:editing animated:animated];
+	
+	NSArray *paths = [NSArray arrayWithObjects:[NSIndexPath 
+												indexPathForRow:[pictures count]
+												inSection:SECTION_IMAGES], 
+					  nil];
+	
+	[self.tableView beginUpdates];
+	
+    if( editing )
+        [self.tableView insertRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationBottom];
+    else
+        [self.tableView deleteRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationBottom];
+	
+	[self.tableView endUpdates];
+	
+    //[paths release];
+}
 
-/*
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+ 	
+    if( indexPath.section == SECTION_IMAGES && indexPath.row == [pictures count] )
+        return UITableViewCellEditingStyleInsert;
+	
+    return UITableViewCellEditingStyleDelete;
+}
+
+
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+		CleanUpSettings *settings = [appDelegate cleanUpSettings];
+		CleanUpPicture *cup = [pictures objectAtIndex:indexPath.row];
+		[settings removePicturesObject:cup];
+		[appDelegate saveData];
+		[pictures removeObjectAtIndex:indexPath.row];
+		
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+		[self chooseImage];
     }   
 }
-*/
+
 
 
 /*
@@ -152,6 +240,10 @@
 
 #pragma mark -
 #pragma mark Table view delegate
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	return nil;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
@@ -229,6 +321,17 @@
 - (void)useImage:(UIImage*)theImage {
 	FUNCTION_LOG();
 	[((CleanUpView *)cleanUpViewController.view) addImage:theImage];
+	
+	CleanUpSettings *settings = [appDelegate cleanUpSettings];
+	
+	CleanUpPicture *newPicture = (CleanUpPicture *)[NSEntityDescription insertNewObjectForEntityForName:@"CleanUpPicture" 
+															   inManagedObjectContext:[appDelegate managedObjectContext]];
+	newPicture.pictureData = UIImageJPEGRepresentation(theImage, 1.0);
+
+	[settings addPicturesObject:newPicture];
+	
+	[appDelegate saveData];
+		
 	[cleanUpViewController.popover dismissPopoverAnimated:YES];
 }
 

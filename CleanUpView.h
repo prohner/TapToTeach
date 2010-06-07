@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Utility.h"
+#import "TapToTeachAppDelegate.h"
 
 @interface CleanUpView : UIView {
 	CALayer *deskLayer;
@@ -21,6 +22,7 @@
 	CGPoint dragLastPoint;
 	
 	IBOutlet UIView *infoButtonView;
+	TapToTeachAppDelegate *appDelegate;
 }
 
 @property (nonatomic, retain) IBOutlet UIView *infoButtonView;

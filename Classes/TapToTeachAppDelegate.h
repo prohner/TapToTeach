@@ -16,6 +16,7 @@
 @class WordBankViewController;
 @class VoicePlayViewController;
 @class ActivitiesViewController;
+@class CleanUpSettings;
 
 @interface TapToTeachAppDelegate : NSObject <UIApplicationDelegate> {
 
@@ -47,6 +48,7 @@
 - (NSString *)applicationDocumentsDirectory;
 
 - (WordBankSettings *)wordBankSettings;
+- (CleanUpSettings *)cleanUpSettings;
 - (NSArray *)wordBanks;
 - (void)saveData;
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ActivityViewController.h"
+#import "TapToTeachAppDelegate.h"
 
 @interface CleanUpViewController : ActivityViewController {
 	UIPopoverController *popover;

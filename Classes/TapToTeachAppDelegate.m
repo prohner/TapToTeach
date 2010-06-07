@@ -10,6 +10,7 @@
 #import "WordBankViewController.h"
 #import "SettingsViewController.h"
 #import "ActivitiesViewController.h"
+#import "CleanUpSettings.h"
 
 @implementation TapToTeachAppDelegate
 
@@ -232,6 +233,31 @@
 	
 	return array;
 }
+
+- (CleanUpSettings *)cleanUpSettings {
+	CleanUpSettings *cleanUpSettings;
+	NSEntityDescription *cleanUpSettingsEntity = [[[self managedObjectModel] entitiesByName] objectForKey:@"CleanUpSettings"];
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	[request setEntity:cleanUpSettingsEntity];
+	
+	NSError *error = nil;
+	NSArray *array = [[self managedObjectContext] executeFetchRequest:request error:&error];
+	
+	if ((error != nil) || (array == nil)) {
+		NSLog(@"Error while fetching\n%@",
+			  ([error localizedDescription] != nil)
+			  ? [error localizedDescription] : @"Unknown Error");
+		exit(1);
+	}
+	
+	if ([array count] > 0) {
+		cleanUpSettings = [array objectAtIndex:0];
+	} else {
+		cleanUpSettings = (CleanUpSettings *)[NSEntityDescription insertNewObjectForEntityForName:@"CleanUpSettings" inManagedObjectContext:[self managedObjectContext]];
+	}
+	return cleanUpSettings;
+}
+
 
 - (void)saveData {
 	NSError *error = nil;

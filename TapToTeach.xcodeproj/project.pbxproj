@@ -41,6 +41,8 @@
 		E7C26B19118B98DA0054600F /* WordBankSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C26B17118B98DA0054600F /* WordBankSettingsViewController.xib */; };
 		E7E0704911B458E400E9869B /* CleanUpSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */; };
 		E7E0704A11B458E400E9869B /* CleanUpSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E0704811B458E400E9869B /* CleanUpSettingsViewController.xib */; };
+		E7E071A111BC9AE900E9869B /* CleanUpPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E071A011BC9AE900E9869B /* CleanUpPicture.m */; };
+		E7E071AA11BC9BA200E9869B /* CleanUpSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E071A911BC9BA200E9869B /* CleanUpSettings.m */; };
 		E7E39E7B1190796E0021EEC3 /* WordBankWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */; };
 		E7E39E7C1190796E0021EEC3 /* WordBankWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */; };
 		E7E39F49119132410021EEC3 /* WordBankSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E39F48119132410021EEC3 /* WordBankSettings.m */; };
@@ -202,6 +204,10 @@
 		E7E0704611B458E400E9869B /* CleanUpSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanUpSettingsViewController.h; sourceTree = "<group>"; };
 		E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanUpSettingsViewController.m; sourceTree = "<group>"; };
 		E7E0704811B458E400E9869B /* CleanUpSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CleanUpSettingsViewController.xib; sourceTree = "<group>"; };
+		E7E0719F11BC9AE900E9869B /* CleanUpPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanUpPicture.h; sourceTree = "<group>"; };
+		E7E071A011BC9AE900E9869B /* CleanUpPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanUpPicture.m; sourceTree = "<group>"; };
+		E7E071A811BC9BA200E9869B /* CleanUpSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanUpSettings.h; sourceTree = "<group>"; };
+		E7E071A911BC9BA200E9869B /* CleanUpSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanUpSettings.m; sourceTree = "<group>"; };
 		E7E39E781190796E0021EEC3 /* WordBankWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBankWordsViewController.h; sourceTree = "<group>"; };
 		E7E39E791190796E0021EEC3 /* WordBankWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBankWordsViewController.m; sourceTree = "<group>"; };
 		E7E39E7A1190796E0021EEC3 /* WordBankWordsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBankWordsViewController.xib; sourceTree = "<group>"; };
@@ -1021,6 +1027,8 @@
 				E7A254D711AA3FD800F8773D /* CleanUpViewController.m in Sources */,
 				E7A254DB11AA400E00F8773D /* CleanUpView.m in Sources */,
 				E7E0704911B458E400E9869B /* CleanUpSettingsViewController.m in Sources */,
+				E7E071A111BC9AE900E9869B /* CleanUpPicture.m in Sources */,
+				E7E071AA11BC9BA200E9869B /* CleanUpSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,6 +1125,10 @@
 			isa = XCVersionGroup;
 			children = (
 				28C3AD890F43EF2300507BA6 /* TapToTeach.xcdatamodel */,
+				E7E071A811BC9BA200E9869B /* CleanUpSettings.h */,
+				E7E071A911BC9BA200E9869B /* CleanUpSettings.m */,
+				E7E0719F11BC9AE900E9869B /* CleanUpPicture.h */,
+				E7E071A011BC9AE900E9869B /* CleanUpPicture.m */,
 				E7E39F47119132410021EEC3 /* WordBankSettings.h */,
 				E7E39F48119132410021EEC3 /* WordBankSettings.m */,
 				E7C269B811888A7B0054600F /* SystemSettings.h */,
