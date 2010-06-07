@@ -46,7 +46,7 @@
 					chosenTableWidths = (
 						103.000000,
 						22.000000,
-						66.080078,
+						63.080078,
 					);
 				};
 				UIContextForLayoutManager = {
@@ -56,8 +56,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {659, 218}}",
-							"{{664, 0}, {345, 218}}",
+							"{{0, 0}, {522, 220}}",
+							"{{527, 0}, {273, 220}}",
 						);
 					};
 					diagramSplitGeometry = {
@@ -66,8 +66,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {1009, 220}}",
-							"{{0, 225}, {1009, 295}}",
+							"{{0, 0}, {800, 220}}",
+							"{{0, 225}, {800, 512}}",
 						);
 					};
 					tableSplitGeometry = {
@@ -76,8 +76,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {216, 218}}",
-							"{{221, 0}, {436, 218}}",
+							"{{0, 0}, {213, 220}}",
+							"{{218, 0}, {304, 220}}",
 						);
 					};
 				};
@@ -166,7 +166,7 @@
 					chosenTableWidthsPT = (
 						128.000000,
 						108.110840,
-						173.570801,
+						96.570801,
 					);
 					chosenTableWidthsRT = (
 						128.000000,
@@ -174,7 +174,7 @@
 					);
 				};
 				"xdesign model browser state key - shown/hidden" = 1;
-				"xdesign model diagram view visible rect key" = "{{-137, 0}, {994, 280}}";
+				"xdesign model diagram view visible rect key" = "{{-33, 0}, {785, 497}}";
 			};
 		};
 	};
@@ -200,10 +200,10 @@
 			E7A2533B11A71F8700F8773D /* WordBankViewController.m:54 */,
 			E7A2534011A71F9C00F8773D /* WordBankViewController.m:429 */,
 			E7A2534211A71FA000F8773D /* WordBankViewController.m:441 */,
-			E7A255DF11AA522300F8773D /* CleanUpView.m:283 */,
+			E7A255DF11AA522300F8773D /* CleanUpView.m:277 */,
 			E7A2567611AB8D0800F8773D /* CleanUpView.m:149 */,
 			E7E071BE11BC9E9000E9869B /* CleanUpView.m:147 */,
-			E7E071E111BC9EF500E9869B /* CleanUpSettingsViewController.m:323 */,
+			E7E071E111BC9EF500E9869B /* CleanUpSettingsViewController.m:326 */,
 		);
 		codeSenseManager = E7C268971187E2560054600F /* Code sense */;
 		executables = (
@@ -718,6 +718,19 @@
 			E7E0725411BCAC0100E9869B /* PBXTextBookmark */ = E7E0725411BCAC0100E9869B /* PBXTextBookmark */;
 			E7E0725511BCAC0100E9869B /* PBXTextBookmark */ = E7E0725511BCAC0100E9869B /* PBXTextBookmark */;
 			E7E0725611BCAC0100E9869B /* PBXTextBookmark */ = E7E0725611BCAC0100E9869B /* PBXTextBookmark */;
+			E7E0725911BCACD900E9869B /* PBXTextBookmark */ = E7E0725911BCACD900E9869B /* PBXTextBookmark */;
+			E7E0725C11BCAE2200E9869B /* PBXTextBookmark */ = E7E0725C11BCAE2200E9869B /* PBXTextBookmark */;
+			E7E0725D11BCAE2200E9869B /* PBXTextBookmark */ = E7E0725D11BCAE2200E9869B /* PBXTextBookmark */;
+			E7E0725E11BCAE2200E9869B /* PBXTextBookmark */ = E7E0725E11BCAE2200E9869B /* PBXTextBookmark */;
+			E7E0725F11BCAE2200E9869B /* PBXTextBookmark */ = E7E0725F11BCAE2200E9869B /* PBXTextBookmark */;
+			E7E0727611BCB0D200E9869B /* PBXTextBookmark */ = E7E0727611BCB0D200E9869B /* PBXTextBookmark */;
+			E7E0727711BCB0D200E9869B /* PBXTextBookmark */ = E7E0727711BCB0D200E9869B /* PBXTextBookmark */;
+			E7E0727811BCB0D200E9869B /* PBXTextBookmark */ = E7E0727811BCB0D200E9869B /* PBXTextBookmark */;
+			E7E0727911BCB0D200E9869B /* XDModelBookmark */ = E7E0727911BCB0D200E9869B /* XDModelBookmark */;
+			E7E0727A11BCB0D200E9869B /* PBXTextBookmark */ = E7E0727A11BCB0D200E9869B /* PBXTextBookmark */;
+			E7E0727B11BCB0D200E9869B /* PBXTextBookmark */ = E7E0727B11BCB0D200E9869B /* PBXTextBookmark */;
+			E7E0727C11BCB0D200E9869B /* PBXTextBookmark */ = E7E0727C11BCB0D200E9869B /* PBXTextBookmark */;
+			E7E0728111BCB14100E9869B /* PBXTextBookmark */ = E7E0728111BCB14100E9869B /* PBXTextBookmark */;
 			E7E3A083119275E50021EEC3 = E7E3A083119275E50021EEC3 /* PBXTextBookmark */;
 			E7E3A468119533510021EEC3 = E7E3A468119533510021EEC3 /* PBXTextBookmark */;
 			E7E3A488119679950021EEC3 = E7E3A488119679950021EEC3 /* PBXTextBookmark */;
@@ -776,7 +789,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {754, 780}}";
 			sepNavSelRange = "{1651, 2}";
-			sepNavVisRange = "{47, 1705}";
+			sepNavVisRange = "{92, 1660}";
 		};
 	};
 	E757CE48119A69820099327A /* SettingsViewController.m */ = {
@@ -1325,9 +1338,9 @@
 	};
 	E7A254DA11AA400E00F8773D /* CleanUpView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1076, 6071}}";
-			sepNavSelRange = "{7148, 0}";
-			sepNavVisRange = "{6175, 1627}";
+			sepNavIntBoundsRect = "{{0, 0}, {1076, 6123}}";
+			sepNavSelRange = "{6807, 0}";
+			sepNavVisRange = "{5213, 1957}";
 		};
 	};
 	E7A254E611AA413A00F8773D /* PBXTextBookmark */ = {
@@ -1676,7 +1689,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 44";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1645;
 		vrLoc = 709;
@@ -1686,7 +1699,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 52";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 709;
@@ -1706,7 +1719,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 46";
 		rLen = 0;
-		rLoc = 5187;
+		rLoc = 5189;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 268;
@@ -1768,7 +1781,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 79";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1375;
 		vrLoc = 1236;
@@ -1778,7 +1791,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 52";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1359;
 		vrLoc = 1155;
@@ -1798,7 +1811,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 64";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1364;
 		vrLoc = 1336;
@@ -1808,7 +1821,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 79";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 1232;
@@ -1818,7 +1831,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 59";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1473;
 		vrLoc = 1232;
@@ -1828,7 +1841,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 67";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1502;
 		vrLoc = 1232;
@@ -1838,7 +1851,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 62";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 1232;
@@ -1848,7 +1861,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 62";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 1232;
@@ -1858,7 +1871,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 58";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1552;
 		vrLoc = 1232;
@@ -1868,7 +1881,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 69";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 1336;
@@ -1878,7 +1891,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 67";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1656;
 		vrLoc = 1336;
@@ -1888,7 +1901,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 56";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1483;
 		vrLoc = 1106;
@@ -1898,7 +1911,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 56";
 		rLen = 0;
-		rLoc = 14733;
+		rLoc = 14426;
 		rType = 0;
 		vrLen = 1481;
 		vrLoc = 1106;
@@ -1928,7 +1941,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 57";
 		rLen = 0;
-		rLoc = 9918;
+		rLoc = 9611;
 		rType = 0;
 		vrLen = 1521;
 		vrLoc = 659;
@@ -1968,7 +1981,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 61";
 		rLen = 0;
-		rLoc = 7936;
+		rLoc = 7629;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 659;
@@ -1978,7 +1991,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 106";
 		rLen = 156;
-		rLoc = 10232;
+		rLoc = 9925;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 2139;
@@ -2003,7 +2016,7 @@
 		vrLen = 482;
 		vrLoc = 0;
 	};
-	E7A255DF11AA522300F8773D /* CleanUpView.m:283 */ = {
+	E7A255DF11AA522300F8773D /* CleanUpView.m:277 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2015,7 +2028,7 @@
 		functionName = "-handlePanGesture:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 283;
+		lineNumber = 277;
 		location = TapToTeach;
 		modificationTime = 297576463.150061;
 		originalNumberOfMultipleMatches = 1;
@@ -2036,7 +2049,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 75";
 		rLen = 0;
-		rLoc = 8983;
+		rLoc = 8676;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 1550;
@@ -2046,7 +2059,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 75";
 		rLen = 0;
-		rLoc = 8983;
+		rLoc = 8676;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 1550;
@@ -2056,7 +2069,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 77";
 		rLen = 0;
-		rLoc = 8656;
+		rLoc = 8349;
 		rType = 0;
 		vrLen = 1754;
 		vrLoc = 1469;
@@ -2076,7 +2089,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 77";
 		rLen = 0;
-		rLoc = 8671;
+		rLoc = 8364;
 		rType = 0;
 		vrLen = 1690;
 		vrLoc = 1533;
@@ -2086,7 +2099,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 87";
 		rLen = 135;
-		rLoc = 8983;
+		rLoc = 8676;
 		rType = 0;
 		vrLen = 1493;
 		vrLoc = 1873;
@@ -2106,7 +2119,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 63";
 		rLen = 0;
-		rLoc = 7842;
+		rLoc = 7535;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 1372;
@@ -2126,7 +2139,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 64";
 		rLen = 64;
-		rLoc = 7610;
+		rLoc = 7303;
 		rType = 0;
 		vrLen = 1708;
 		vrLoc = 757;
@@ -2136,7 +2149,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 66";
 		rLen = 0;
-		rLoc = 7691;
+		rLoc = 7384;
 		rType = 0;
 		vrLen = 1673;
 		vrLoc = 912;
@@ -2146,7 +2159,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 61";
 		rLen = 0;
-		rLoc = 5187;
+		rLoc = 5189;
 		rType = 0;
 		vrLen = 1729;
 		vrLoc = 912;
@@ -2156,7 +2169,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 71";
 		rLen = 0;
-		rLoc = 7761;
+		rLoc = 7454;
 		rType = 0;
 		vrLen = 1731;
 		vrLoc = 912;
@@ -2166,7 +2179,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 76";
 		rLen = 0;
-		rLoc = 7932;
+		rLoc = 7625;
 		rType = 0;
 		vrLen = 1808;
 		vrLoc = 1866;
@@ -2196,7 +2209,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 142";
 		rLen = 67;
-		rLoc = 10771;
+		rLoc = 10464;
 		rType = 0;
 		vrLen = 1245;
 		vrLoc = 4277;
@@ -2236,7 +2249,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 142";
 		rLen = 67;
-		rLoc = 10771;
+		rLoc = 10464;
 		rType = 0;
 		vrLen = 1274;
 		vrLoc = 4248;
@@ -2246,7 +2259,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 147";
 		rLen = 0;
-		rLoc = 12842;
+		rLoc = 12535;
 		rType = 0;
 		vrLen = 1275;
 		vrLoc = 4248;
@@ -2256,7 +2269,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 147";
 		rLen = 0;
-		rLoc = 11031;
+		rLoc = 10724;
 		rType = 0;
 		vrLen = 1336;
 		vrLoc = 4248;
@@ -2266,7 +2279,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 147";
 		rLen = 0;
-		rLoc = 11028;
+		rLoc = 10721;
 		rType = 0;
 		vrLen = 1335;
 		vrLoc = 4248;
@@ -2276,7 +2289,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 149";
 		rLen = 0;
-		rLoc = 12842;
+		rLoc = 12535;
 		rType = 0;
 		vrLen = 1333;
 		vrLoc = 4248;
@@ -2286,7 +2299,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 147";
 		rLen = 0;
-		rLoc = 11034;
+		rLoc = 10727;
 		rType = 0;
 		vrLen = 1332;
 		vrLoc = 4248;
@@ -2326,7 +2339,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 232";
 		rLen = 0;
-		rLoc = 14718;
+		rLoc = 14411;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 6198;
@@ -2336,7 +2349,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 152";
 		rLen = 0;
-		rLoc = 11157;
+		rLoc = 10850;
 		rType = 0;
 		vrLen = 1317;
 		vrLoc = 4690;
@@ -2355,7 +2368,7 @@
 		isa = PBXTextBookmark;
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		rLen = 0;
-		rLoc = 342;
+		rLoc = 336;
 		rType = 1;
 	};
 	E7A2564911AB827C00F8773D /* PBXTextBookmark */ = {
@@ -2363,7 +2376,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 229";
 		rLen = 62;
-		rLoc = 14654;
+		rLoc = 14347;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 5903;
@@ -2373,7 +2386,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 144";
 		rLen = 0;
-		rLoc = 10443;
+		rLoc = 10136;
 		rType = 0;
 		vrLen = 1384;
 		vrLoc = 3480;
@@ -2413,7 +2426,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 113";
 		rLen = 0;
-		rLoc = 9265;
+		rLoc = 8958;
 		rType = 0;
 		vrLen = 1396;
 		vrLoc = 3268;
@@ -2423,7 +2436,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 113";
 		rLen = 0;
-		rLoc = 9265;
+		rLoc = 8958;
 		rType = 0;
 		vrLen = 1396;
 		vrLoc = 3268;
@@ -2433,7 +2446,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 113";
 		rLen = 0;
-		rLoc = 9358;
+		rLoc = 9051;
 		rType = 0;
 		vrLen = 1476;
 		vrLoc = 2803;
@@ -2443,7 +2456,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 225";
 		rLen = 0;
-		rLoc = 13006;
+		rLoc = 12699;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 6230;
@@ -2453,7 +2466,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 248";
 		rLen = 0;
-		rLoc = 13883;
+		rLoc = 13576;
 		rType = 0;
 		vrLen = 1387;
 		vrLoc = 6681;
@@ -2463,7 +2476,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 247";
 		rLen = 0;
-		rLoc = 13883;
+		rLoc = 13576;
 		rType = 0;
 		vrLen = 1387;
 		vrLoc = 6681;
@@ -2473,7 +2486,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 247";
 		rLen = 0;
-		rLoc = 13883;
+		rLoc = 13576;
 		rType = 0;
 		vrLen = 1389;
 		vrLoc = 6681;
@@ -2701,7 +2714,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 292";
 		rLen = 0;
-		rLoc = 13883;
+		rLoc = 13576;
 		rType = 0;
 		vrLen = 1511;
 		vrLoc = 8320;
@@ -2711,7 +2724,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 300";
 		rLen = 0;
-		rLoc = 14249;
+		rLoc = 13942;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 8320;
@@ -2721,7 +2734,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 300";
 		rLen = 0;
-		rLoc = 14249;
+		rLoc = 13942;
 		rType = 0;
 		vrLen = 1511;
 		vrLoc = 8320;
@@ -2731,7 +2744,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 298";
 		rLen = 0;
-		rLoc = 14141;
+		rLoc = 13834;
 		rType = 0;
 		vrLen = 1513;
 		vrLoc = 8320;
@@ -2751,7 +2764,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 203";
 		rLen = 0;
-		rLoc = 11181;
+		rLoc = 10874;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 6017;
@@ -2761,7 +2774,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 176";
 		rLen = 0;
-		rLoc = 9964;
+		rLoc = 9657;
 		rType = 0;
 		vrLen = 1455;
 		vrLoc = 4760;
@@ -2771,7 +2784,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 264";
 		rLen = 0;
-		rLoc = 12840;
+		rLoc = 12533;
 		rType = 0;
 		vrLen = 1201;
 		vrLoc = 7623;
@@ -2781,7 +2794,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 199";
 		rLen = 0;
-		rLoc = 10986;
+		rLoc = 10679;
 		rType = 0;
 		vrLen = 1404;
 		vrLoc = 5801;
@@ -2811,7 +2824,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 199";
 		rLen = 0;
-		rLoc = 10986;
+		rLoc = 10679;
 		rType = 0;
 		vrLen = 1384;
 		vrLoc = 5801;
@@ -3115,7 +3128,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 314";
 		rLen = 0;
-		rLoc = 14318;
+		rLoc = 14011;
 		rType = 0;
 		vrLen = 1472;
 		vrLoc = 9006;
@@ -3125,7 +3138,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 311";
 		rLen = 105;
-		rLoc = 14318;
+		rLoc = 14011;
 		rType = 0;
 		vrLen = 1496;
 		vrLoc = 9006;
@@ -3135,7 +3148,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 342";
 		rLen = 0;
-		rLoc = 14341;
+		rLoc = 14034;
 		rType = 0;
 		vrLen = 1499;
 		vrLoc = 10005;
@@ -3155,7 +3168,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 276";
 		rLen = 0;
-		rLoc = 13006;
+		rLoc = 12699;
 		rType = 0;
 		vrLen = 1661;
 		vrLoc = 8652;
@@ -3165,7 +3178,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 327";
 		rLen = 0;
-		rLoc = 14413;
+		rLoc = 14106;
 		rType = 0;
 		vrLen = 1733;
 		vrLoc = 9017;
@@ -3175,7 +3188,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 315";
 		rLen = 0;
-		rLoc = 14341;
+		rLoc = 14034;
 		rType = 0;
 		vrLen = 1758;
 		vrLoc = 9030;
@@ -3185,7 +3198,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 316";
 		rLen = 0;
-		rLoc = 14341;
+		rLoc = 14034;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 9030;
@@ -3195,7 +3208,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 327";
 		rLen = 0;
-		rLoc = 14413;
+		rLoc = 14106;
 		rType = 0;
 		vrLen = 1647;
 		vrLoc = 9470;
@@ -3205,7 +3218,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 310";
 		rLen = 0;
-		rLoc = 14308;
+		rLoc = 14001;
 		rType = 0;
 		vrLen = 1681;
 		vrLoc = 8997;
@@ -3215,7 +3228,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 310";
 		rLen = 0;
-		rLoc = 14308;
+		rLoc = 14001;
 		rType = 0;
 		vrLen = 1465;
 		vrLoc = 9782;
@@ -3225,7 +3238,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 310";
 		rLen = 0;
-		rLoc = 14308;
+		rLoc = 14001;
 		rType = 0;
 		vrLen = 1465;
 		vrLoc = 9782;
@@ -3235,7 +3248,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 328";
 		rLen = 0;
-		rLoc = 14413;
+		rLoc = 14106;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 10072;
@@ -3245,7 +3258,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 329";
 		rLen = 0;
-		rLoc = 14413;
+		rLoc = 14106;
 		rType = 0;
 		vrLen = 1459;
 		vrLoc = 9898;
@@ -3255,7 +3268,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 325";
 		rLen = 0;
-		rLoc = 14413;
+		rLoc = 14106;
 		rType = 0;
 		vrLen = 1341;
 		vrLoc = 10099;
@@ -3265,7 +3278,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 325";
 		rLen = 0;
-		rLoc = 14412;
+		rLoc = 14105;
 		rType = 0;
 		vrLen = 1230;
 		vrLoc = 10388;
@@ -3275,7 +3288,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 325";
 		rLen = 0;
-		rLoc = 14412;
+		rLoc = 14105;
 		rType = 0;
 		vrLen = 1574;
 		vrLoc = 4434;
@@ -3285,7 +3298,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 158";
 		rLen = 0;
-		rLoc = 9132;
+		rLoc = 8825;
 		rType = 0;
 		vrLen = 1594;
 		vrLoc = 4547;
@@ -3305,7 +3318,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 158";
 		rLen = 0;
-		rLoc = 9132;
+		rLoc = 8825;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 1092;
@@ -3315,7 +3328,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 207";
 		rLen = 0;
-		rLoc = 10663;
+		rLoc = 10356;
 		rType = 0;
 		vrLen = 1353;
 		vrLoc = 6229;
@@ -3365,7 +3378,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 214";
 		rLen = 0;
-		rLoc = 10769;
+		rLoc = 10462;
 		rType = 0;
 		vrLen = 1366;
 		vrLoc = 9545;
@@ -3515,7 +3528,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 123";
 		rLen = 0;
-		rLoc = 5189;
+		rLoc = 5191;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 2963;
@@ -3545,7 +3558,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 117";
 		rLen = 0;
-		rLoc = 4746;
+		rLoc = 4748;
 		rType = 0;
 		vrLen = 1381;
 		vrLoc = 2939;
@@ -3555,7 +3568,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 133";
 		rLen = 0;
-		rLoc = 7546;
+		rLoc = 7239;
 		rType = 0;
 		vrLen = 1336;
 		vrLoc = 3183;
@@ -3563,16 +3576,16 @@
 	E7E0704611B458E400E9869B /* CleanUpSettingsViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {936, 699}}";
-			sepNavSelRange = "{607, 0}";
-			sepNavVisRange = "{0, 997}";
+			sepNavSelRange = "{991, 38}";
+			sepNavVisRange = "{0, 1035}";
 		};
 	};
 	E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{7136, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7187, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7237, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 10248}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1048, 4420}}";
-			sepNavSelRange = "{9493, 35}";
-			sepNavVisRange = "{8212, 1979}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{7313, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7364, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7414, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 10799}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {936, 4654}}";
+			sepNavSelRange = "{9074, 0}";
+			sepNavVisRange = "{8942, 1800}";
 		};
 	};
 	E7E0704C11B4595600E9869B /* PBXTextBookmark */ = {
@@ -3590,7 +3603,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 133";
 		rLen = 0;
-		rLoc = 7546;
+		rLoc = 7239;
 		rType = 0;
 		vrLen = 1336;
 		vrLoc = 3183;
@@ -3620,7 +3633,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 69";
 		rLen = 0;
-		rLoc = 2234;
+		rLoc = 2411;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 1011;
@@ -3630,7 +3643,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 89";
 		rLen = 0;
-		rLoc = 2697;
+		rLoc = 2874;
 		rType = 0;
 		vrLen = 1216;
 		vrLoc = 1011;
@@ -3740,7 +3753,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 113";
 		rLen = 0;
-		rLoc = 4492;
+		rLoc = 4669;
 		rType = 0;
 		vrLen = 1260;
 		vrLoc = 2355;
@@ -3760,7 +3773,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 113";
 		rLen = 0;
-		rLoc = 4492;
+		rLoc = 4669;
 		rType = 0;
 		vrLen = 1260;
 		vrLoc = 2355;
@@ -3770,7 +3783,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 192";
 		rLen = 0;
-		rLoc = 8267;
+		rLoc = 8444;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 4307;
@@ -3790,7 +3803,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 189";
 		rLen = 22;
-		rLoc = 7985;
+		rLoc = 8162;
 		rType = 0;
 		vrLen = 964;
 		vrLoc = 4307;
@@ -3800,7 +3813,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 161";
 		rLen = 0;
-		rLoc = 7480;
+		rLoc = 7657;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 4346;
@@ -3810,7 +3823,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 203";
 		rLen = 0;
-		rLoc = 9106;
+		rLoc = 9283;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 4748;
@@ -3850,7 +3863,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 203";
 		rLen = 0;
-		rLoc = 9106;
+		rLoc = 9283;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 4657;
@@ -3860,7 +3873,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 198";
 		rLen = 0;
-		rLoc = 8475;
+		rLoc = 8652;
 		rType = 0;
 		vrLen = 1175;
 		vrLoc = 4789;
@@ -3890,7 +3903,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 198";
 		rLen = 0;
-		rLoc = 8340;
+		rLoc = 8517;
 		rType = 0;
 		vrLen = 1245;
 		vrLoc = 4789;
@@ -3910,7 +3923,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 192";
 		rLen = 23;
-		rLoc = 8088;
+		rLoc = 8265;
 		rType = 0;
 		vrLen = 1350;
 		vrLoc = 4405;
@@ -3950,7 +3963,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 153";
 		rLen = 91;
-		rLoc = 6958;
+		rLoc = 7135;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 3382;
@@ -3960,7 +3973,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 153";
 		rLen = 91;
-		rLoc = 6958;
+		rLoc = 7135;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 3382;
@@ -4000,7 +4013,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 206";
 		rLen = 0;
-		rLoc = 8867;
+		rLoc = 9044;
 		rType = 0;
 		vrLen = 1590;
 		vrLoc = 4782;
@@ -4010,7 +4023,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 201";
 		rLen = 0;
-		rLoc = 8462;
+		rLoc = 8639;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 4849;
@@ -4040,7 +4053,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 200";
 		rLen = 0;
-		rLoc = 8340;
+		rLoc = 8517;
 		rType = 0;
 		vrLen = 1705;
 		vrLoc = 4715;
@@ -4050,7 +4063,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 209";
 		rLen = 0;
-		rLoc = 8867;
+		rLoc = 9044;
 		rType = 0;
 		vrLen = 1681;
 		vrLoc = 4715;
@@ -4060,7 +4073,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 209";
 		rLen = 0;
-		rLoc = 8867;
+		rLoc = 9044;
 		rType = 0;
 		vrLen = 1681;
 		vrLoc = 4715;
@@ -4090,7 +4103,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 189";
 		rLen = 0;
-		rLoc = 7983;
+		rLoc = 8160;
 		rType = 0;
 		vrLen = 1681;
 		vrLoc = 4715;
@@ -4100,7 +4113,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 200";
 		rLen = 0;
-		rLoc = 8339;
+		rLoc = 8516;
 		rType = 0;
 		vrLen = 1691;
 		vrLoc = 4715;
@@ -4130,7 +4143,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 205";
 		rLen = 0;
-		rLoc = 8624;
+		rLoc = 8801;
 		rType = 0;
 		vrLen = 1639;
 		vrLoc = 4691;
@@ -4140,7 +4153,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 208";
 		rLen = 0;
-		rLoc = 8825;
+		rLoc = 9002;
 		rType = 0;
 		vrLen = 1632;
 		vrLoc = 4691;
@@ -4220,7 +4233,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 208";
 		rLen = 0;
-		rLoc = 8825;
+		rLoc = 9002;
 		rType = 0;
 		vrLen = 1650;
 		vrLoc = 4908;
@@ -4320,7 +4333,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 233";
 		rLen = 37;
-		rLoc = 10138;
+		rLoc = 10315;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 5296;
@@ -4370,7 +4383,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 233";
 		rLen = 37;
-		rLoc = 10138;
+		rLoc = 10315;
 		rType = 0;
 		vrLen = 1540;
 		vrLoc = 5230;
@@ -4400,7 +4413,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 133";
 		rLen = 39;
-		rLoc = 5212;
+		rLoc = 5214;
 		rType = 0;
 		vrLen = 1365;
 		vrLoc = 2919;
@@ -4430,7 +4443,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 233";
 		rLen = 37;
-		rLoc = 10138;
+		rLoc = 10315;
 		rType = 0;
 		vrLen = 1539;
 		vrLoc = 5230;
@@ -4440,7 +4453,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 231";
 		rLen = 0;
-		rLoc = 9610;
+		rLoc = 9787;
 		rType = 0;
 		vrLen = 1600;
 		vrLoc = 5230;
@@ -4470,7 +4483,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 231";
 		rLen = 0;
-		rLoc = 9610;
+		rLoc = 9787;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 5321;
@@ -4480,7 +4493,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 232";
 		rLen = 0;
-		rLoc = 10132;
+		rLoc = 10309;
 		rType = 0;
 		vrLen = 1576;
 		vrLoc = 5321;
@@ -4490,7 +4503,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 232";
 		rLen = 0;
-		rLoc = 10132;
+		rLoc = 10309;
 		rType = 0;
 		vrLen = 1576;
 		vrLoc = 5321;
@@ -4510,7 +4523,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 130";
 		rLen = 0;
-		rLoc = 7250;
+		rLoc = 6943;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 2878;
@@ -4549,8 +4562,8 @@
 		isa = PBXTextBookmark;
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 143";
-		rLen = 388;
-		rLoc = 6723;
+		rLen = 0;
+		rLoc = 6807;
 		rType = 0;
 		vrLen = 494;
 		vrLoc = 4081;
@@ -4580,7 +4593,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 262";
 		rLen = 64;
-		rLoc = 10771;
+		rLoc = 10464;
 		rType = 0;
 		vrLen = 1606;
 		vrLoc = 4303;
@@ -4610,7 +4623,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 232";
 		rLen = 0;
-		rLoc = 10132;
+		rLoc = 10309;
 		rType = 0;
 		vrLen = 1667;
 		vrLoc = 5230;
@@ -4640,7 +4653,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 106";
 		rLen = 0;
-		rLoc = 3386;
+		rLoc = 3563;
 		rType = 0;
 		vrLen = 1270;
 		vrLoc = 1919;
@@ -4650,7 +4663,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 106";
 		rLen = 0;
-		rLoc = 3388;
+		rLoc = 3565;
 		rType = 0;
 		vrLen = 1270;
 		vrLoc = 1919;
@@ -4670,7 +4683,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 106";
 		rLen = 0;
-		rLoc = 3388;
+		rLoc = 3565;
 		rType = 0;
 		vrLen = 1269;
 		vrLoc = 1919;
@@ -4680,7 +4693,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 111";
 		rLen = 0;
-		rLoc = 3607;
+		rLoc = 3784;
 		rType = 0;
 		vrLen = 1341;
 		vrLoc = 2046;
@@ -4914,7 +4927,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 110";
 		rLen = 0;
-		rLoc = 3535;
+		rLoc = 3712;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 2046;
@@ -5150,9 +5163,16 @@
 	};
 	E7E071A811BC9BA200E9869B /* CleanUpSettings.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1587, 931}}";
+			sepNavIntBoundsRect = "{{0, 0}, {741, 699}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 665}";
+		};
+	};
+	E7E071A911BC9BA200E9869B /* CleanUpSettings.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {741, 699}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 312}";
 		};
 	};
 	E7E071B511BC9C8000E9869B /* XDModelBookmark */ = {
@@ -5720,7 +5740,7 @@
 		vrLen = 1627;
 		vrLoc = 957;
 	};
-	E7E071E111BC9EF500E9869B /* CleanUpSettingsViewController.m:323 */ = {
+	E7E071E111BC9EF500E9869B /* CleanUpSettingsViewController.m:326 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -5732,7 +5752,7 @@
 		functionName = "-useImage:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 323;
+		lineNumber = 326;
 		location = TapToTeach;
 		modificationTime = 297576463.150158;
 		originalNumberOfMultipleMatches = 1;
@@ -5753,7 +5773,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 247";
 		rLen = 35;
-		rLoc = 9493;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 2064;
 		vrLoc = 5786;
@@ -5763,7 +5783,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 246";
 		rLen = 35;
-		rLoc = 9493;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 2233;
 		vrLoc = 5672;
@@ -5773,7 +5793,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 167";
 		rLen = 0;
-		rLoc = 7148;
+		rLoc = 6843;
 		rType = 0;
 		vrLen = 1688;
 		vrLoc = 4481;
@@ -5782,7 +5802,7 @@
 		isa = PBXTextBookmark;
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		rLen = 0;
-		rLoc = 290;
+		rLoc = 293;
 		rType = 1;
 	};
 	E7E071E811BC9F0500E9869B /* PBXTextBookmark */ = {
@@ -5790,7 +5810,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 217";
 		rLen = 0;
-		rLoc = 8269;
+		rLoc = 8446;
 		rType = 0;
 		vrLen = 2233;
 		vrLoc = 5672;
@@ -5830,7 +5850,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 217";
 		rLen = 0;
-		rLoc = 8269;
+		rLoc = 8446;
 		rType = 0;
 		vrLen = 2233;
 		vrLoc = 5672;
@@ -5890,7 +5910,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 93";
 		rLen = 0;
-		rLoc = 4517;
+		rLoc = 4519;
 		rType = 0;
 		vrLen = 1947;
 		vrLoc = 1634;
@@ -5920,7 +5940,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 153";
 		rLen = 0;
-		rLoc = 6345;
+		rLoc = 6522;
 		rType = 0;
 		vrLen = 1488;
 		vrLoc = 3086;
@@ -5930,7 +5950,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 92";
 		rLen = 0;
-		rLoc = 2212;
+		rLoc = 2389;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 1230;
@@ -5950,7 +5970,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 101";
 		rLen = 0;
-		rLoc = 2432;
+		rLoc = 2609;
 		rType = 0;
 		vrLen = 1481;
 		vrLoc = 1964;
@@ -5960,7 +5980,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 143";
 		rLen = 0;
-		rLoc = 4161;
+		rLoc = 4338;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 2236;
@@ -5980,7 +6000,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 141";
 		rLen = 0;
-		rLoc = 3987;
+		rLoc = 4164;
 		rType = 0;
 		vrLen = 1531;
 		vrLoc = 1687;
@@ -5990,7 +6010,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 138";
 		rLen = 0;
-		rLoc = 3752;
+		rLoc = 3929;
 		rType = 0;
 		vrLen = 1669;
 		vrLoc = 2418;
@@ -6010,7 +6030,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 174";
 		rLen = 0;
-		rLoc = 4807;
+		rLoc = 4984;
 		rType = 0;
 		vrLen = 1665;
 		vrLoc = 4009;
@@ -6020,7 +6040,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 149";
 		rLen = 0;
-		rLoc = 3973;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1758;
 		vrLoc = 3066;
@@ -6050,7 +6070,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 241";
 		rLen = 0;
-		rLoc = 7275;
+		rLoc = 7452;
 		rType = 0;
 		vrLen = 1497;
 		vrLoc = 6088;
@@ -6060,7 +6080,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 238";
 		rLen = 0;
-		rLoc = 6942;
+		rLoc = 7119;
 		rType = 0;
 		vrLen = 1663;
 		vrLoc = 6088;
@@ -6070,7 +6090,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 238";
 		rLen = 0;
-		rLoc = 6942;
+		rLoc = 7119;
 		rType = 0;
 		vrLen = 1606;
 		vrLoc = 6088;
@@ -6080,7 +6100,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 238";
 		rLen = 0;
-		rLoc = 6942;
+		rLoc = 7119;
 		rType = 0;
 		vrLen = 1661;
 		vrLoc = 6087;
@@ -6090,7 +6110,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 238";
 		rLen = 0;
-		rLoc = 6942;
+		rLoc = 7119;
 		rType = 0;
 		vrLen = 1560;
 		vrLoc = 6087;
@@ -6109,7 +6129,7 @@
 		isa = PBXTextBookmark;
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		rLen = 0;
-		rLoc = 244;
+		rLoc = 247;
 		rType = 1;
 	};
 	E7E0723711BCA77600E9869B /* PBXTextBookmark */ = {
@@ -6117,7 +6137,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 245";
 		rLen = 0;
-		rLoc = 6942;
+		rLoc = 7119;
 		rType = 0;
 		vrLen = 1560;
 		vrLoc = 6087;
@@ -6137,7 +6157,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 211";
 		rLen = 0;
-		rLoc = 6154;
+		rLoc = 6331;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 5093;
@@ -6147,7 +6167,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 213";
 		rLen = 0;
-		rLoc = 6332;
+		rLoc = 6509;
 		rType = 0;
 		vrLen = 1785;
 		vrLoc = 5460;
@@ -6167,7 +6187,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 213";
 		rLen = 0;
-		rLoc = 6332;
+		rLoc = 6509;
 		rType = 0;
 		vrLen = 1785;
 		vrLoc = 5460;
@@ -6177,7 +6197,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 213";
 		rLen = 0;
-		rLoc = 6010;
+		rLoc = 6187;
 		rType = 0;
 		vrLen = 1922;
 		vrLoc = 4860;
@@ -6187,7 +6207,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 213";
 		rLen = 0;
-		rLoc = 6010;
+		rLoc = 6187;
 		rType = 0;
 		vrLen = 1927;
 		vrLoc = 4860;
@@ -6217,7 +6237,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 153";
 		rLen = 0;
-		rLoc = 4481;
+		rLoc = 4483;
 		rType = 0;
 		vrLen = 2039;
 		vrLoc = 3354;
@@ -6227,7 +6247,7 @@
 		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
 		name = "CleanUpSettingsViewController.m: 321";
 		rLen = 35;
-		rLoc = 9550;
+		rLoc = 9727;
 		rType = 0;
 		vrLen = 1979;
 		vrLoc = 8269;
@@ -6247,7 +6267,7 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 153";
 		rLen = 0;
-		rLoc = 4481;
+		rLoc = 4483;
 		rType = 0;
 		vrLen = 2118;
 		vrLoc = 3354;
@@ -6257,10 +6277,295 @@
 		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
 		name = "CleanUpView.m: 231";
 		rLen = 0;
-		rLoc = 7148;
+		rLoc = 6843;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 6175;
+	};
+	E7E0725911BCACD900E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
+		name = "CleanUpView.m: 153";
+		rLen = 0;
+		rLoc = 4399;
+		rType = 0;
+		vrLen = 2045;
+		vrLoc = 3149;
+	};
+	E7E0725C11BCAE2200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
+		name = "CleanUpView.m: 153";
+		rLen = 0;
+		rLoc = 4399;
+		rType = 0;
+		vrLen = 2045;
+		vrLoc = 3149;
+	};
+	E7E0725D11BCAE2200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E0704611B458E400E9869B /* CleanUpSettingsViewController.h */;
+		name = "CleanUpSettingsViewController.h: 32";
+		rLen = 38;
+		rLoc = 991;
+		rType = 0;
+		vrLen = 1035;
+		vrLoc = 0;
+	};
+	E7E0725E11BCAE2200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
+		name = "CleanUpSettingsViewController.m: 321";
+		rLen = 35;
+		rLoc = 9727;
+		rType = 0;
+		vrLen = 1978;
+		vrLoc = 8269;
+	};
+	E7E0725F11BCAE2200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
+		name = "CleanUpSettingsViewController.m: 345";
+		rLen = 0;
+		rLoc = 10790;
+		rType = 0;
+		vrLen = 2001;
+		vrLoc = 8299;
+	};
+	E7E0727611BCB0D200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E071A911BC9BA200E9869B /* CleanUpSettings.m */;
+		name = "CleanUpSettings.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 312;
+		vrLoc = 0;
+	};
+	E7E0727711BCB0D200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E071A811BC9BA200E9869B /* CleanUpSettings.h */;
+		name = "CleanUpSettings.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 665;
+		vrLoc = 0;
+	};
+	E7E0727811BCB0D200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E757CE47119A69820099327A /* SettingsViewController.h */;
+		name = "SettingsViewController.h: 56";
+		rLen = 2;
+		rLoc = 1651;
+		rType = 0;
+		vrLen = 1660;
+		vrLoc = 92;
+	};
+	E7E0727911BCB0D200E9869B /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 28C3AD890F43EF2300507BA6 /* TapToTeach.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 1;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					103.000000,
+					22.000000,
+					63.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {522, 220}}",
+						"{{527, 0}, {273, 220}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {800, 220}}",
+						"{{0, 225}, {800, 512}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {213, 220}}",
+						"{{218, 0}, {304, 220}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					64.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					144.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					249.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					96.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-33, 0}, {785, 497}}";
+			"xdesign model selected entities key" = (
+				"<XDPMEntity: 0x204884460>{name=CleanUpSettings, package=}",
+			);
+			"xdesign model selected properties key" = (
+				"<XDPMAttribute: 0x205412a00>{name=sizeOfImages, type=(null)}",
+			);
+		};
+	};
+	E7E0727A11BCB0D200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7E0704711B458E400E9869B /* CleanUpSettingsViewController.m */;
+		name = "CleanUpSettingsViewController.m: 307";
+		rLen = 0;
+		rLoc = 9131;
+		rType = 0;
+		vrLen = 1800;
+		vrLoc = 8999;
+	};
+	E7E0727B11BCB0D200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
+		name = "CleanUpView.m: 153";
+		rLen = 0;
+		rLoc = 4399;
+		rType = 0;
+		vrLen = 2100;
+		vrLoc = 3111;
+	};
+	E7E0727C11BCB0D200E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
+		name = "CleanUpView.m: 224";
+		rLen = 0;
+		rLoc = 6942;
+		rType = 0;
+		vrLen = 1696;
+		vrLoc = 5863;
+	};
+	E7E0728111BCB14100E9869B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E7A254DA11AA400E00F8773D /* CleanUpView.m */;
+		name = "CleanUpView.m: 224";
+		rLen = 0;
+		rLoc = 6807;
+		rType = 0;
+		vrLen = 1957;
+		vrLoc = 5213;
 	};
 	E7E39DAA118FD23A0021EEC3 /* WordBankSettingsViewController.m:394 */ = {
 		isa = PBXFileBreakpoint;

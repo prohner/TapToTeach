@@ -284,7 +284,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 45}, {250, 800}}</string>
+							<string>{{0, 0}, {250, 800}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -333,7 +333,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E7E0725611BCAC0100E9869B</string>
+										<string>E7E0728111BCB14100E9869B</string>
 										<key>history</key>
 										<array>
 											<string>E7C268D61187F05D0054600F</string>
@@ -366,11 +366,8 @@
 											<string>E7E0713811BA11DD00E9869B</string>
 											<string>E7E0716311BA20CD00E9869B</string>
 											<string>E7E071C111BC9E9C00E9869B</string>
-											<string>E7E071C211BC9E9C00E9869B</string>
 											<string>E7E071C311BC9E9C00E9869B</string>
 											<string>E7E071C411BC9E9C00E9869B</string>
-											<string>E7E071C611BC9E9C00E9869B</string>
-											<string>E7E071C711BC9E9C00E9869B</string>
 											<string>E7E071CC11BC9E9C00E9869B</string>
 											<string>E7E071CD11BC9E9C00E9869B</string>
 											<string>E7E071CF11BC9E9C00E9869B</string>
@@ -380,11 +377,15 @@
 											<string>E7E071F011BC9F9A00E9869B</string>
 											<string>E7E071F311BC9F9A00E9869B</string>
 											<string>E7E071F511BC9F9A00E9869B</string>
-											<string>E7E0722711BCA70C00E9869B</string>
 											<string>E7E0723C11BCA80D00E9869B</string>
-											<string>E7E0725311BCAC0100E9869B</string>
 											<string>E7E0725411BCAC0100E9869B</string>
-											<string>E7E0725511BCAC0100E9869B</string>
+											<string>E7E0725D11BCAE2200E9869B</string>
+											<string>E7E0727611BCB0D200E9869B</string>
+											<string>E7E0727711BCB0D200E9869B</string>
+											<string>E7E0727811BCB0D200E9869B</string>
+											<string>E7E0727911BCB0D200E9869B</string>
+											<string>E7E0727A11BCB0D200E9869B</string>
+											<string>E7E0727B11BCB0D200E9869B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

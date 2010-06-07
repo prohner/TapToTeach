@@ -29,5 +29,6 @@
 - (void)chooseImage;
 - (void)useImage:(UIImage*)theImage;
 - (IBAction)quitCleanUp:(id)sender;
+- (IBAction)sliderChanged:(id)sender;
 
 @end

@@ -39,11 +39,14 @@
 }
 
 
-/*
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+	CleanUpSettings *settings = [appDelegate cleanUpSettings];
+	imageSizeSlider.value = [settings.sizeOfImages intValue];
+	imageCountSlider.value = [settings.numberOfImages intValue];
 }
-*/
+
 /*
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -340,6 +343,17 @@
 	[cleanUpViewController quitActivity:sender];
 }
 
+- (IBAction)sliderChanged:(id)sender {
+	FUNCTION_LOG();
+	CleanUpSettings *settings = [appDelegate cleanUpSettings];
+	if (sender == imageSizeSlider) {
+		settings.sizeOfImages = [NSNumber numberWithInt:imageSizeSlider.value];
+	} else if (sender == imageCountSlider) {
+		settings.numberOfImages = [NSNumber numberWithInt:imageCountSlider.value];
+	}
+
+	[appDelegate saveData];
+}
 
 @end
 

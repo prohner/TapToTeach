@@ -150,7 +150,7 @@
 		
 		for (CleanUpPicture *cleanUpPicture in cleanUpSettings.pictures) {
 			UIImage *image = [UIImage imageWithData:cleanUpPicture.pictureData];
-			image = [image imageByScalingProportionallyToSize:CGSizeMake(imageSize, imageSize)];
+			//image = [image imageByScalingProportionallyToSize:CGSizeMake(imageSize, imageSize)];
 			[self addImage:image];
 		}		
 		
@@ -176,7 +176,9 @@
 
 - (void)addImage:(UIImage *)newImage {
 	CALayer *item = [CALayer layer];
-	int imageSize = IMAGE_SIZE;
+
+	CleanUpSettings *settings = [appDelegate cleanUpSettings];
+	int imageSize = [settings.sizeOfImages intValue];
 
 	int targetMinX = targetLayer.position.x - targetLayer.bounds.size.width / 2;
 	int targetMinY = targetLayer.position.y - targetLayer.bounds.size.height / 2;
@@ -218,17 +220,9 @@
 		x = RANDOM_FUNC() % (viewWidth - imageSize / 2);
 		y = RANDOM_FUNC() % (viewHeight - imageSize / 2);
 	}
-	
-//	UIGraphicsBeginImageContext(size);
-//	CGContextRef context = UIGraphicsGetCurrentContext();
-//	CGContextTranslateCTM(context, 0.0, size.height);
-//	CGContextScaleCTM(context, 1.0, -1.0);
-//	CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, size.width, size.height), self.CGImage);
-//	UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
-//	UIGraphicsEndImageContext();
 
 	item.position = CGPointMake(x, y);
-	item.contents = (id)[[newImage imageByScalingProportionallyToSize: CGSizeMake(IMAGE_SIZE, IMAGE_SIZE)] CGImage];
+	item.contents = (id)[[newImage imageByScalingProportionallyToSize: CGSizeMake(imageSize, imageSize)] CGImage];
 	[item setValue:@"sheet" forKey:@"kind"];
 	CGFloat r = (1000 - (RANDOM_FUNC() % 2000)) / 1000.0f;
 	CGFloat angle = r * M_PI_2;
